@@ -1,0 +1,11 @@
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub/CMakeFiles/uninstall.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub/CMakeFiles/odd_num_pubsub_uninstall.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub/CMakeFiles/talker.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub/CMakeFiles/listener.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub/CMakeFiles/test.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub/CMakeFiles/edit_cache.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub/CMakeFiles/rebuild_cache.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub/CMakeFiles/list_install_components.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub/CMakeFiles/install.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub/CMakeFiles/install/local.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub/CMakeFiles/install/strip.dir

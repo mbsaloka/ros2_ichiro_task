@@ -1,0 +1,17 @@
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/lib/odd_num_pubsub/talker
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/lib/odd_num_pubsub/listener
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/ament_index/resource_index/package_run_dependencies/odd_num_pubsub
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/ament_index/resource_index/parent_prefix_path/odd_num_pubsub
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/environment/ament_prefix_path.sh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/environment/ament_prefix_path.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/environment/path.sh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/environment/path.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/local_setup.bash
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/local_setup.sh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/local_setup.zsh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/local_setup.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/package.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/ament_index/resource_index/packages/odd_num_pubsub
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/cmake/odd_num_pubsubConfig.cmake
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/cmake/odd_num_pubsubConfig-version.cmake
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/package.xml
