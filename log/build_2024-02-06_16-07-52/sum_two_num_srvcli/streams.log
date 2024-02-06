@@ -1,0 +1,68 @@
+[0.170s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/mbsaloka/Desktop/ros2_ichiro_task/src/sum_two_num_srvcli -DCMAKE_INSTALL_PREFIX=/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli
+[0.437s] -- The C compiler identification is GNU 11.4.0
+[0.654s] -- The CXX compiler identification is GNU 11.4.0
+[0.674s] -- Detecting C compiler ABI info
+[0.816s] -- Detecting C compiler ABI info - done
+[0.848s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.849s] -- Detecting C compile features
+[0.851s] -- Detecting C compile features - done
+[0.866s] -- Detecting CXX compiler ABI info
+[1.047s] -- Detecting CXX compiler ABI info - done
+[1.061s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.062s] -- Detecting CXX compile features
+[1.063s] -- Detecting CXX compile features - done
+[1.075s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[1.558s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.767s] -- Found rclcpp: 21.0.4 (/opt/ros/iron/share/rclcpp/cmake)
+[1.859s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[1.880s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[1.909s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.944s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.449s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[2.458s] -- Found rmw_fastrtps_cpp: 7.1.2 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[2.810s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.864s] -- Found FastRTPS: /opt/ros/iron/include  
+[2.966s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.571s] -- Found example_interfaces: 0.10.2 (/opt/ros/iron/share/example_interfaces/cmake)
+[4.205s] -- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[4.402s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.403s] -- Configured cppcheck include dirs: 
+[4.403s] -- Configured cppcheck exclude dirs and/or files: 
+[4.405s] -- Added test 'lint_cmake' to check CMake code style
+[4.407s] -- Added test 'uncrustify' to check C / C++ code style
+[4.407s] -- Configured uncrustify additional arguments: 
+[4.408s] -- Added test 'xmllint' to check XML markup files
+[4.410s] -- Configuring done
+[4.438s] -- Generating done
+[4.441s] -- Build files have been written to: /home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli
+[4.462s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/mbsaloka/Desktop/ros2_ichiro_task/src/sum_two_num_srvcli -DCMAKE_INSTALL_PREFIX=/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli
+[4.464s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli -- -j16 -l16
+[4.597s] [ 50%] [32mBuilding CXX object CMakeFiles/client.dir/src/sum_two_num_client.cpp.o[0m
+[4.598s] [ 50%] [32mBuilding CXX object CMakeFiles/server.dir/src/sum_two_num_server.cpp.o[0m
+[11.256s] [ 75%] [32m[1mLinking CXX executable server[0m
+[11.572s] [100%] [32m[1mLinking CXX executable client[0m
+[11.610s] [100%] Built target server
+[11.875s] [100%] Built target client
+[11.893s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli -- -j16 -l16
+[11.961s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli
+[11.971s] -- Install configuration: ""
+[11.971s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/lib/sum_two_num_srvcli/server
+[11.973s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/lib/sum_two_num_srvcli/server" to ""
+[11.973s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/lib/sum_two_num_srvcli/client
+[11.974s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/lib/sum_two_num_srvcli/client" to ""
+[11.975s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/ament_index/resource_index/package_run_dependencies/sum_two_num_srvcli
+[11.975s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/ament_index/resource_index/parent_prefix_path/sum_two_num_srvcli
+[11.976s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/environment/ament_prefix_path.sh
+[11.976s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/environment/ament_prefix_path.dsv
+[11.976s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/environment/path.sh
+[11.976s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/environment/path.dsv
+[11.976s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/local_setup.bash
+[11.976s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/local_setup.sh
+[11.976s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/local_setup.zsh
+[11.977s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/local_setup.dsv
+[11.977s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.dsv
+[11.977s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/ament_index/resource_index/packages/sum_two_num_srvcli
+[11.977s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/cmake/sum_two_num_srvcliConfig.cmake
+[11.977s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/cmake/sum_two_num_srvcliConfig-version.cmake
+[11.977s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.xml
+[11.979s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli

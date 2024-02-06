@@ -1,0 +1,17 @@
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/lib/sum_two_num_srvcli/server
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/lib/sum_two_num_srvcli/client
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/ament_index/resource_index/package_run_dependencies/sum_two_num_srvcli
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/ament_index/resource_index/parent_prefix_path/sum_two_num_srvcli
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/environment/ament_prefix_path.sh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/environment/ament_prefix_path.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/environment/path.sh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/environment/path.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/local_setup.bash
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/local_setup.sh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/local_setup.zsh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/local_setup.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/ament_index/resource_index/packages/sum_two_num_srvcli
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/cmake/sum_two_num_srvcliConfig.cmake
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/cmake/sum_two_num_srvcliConfig-version.cmake
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.xml

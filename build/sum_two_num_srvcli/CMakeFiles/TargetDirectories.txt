@@ -1,0 +1,11 @@
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli/CMakeFiles/uninstall.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli/CMakeFiles/sum_two_num_srvcli_uninstall.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli/CMakeFiles/server.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli/CMakeFiles/client.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli/CMakeFiles/test.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli/CMakeFiles/edit_cache.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli/CMakeFiles/rebuild_cache.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli/CMakeFiles/list_install_components.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli/CMakeFiles/install.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli/CMakeFiles/install/local.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli/CMakeFiles/install/strip.dir

@@ -1,0 +1,4 @@
+source;share/sum_two_num_srvcli/local_setup.bash
+source;share/sum_two_num_srvcli/local_setup.dsv
+source;share/sum_two_num_srvcli/local_setup.sh
+source;share/sum_two_num_srvcli/local_setup.zsh
