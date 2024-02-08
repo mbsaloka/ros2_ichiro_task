@@ -1,0 +1,32 @@
+[35m[1mConsolidate compiler generated dependencies of target my_package[0m
+[100%] Built target my_package
+-- Install configuration: ""
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/my_robot_driver.xml
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/lib/libmy_package.so
+-- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/lib/libmy_package.so" to ""
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package//launch
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package//launch/robot_launch.py
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package//resource
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package//resource/my_robot.urdf
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package//worlds
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package//worlds/my_world.wbt
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/environment/library_path.sh
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/environment/library_path.dsv
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/environment/ament_prefix_path.sh
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/environment/path.sh
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/environment/path.dsv
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/local_setup.bash
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/local_setup.sh
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/local_setup.zsh
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/local_setup.dsv
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/package.dsv
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/ament_index/resource_index/packages/my_package
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/ament_index/resource_index/webots_ros2_driver__pluginlib__plugin/my_package
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/package.xml

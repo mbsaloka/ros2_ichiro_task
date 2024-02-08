@@ -1,0 +1,5 @@
+source;share/soccer_pubsub/local_setup.bash
+source;share/soccer_pubsub/local_setup.dsv
+source;share/soccer_pubsub/local_setup.ps1
+source;share/soccer_pubsub/local_setup.sh
+source;share/soccer_pubsub/local_setup.zsh

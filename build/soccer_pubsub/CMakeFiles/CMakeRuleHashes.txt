@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+a06e71b3ae291ff6dacc14ac5e4d919f CMakeFiles/soccer_pubsub_uninstall

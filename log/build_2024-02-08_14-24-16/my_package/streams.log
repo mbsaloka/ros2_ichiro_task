@@ -1,0 +1,40 @@
+[0.364s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/mbsaloka/Desktop/ros2_ichiro_task/src/my_package -DCMAKE_INSTALL_PREFIX=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package
+[0.571s] -- The C compiler identification is GNU 11.4.0
+[0.788s] -- The CXX compiler identification is GNU 11.4.0
+[0.814s] -- Detecting C compiler ABI info
+[0.958s] -- Detecting C compiler ABI info - done
+[0.972s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.972s] -- Detecting C compile features
+[0.973s] -- Detecting C compile features - done
+[0.980s] -- Detecting CXX compiler ABI info
+[1.126s] -- Detecting CXX compiler ABI info - done
+[1.147s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.147s] -- Detecting CXX compile features
+[1.150s] -- Detecting CXX compile features - done
+[1.158s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[1.561s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.719s] -- Found rclcpp: 21.0.4 (/opt/ros/iron/share/rclcpp/cmake)
+[1.806s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[1.825s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[1.862s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.894s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.189s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[2.194s] -- Found rmw_fastrtps_cpp: 7.1.2 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[2.376s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.418s] -- Found FastRTPS: /opt/ros/iron/include  
+[2.488s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.821s] -- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)
+[2.878s] -- Found geometry_msgs: 5.0.0 (/opt/ros/iron/share/geometry_msgs/cmake)
+[2.952s] -- Found pluginlib: 5.2.2 (/opt/ros/iron/share/pluginlib/cmake)
+[2.999s] -- Found webots_ros2_driver: 2023.1.1 (/opt/ros/iron/share/webots_ros2_driver/cmake)
+[3.292s] -- Found eigen3_cmake_module: 0.2.2 (/opt/ros/iron/share/eigen3_cmake_module/cmake)
+[3.295s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.295s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[5.329s] -- Configuring done
+[5.427s] -- Generating done
+[5.430s] -- Build files have been written to: /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package
+[5.449s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/mbsaloka/Desktop/ros2_ichiro_task/src/my_package -DCMAKE_INSTALL_PREFIX=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package
+[5.455s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package -- -j16 -l16
+[5.541s] [ 50%] [32mBuilding CXX object CMakeFiles/my_package.dir/src/MyRobotDriver.cpp.o[0m
+[18.011s] [100%] [32m[1mLinking CXX shared library libmy_package.so[0m
+[19.058s] [100%] Built target my_package

@@ -1,0 +1,237 @@
+[0.138s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces -- -j16 -l16
+[0.185s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.488s] -- Found geometry_msgs: 5.0.0 (/opt/ros/iron/share/geometry_msgs/cmake)
+[0.541s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.553s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.581s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.604s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.783s] -- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+[0.793s] -- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+[1.376s] -- Found ament_cmake_ros: 0.11.2 (/opt/ros/iron/share/ament_cmake_ros/cmake)
+[1.904s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.121s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.164s] -- Found python_cmake_module: 0.10.2 (/opt/ros/iron/share/python_cmake_module/cmake)
+[2.204s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.204s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.205s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.228s] -- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[2.249s] -- Added test 'lint_cmake' to check CMake code style
+[2.251s] -- Added test 'xmllint' to check XML markup files
+[2.254s] -- Configuring done
+[2.307s] -- Generating done
+[2.313s] -- Build files have been written to: /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces
+[2.381s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[2.396s] [  2%] Built target ament_cmake_python_copy_my_interfaces
+[2.763s] [  2%] Built target my_interfaces__rosidl_generator_type_description
+[2.788s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.805s] [  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.856s] running egg_info
+[2.857s] writing my_interfaces.egg-info/PKG-INFO
+[2.857s] writing dependency_links to my_interfaces.egg-info/dependency_links.txt
+[2.858s] writing top-level names to my_interfaces.egg-info/top_level.txt
+[2.865s] reading manifest file 'my_interfaces.egg-info/SOURCES.txt'
+[2.866s] writing manifest file 'my_interfaces.egg-info/SOURCES.txt'
+[2.915s] [  8%] Built target ament_cmake_python_build_my_interfaces_egg
+[3.238s] [  8%] Built target my_interfaces__cpp
+[3.296s] [ 11%] [32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/pose__description.c.o[0m
+[3.296s] [ 14%] [32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/pose__functions.c.o[0m
+[3.297s] [ 17%] [32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/pose__type_support.c.o[0m
+[3.409s] [ 20%] [32m[1mLinking C shared library libmy_interfaces__rosidl_generator_c.so[0m
+[3.493s] [ 20%] Built target my_interfaces__rosidl_generator_c
+[3.515s] [ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.515s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.516s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.516s] [ 35%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.516s] [ 35%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.517s] [ 38%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.998s] [ 41%] [32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/msg/pose__type_support.cpp.o[0m
+[4.025s] [ 44%] [32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/msg/pose__type_support.cpp.o[0m
+[4.040s] [ 47%] [32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/pose__type_support.cpp.o[0m
+[4.053s] [ 50%] [32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__type_support.c.o[0m
+[4.054s] [ 52%] [32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/pose__type_support.cpp.o[0m
+[4.114s] [ 55%] [32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/pose__type_support_c.cpp.o[0m
+[4.128s] [ 58%] [32m[1mLinking C shared library libmy_interfaces__rosidl_typesupport_introspection_c.so[0m
+[4.147s] [ 61%] [32m[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_c.so[0m
+[4.192s] [ 61%] Built target my_interfaces__rosidl_typesupport_introspection_c
+[4.239s] [ 61%] Built target my_interfaces__rosidl_typesupport_c
+[4.739s] [ 64%] [32m[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[4.739s] [ 67%] [32m[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_cpp.so[0m
+[4.781s] [ 70%] [32m[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[4.835s] [ 70%] Built target my_interfaces__rosidl_typesupport_cpp
+[4.887s] [ 70%] Built target my_interfaces__rosidl_typesupport_introspection_cpp
+[4.920s] [ 70%] Built target my_interfaces__rosidl_typesupport_fastrtps_c
+[5.028s] [ 73%] [32m[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.165s] [ 73%] Built target my_interfaces__rosidl_typesupport_fastrtps_cpp
+[5.200s] [ 73%] Built target my_interfaces
+[5.239s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.734s] [ 76%] Built target my_interfaces__py
+[5.776s] [ 79%] [32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/msg/_pose_s.c.o[0m
+[6.004s] [ 82%] [32m[1mLinking C shared library rosidl_generator_py/my_interfaces/libmy_interfaces__rosidl_generator_py.so[0m
+[6.128s] [ 82%] Built target my_interfaces__rosidl_generator_py
+[6.164s] [35m[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[6.164s] [35m[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[6.164s] [35m[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_c__pyext[0m
+[6.205s] [ 85%] [32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.206s] [ 88%] [32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.207s] [ 91%] [32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[6.400s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.402s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.405s] [100%] [32m[1mLinking C shared library rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.458s] [100%] Built target my_interfaces__rosidl_typesupport_introspection_c__pyext
+[6.458s] [100%] Built target my_interfaces__rosidl_typesupport_c__pyext
+[6.466s] [100%] Built target my_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[6.486s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces -- -j16 -l16
+[6.683s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces
+[6.707s] -- Install configuration: ""
+[6.707s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_interfaces
+[6.709s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/msg/Pose.json
+[6.709s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces
+[6.710s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg
+[6.710s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/my_soccer.h
+[6.711s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/pose.h
+[6.711s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_generator_c__visibility_control.h
+[6.712s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail
+[6.712s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__type_support.h
+[6.712s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__functions.h
+[6.713s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_soccer__functions.c
+[6.713s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__description.c
+[6.713s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__struct.h
+[6.713s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__functions.c
+[6.713s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_soccer__struct.h
+[6.714s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_soccer__description.c
+[6.714s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__type_support.c
+[6.714s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_soccer__type_support.h
+[6.714s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_soccer__type_support.c
+[6.714s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_soccer__functions.h
+[6.714s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/environment/library_path.sh
+[6.714s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/environment/library_path.dsv
+[6.715s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_c.so
+[6.715s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_c.so" to ""
+[6.715s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces
+[6.715s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg
+[6.715s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.716s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail
+[6.716s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_soccer__rosidl_typesupport_fastrtps_c.h
+[6.716s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__rosidl_typesupport_fastrtps_c.h
+[6.716s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_c.so
+[6.717s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[6.717s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces
+[6.717s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg
+[6.717s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/pose.hpp
+[6.717s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/my_soccer.hpp
+[6.717s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail
+[6.718s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__builder.hpp
+[6.718s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_soccer__traits.hpp
+[6.718s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_soccer__builder.hpp
+[6.718s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_soccer__struct.hpp
+[6.718s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__struct.hpp
+[6.718s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__traits.hpp
+[6.719s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces
+[6.719s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg
+[6.719s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.719s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail
+[6.719s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/dds_fastrtps
+[6.719s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__rosidl_typesupport_fastrtps_cpp.hpp
+[6.720s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_soccer__rosidl_typesupport_fastrtps_cpp.hpp
+[6.720s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[6.720s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[6.720s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces
+[6.720s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg
+[6.721s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.721s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail
+[6.721s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_soccer__rosidl_typesupport_introspection_c.h
+[6.721s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__type_support.c
+[6.721s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_soccer__type_support.c
+[6.721s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__rosidl_typesupport_introspection_c.h
+[6.721s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_c.so
+[6.722s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[6.723s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_c.so
+[6.723s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_c.so" to ""
+[6.724s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces
+[6.724s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg
+[6.724s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail
+[6.724s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp
+[6.724s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__type_support.cpp
+[6.725s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_soccer__rosidl_typesupport_introspection_cpp.hpp
+[6.725s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/my_soccer__type_support.cpp
+[6.725s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_cpp.so
+[6.726s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[6.726s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_cpp.so
+[6.727s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_cpp.so" to ""
+[6.727s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/environment/pythonpath.sh
+[6.728s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/environment/pythonpath.dsv
+[6.728s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces-0.0.0-py3.10.egg-info
+[6.728s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[6.728s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[6.728s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[6.729s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[6.729s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces
+[6.730s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.730s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.730s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[6.730s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_c.c
+[6.731s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/__init__.py
+[6.731s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/msg
+[6.731s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/msg/_pose_s.c
+[6.731s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/msg/_my_soccer.py
+[6.731s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/msg/_my_soccer_s.c
+[6.732s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/msg/_pose.py
+[6.732s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/msg/__init__.py
+[6.732s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/libmy_interfaces__rosidl_generator_py.so
+[6.732s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.732s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.833s] Listing '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces'...
+[6.833s] Compiling '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/__init__.py'...
+[6.834s] Listing '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/msg'...
+[6.834s] Compiling '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/msg/__init__.py'...
+[6.834s] Compiling '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/msg/_pose.py'...
+[6.850s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.851s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.851s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.852s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.853s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.853s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.854s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_py.so
+[6.855s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_py.so" to ""
+[6.855s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/msg/Pose.idl
+[6.855s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/msg/Pose.msg
+[6.856s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/ament_index/resource_index/package_run_dependencies/my_interfaces
+[6.856s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/ament_index/resource_index/parent_prefix_path/my_interfaces
+[6.856s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/environment/ament_prefix_path.sh
+[6.857s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/environment/ament_prefix_path.dsv
+[6.857s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/environment/path.sh
+[6.857s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/environment/path.dsv
+[6.857s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/local_setup.bash
+[6.858s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/local_setup.sh
+[6.858s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/local_setup.zsh
+[6.858s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/local_setup.dsv
+[6.858s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/package.dsv
+[6.859s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/ament_index/resource_index/packages/my_interfaces
+[6.859s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cExport.cmake
+[6.859s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cExport-noconfig.cmake
+[6.860s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[6.860s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[6.860s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cppExport.cmake
+[6.860s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[6.861s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[6.861s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[6.861s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.861s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cExport.cmake
+[6.861s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[6.862s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[6.862s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.862s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cppExport.cmake
+[6.862s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[6.862s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_pyExport.cmake
+[6.863s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[6.863s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake-extras.cmake
+[6.863s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.863s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[6.863s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[6.864s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.864s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.864s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.864s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/my_interfacesConfig.cmake
+[6.864s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake/my_interfacesConfig-version.cmake
+[6.864s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/package.xml
+[6.872s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces

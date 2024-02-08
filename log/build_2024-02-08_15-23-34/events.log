@@ -1,0 +1,205 @@
+[0.000000] (-) TimerEvent: {}
+[0.000639] (-) JobUnselected: {'identifier': 'my_interfaces'}
+[0.000823] (-) JobUnselected: {'identifier': 'odd_num_pubsub'}
+[0.000877] (-) JobUnselected: {'identifier': 'soccer_pubsub'}
+[0.000902] (-) JobUnselected: {'identifier': 'sum_two_num_srvcli'}
+[0.000926] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.000955] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.072399] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'cmake'}
+[0.074415] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'build'}
+[0.074500] (my_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package', '--', '-j16', '-l16'], 'cwd': '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mbsaloka'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/mbsaloka'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '13047'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mbsaloka'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mbsaloka'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mbsaloka-LOQ-15IRH8:@/tmp/.ICE-unix/2774,unix/mbsaloka-LOQ-15IRH8:/tmp/.ICE-unix/2774'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/98149e6b_e94f_4a0f_9f2a_21b1212502fd'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.277'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[0.099258] (-) TimerEvent: {}
+[0.150005] (my_package) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[0.199474] (-) TimerEvent: {}
+[0.299936] (-) TimerEvent: {}
+[0.378486] (my_package) StdoutLine: {'line': b'-- Found rclcpp: 21.0.4 (/opt/ros/iron/share/rclcpp/cmake)\n'}
+[0.400126] (-) TimerEvent: {}
+[0.438217] (my_package) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)\n'}
+[0.457449] (my_package) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)\n'}
+[0.480611] (my_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.500244] (-) TimerEvent: {}
+[0.507610] (my_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600461] (-) TimerEvent: {}
+[0.701105] (-) TimerEvent: {}
+[0.752700] (my_package) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)\n'}
+[0.756081] (my_package) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 7.1.2 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.801369] (-) TimerEvent: {}
+[0.901931] (-) TimerEvent: {}
+[0.944046] (my_package) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.002180] (-) TimerEvent: {}
+[1.102743] (-) TimerEvent: {}
+[1.189064] (my_package) StdoutLine: {'line': b'-- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)\n'}
+[1.202985] (-) TimerEvent: {}
+[1.228609] (my_package) StdoutLine: {'line': b'-- Found geometry_msgs: 5.0.0 (/opt/ros/iron/share/geometry_msgs/cmake)\n'}
+[1.291288] (my_package) StdoutLine: {'line': b'-- Found pluginlib: 5.2.2 (/opt/ros/iron/share/pluginlib/cmake)\n'}
+[1.303170] (-) TimerEvent: {}
+[1.315849] (my_package) StdoutLine: {'line': b'-- Found webots_ros2_driver: 2023.1.1 (/opt/ros/iron/share/webots_ros2_driver/cmake)\n'}
+[1.403384] (-) TimerEvent: {}
+[1.503845] (-) TimerEvent: {}
+[1.504240] (my_package) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.2.2 (/opt/ros/iron/share/eigen3_cmake_module/cmake)\n'}
+[1.506397] (my_package) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.604048] (-) TimerEvent: {}
+[1.704463] (-) TimerEvent: {}
+[1.804915] (-) TimerEvent: {}
+[1.905318] (-) TimerEvent: {}
+[2.005778] (-) TimerEvent: {}
+[2.106254] (-) TimerEvent: {}
+[2.206772] (-) TimerEvent: {}
+[2.307149] (-) TimerEvent: {}
+[2.407517] (-) TimerEvent: {}
+[2.507907] (-) TimerEvent: {}
+[2.608307] (-) TimerEvent: {}
+[2.708669] (-) TimerEvent: {}
+[2.809030] (-) TimerEvent: {}
+[2.909420] (-) TimerEvent: {}
+[2.926584] (my_package) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.009651] (-) TimerEvent: {}
+[3.037111] (my_package) StdoutLine: {'line': b'-- Generating done\n'}
+[3.040046] (my_package) StdoutLine: {'line': b'-- Build files have been written to: /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package\n'}
+[3.087337] (my_package) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_package\x1b[0m\n'}
+[3.098405] (my_package) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_avoider.dir/src/ObstacleAvoider.cpp.o\x1b[0m\n'}
+[3.109791] (-) TimerEvent: {}
+[3.120716] (my_package) StdoutLine: {'line': b'[ 75%] Built target my_package\n'}
+[3.209962] (-) TimerEvent: {}
+[3.310483] (-) TimerEvent: {}
+[3.411005] (-) TimerEvent: {}
+[3.511584] (-) TimerEvent: {}
+[3.612175] (-) TimerEvent: {}
+[3.712677] (-) TimerEvent: {}
+[3.813301] (-) TimerEvent: {}
+[3.913726] (-) TimerEvent: {}
+[4.014187] (-) TimerEvent: {}
+[4.114685] (-) TimerEvent: {}
+[4.215183] (-) TimerEvent: {}
+[4.315709] (-) TimerEvent: {}
+[4.416147] (-) TimerEvent: {}
+[4.516615] (-) TimerEvent: {}
+[4.616974] (-) TimerEvent: {}
+[4.717492] (-) TimerEvent: {}
+[4.817937] (-) TimerEvent: {}
+[4.918516] (-) TimerEvent: {}
+[5.019026] (-) TimerEvent: {}
+[5.119573] (-) TimerEvent: {}
+[5.220122] (-) TimerEvent: {}
+[5.320597] (-) TimerEvent: {}
+[5.420963] (-) TimerEvent: {}
+[5.521398] (-) TimerEvent: {}
+[5.621740] (-) TimerEvent: {}
+[5.722181] (-) TimerEvent: {}
+[5.822568] (-) TimerEvent: {}
+[5.922906] (-) TimerEvent: {}
+[6.023350] (-) TimerEvent: {}
+[6.123778] (-) TimerEvent: {}
+[6.224201] (-) TimerEvent: {}
+[6.324672] (-) TimerEvent: {}
+[6.425003] (-) TimerEvent: {}
+[6.525429] (-) TimerEvent: {}
+[6.625868] (-) TimerEvent: {}
+[6.726289] (-) TimerEvent: {}
+[6.826748] (-) TimerEvent: {}
+[6.927218] (-) TimerEvent: {}
+[7.027631] (-) TimerEvent: {}
+[7.128073] (-) TimerEvent: {}
+[7.228548] (-) TimerEvent: {}
+[7.329069] (-) TimerEvent: {}
+[7.429444] (-) TimerEvent: {}
+[7.529851] (-) TimerEvent: {}
+[7.630447] (-) TimerEvent: {}
+[7.730792] (-) TimerEvent: {}
+[7.831217] (-) TimerEvent: {}
+[7.931601] (-) TimerEvent: {}
+[8.032051] (-) TimerEvent: {}
+[8.132506] (-) TimerEvent: {}
+[8.232927] (-) TimerEvent: {}
+[8.333283] (-) TimerEvent: {}
+[8.433628] (-) TimerEvent: {}
+[8.534069] (-) TimerEvent: {}
+[8.634495] (-) TimerEvent: {}
+[8.734977] (-) TimerEvent: {}
+[8.835408] (-) TimerEvent: {}
+[8.935874] (-) TimerEvent: {}
+[9.036346] (-) TimerEvent: {}
+[9.136801] (-) TimerEvent: {}
+[9.237191] (-) TimerEvent: {}
+[9.337638] (-) TimerEvent: {}
+[9.437983] (-) TimerEvent: {}
+[9.538398] (-) TimerEvent: {}
+[9.638797] (-) TimerEvent: {}
+[9.739223] (-) TimerEvent: {}
+[9.839640] (-) TimerEvent: {}
+[9.940109] (-) TimerEvent: {}
+[10.040454] (-) TimerEvent: {}
+[10.140890] (-) TimerEvent: {}
+[10.241192] (-) TimerEvent: {}
+[10.341595] (-) TimerEvent: {}
+[10.441964] (-) TimerEvent: {}
+[10.542491] (-) TimerEvent: {}
+[10.643008] (-) TimerEvent: {}
+[10.743403] (-) TimerEvent: {}
+[10.843705] (-) TimerEvent: {}
+[10.944094] (-) TimerEvent: {}
+[11.044515] (-) TimerEvent: {}
+[11.145034] (-) TimerEvent: {}
+[11.245416] (-) TimerEvent: {}
+[11.345715] (-) TimerEvent: {}
+[11.446095] (-) TimerEvent: {}
+[11.546492] (-) TimerEvent: {}
+[11.646919] (-) TimerEvent: {}
+[11.747419] (-) TimerEvent: {}
+[11.847811] (-) TimerEvent: {}
+[11.948233] (-) TimerEvent: {}
+[12.048678] (-) TimerEvent: {}
+[12.149088] (-) TimerEvent: {}
+[12.249616] (-) TimerEvent: {}
+[12.283717] (my_package) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable obstacle_avoider\x1b[0m\n'}
+[12.349822] (-) TimerEvent: {}
+[12.450175] (-) TimerEvent: {}
+[12.550646] (-) TimerEvent: {}
+[12.651093] (-) TimerEvent: {}
+[12.751541] (-) TimerEvent: {}
+[12.835345] (my_package) StdoutLine: {'line': b'[100%] Built target obstacle_avoider\n'}
+[12.851805] (-) TimerEvent: {}
+[12.855174] (my_package) CommandEnded: {'returncode': 0}
+[12.895531] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'install'}
+[12.907665] (my_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package'], 'cwd': '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mbsaloka'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/mbsaloka'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '13047'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mbsaloka'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mbsaloka'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mbsaloka-LOQ-15IRH8:@/tmp/.ICE-unix/2774,unix/mbsaloka-LOQ-15IRH8:/tmp/.ICE-unix/2774'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/98149e6b_e94f_4a0f_9f2a_21b1212502fd'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.277'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[12.916335] (my_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.916577] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/my_robot_driver.xml\n'}
+[12.916708] (my_package) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/lib/my_package/obstacle_avoider\n'}
+[12.922953] (my_package) StdoutLine: {'line': b'-- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/lib/my_package/obstacle_avoider" to ""\n'}
+[12.923210] (my_package) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/include\n'}
+[12.923451] (my_package) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/include/my_package\n'}
+[12.923622] (my_package) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/include/my_package/ObstacleAvoider.hpp\n'}
+[12.923763] (my_package) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/include/my_package/MyRobotDriver.hpp\n'}
+[12.923873] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/lib/libmy_package.so\n'}
+[12.924017] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package//launch\n'}
+[12.924173] (my_package) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package//launch/robot_launch.py\n'}
+[12.924350] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package//resource\n'}
+[12.924527] (my_package) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package//resource/my_robot.urdf\n'}
+[12.924702] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package//worlds\n'}
+[12.924873] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package//worlds/my_world.wbt\n'}
+[12.924996] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/environment/library_path.sh\n'}
+[12.925105] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/environment/library_path.dsv\n'}
+[12.925256] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package\n'}
+[12.925432] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package\n'}
+[12.925542] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/environment/ament_prefix_path.sh\n'}
+[12.925647] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/environment/ament_prefix_path.dsv\n'}
+[12.925752] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/environment/path.sh\n'}
+[12.925858] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/environment/path.dsv\n'}
+[12.925984] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/local_setup.bash\n'}
+[12.926089] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/local_setup.sh\n'}
+[12.926193] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/local_setup.zsh\n'}
+[12.926297] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/local_setup.dsv\n'}
+[12.926399] (my_package) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/package.dsv\n'}
+[12.926502] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/ament_index/resource_index/packages/my_package\n'}
+[12.926614] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/ament_index/resource_index/webots_ros2_driver__pluginlib__plugin/my_package\n'}
+[12.926718] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.926872] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.927086] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/cmake/my_packageConfig.cmake\n'}
+[12.927458] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake\n'}
+[12.927800] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/share/my_package/package.xml\n'}
+[12.928482] (my_package) CommandEnded: {'returncode': 0}
+[12.952139] (-) TimerEvent: {}
+[13.053142] (-) TimerEvent: {}
+[13.153526] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 0}
+[13.154203] (-) TimerEvent: {}
+[13.154287] (-) EventReactorShutdown: {}

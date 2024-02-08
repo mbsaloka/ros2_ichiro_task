@@ -1,0 +1,380 @@
+[1.471s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.471s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fdfcf4aeef0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fdfcf4affa0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fdfcf4affa0>>)
+[1.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.568s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mbsaloka/Desktop/ros2_ichiro_task'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.593s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.593s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.593s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.593s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.594s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.594s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.594s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.594s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.594s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.594s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.594s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.594s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[1.594s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore'
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore_ament_install'
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_pkg']
+[1.595s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_pkg'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_meta']
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_meta'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ros']
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ros'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['cmake', 'python']
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'cmake'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['python_setup_py']
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python_setup_py'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_interfaces) by extension 'ignore'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_interfaces) by extension 'ignore_ament_install'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_interfaces) by extensions ['colcon_pkg']
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_interfaces) by extension 'colcon_pkg'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_interfaces) by extensions ['colcon_meta']
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_interfaces) by extension 'colcon_meta'
+[1.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_interfaces) by extensions ['ros']
+[1.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_interfaces) by extension 'ros'
+[1.603s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_interfaces' with type 'ros.ament_cmake' and name 'my_interfaces'
+[1.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['ignore', 'ignore_ament_install']
+[1.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'ignore'
+[1.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'ignore_ament_install'
+[1.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['colcon_pkg']
+[1.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'colcon_pkg'
+[1.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['colcon_meta']
+[1.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'colcon_meta'
+[1.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['ros']
+[1.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'ros'
+[1.605s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_package' with type 'ros.ament_cmake' and name 'my_package'
+[1.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/odd_num_pubsub) by extensions ['ignore', 'ignore_ament_install']
+[1.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/odd_num_pubsub) by extension 'ignore'
+[1.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/odd_num_pubsub) by extension 'ignore_ament_install'
+[1.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/odd_num_pubsub) by extensions ['colcon_pkg']
+[1.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/odd_num_pubsub) by extension 'colcon_pkg'
+[1.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/odd_num_pubsub) by extensions ['colcon_meta']
+[1.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/odd_num_pubsub) by extension 'colcon_meta'
+[1.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/odd_num_pubsub) by extensions ['ros']
+[1.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/odd_num_pubsub) by extension 'ros'
+[1.607s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odd_num_pubsub' with type 'ros.ament_cmake' and name 'odd_num_pubsub'
+[1.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_pubsub) by extensions ['ignore', 'ignore_ament_install']
+[1.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_pubsub) by extension 'ignore'
+[1.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_pubsub) by extension 'ignore_ament_install'
+[1.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_pubsub) by extensions ['colcon_pkg']
+[1.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_pubsub) by extension 'colcon_pkg'
+[1.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_pubsub) by extensions ['colcon_meta']
+[1.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_pubsub) by extension 'colcon_meta'
+[1.608s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_pubsub) by extensions ['ros']
+[1.608s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_pubsub) by extension 'ros'
+[1.609s] DEBUG:colcon.colcon_core.package_identification:Package 'src/soccer_pubsub' with type 'ros.ament_cmake' and name 'soccer_pubsub'
+[1.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/sum_two_num_srvcli) by extensions ['ignore', 'ignore_ament_install']
+[1.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/sum_two_num_srvcli) by extension 'ignore'
+[1.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/sum_two_num_srvcli) by extension 'ignore_ament_install'
+[1.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/sum_two_num_srvcli) by extensions ['colcon_pkg']
+[1.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/sum_two_num_srvcli) by extension 'colcon_pkg'
+[1.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/sum_two_num_srvcli) by extensions ['colcon_meta']
+[1.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/sum_two_num_srvcli) by extension 'colcon_meta'
+[1.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/sum_two_num_srvcli) by extensions ['ros']
+[1.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/sum_two_num_srvcli) by extension 'ros'
+[1.610s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sum_two_num_srvcli' with type 'ros.ament_cmake' and name 'sum_two_num_srvcli'
+[1.611s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.611s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.611s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.611s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.611s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.760s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.760s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.800s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 315 installed packages in /opt/ros/iron
+[1.802s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.971s] Level 5:colcon.colcon_core.verb:set package 'my_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.972s] Level 5:colcon.colcon_core.verb:set package 'my_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.972s] Level 5:colcon.colcon_core.verb:set package 'my_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.972s] Level 5:colcon.colcon_core.verb:set package 'my_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.972s] Level 5:colcon.colcon_core.verb:set package 'my_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.972s] Level 5:colcon.colcon_core.verb:set package 'my_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.972s] Level 5:colcon.colcon_core.verb:set package 'my_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.972s] Level 5:colcon.colcon_core.verb:set package 'my_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.972s] Level 5:colcon.colcon_core.verb:set package 'my_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.972s] DEBUG:colcon.colcon_core.verb:Building package 'my_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces', 'merge_install': False, 'path': '/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_args' from command line to 'None'
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_target' from command line to 'None'
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_clean_cache' from command line to 'False'
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_clean_first' from command line to 'False'
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_force_configure' from command line to 'False'
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'ament_cmake_args' from command line to 'None'
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'catkin_cmake_args' from command line to 'None'
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.994s] DEBUG:colcon.colcon_core.verb:Building package 'my_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package', 'merge_install': False, 'path': '/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_package', 'symlink_install': False, 'test_result_base': None}
+[2.010s] Level 5:colcon.colcon_core.verb:set package 'odd_num_pubsub' build argument 'cmake_args' from command line to 'None'
+[2.010s] Level 5:colcon.colcon_core.verb:set package 'odd_num_pubsub' build argument 'cmake_target' from command line to 'None'
+[2.010s] Level 5:colcon.colcon_core.verb:set package 'odd_num_pubsub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.010s] Level 5:colcon.colcon_core.verb:set package 'odd_num_pubsub' build argument 'cmake_clean_cache' from command line to 'False'
+[2.010s] Level 5:colcon.colcon_core.verb:set package 'odd_num_pubsub' build argument 'cmake_clean_first' from command line to 'False'
+[2.010s] Level 5:colcon.colcon_core.verb:set package 'odd_num_pubsub' build argument 'cmake_force_configure' from command line to 'False'
+[2.010s] Level 5:colcon.colcon_core.verb:set package 'odd_num_pubsub' build argument 'ament_cmake_args' from command line to 'None'
+[2.010s] Level 5:colcon.colcon_core.verb:set package 'odd_num_pubsub' build argument 'catkin_cmake_args' from command line to 'None'
+[2.010s] Level 5:colcon.colcon_core.verb:set package 'odd_num_pubsub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.010s] DEBUG:colcon.colcon_core.verb:Building package 'odd_num_pubsub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub', 'merge_install': False, 'path': '/home/mbsaloka/Desktop/ros2_ichiro_task/src/odd_num_pubsub', 'symlink_install': False, 'test_result_base': None}
+[2.028s] Level 5:colcon.colcon_core.verb:set package 'soccer_pubsub' build argument 'cmake_args' from command line to 'None'
+[2.028s] Level 5:colcon.colcon_core.verb:set package 'soccer_pubsub' build argument 'cmake_target' from command line to 'None'
+[2.028s] Level 5:colcon.colcon_core.verb:set package 'soccer_pubsub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.028s] Level 5:colcon.colcon_core.verb:set package 'soccer_pubsub' build argument 'cmake_clean_cache' from command line to 'False'
+[2.028s] Level 5:colcon.colcon_core.verb:set package 'soccer_pubsub' build argument 'cmake_clean_first' from command line to 'False'
+[2.028s] Level 5:colcon.colcon_core.verb:set package 'soccer_pubsub' build argument 'cmake_force_configure' from command line to 'False'
+[2.028s] Level 5:colcon.colcon_core.verb:set package 'soccer_pubsub' build argument 'ament_cmake_args' from command line to 'None'
+[2.028s] Level 5:colcon.colcon_core.verb:set package 'soccer_pubsub' build argument 'catkin_cmake_args' from command line to 'None'
+[2.028s] Level 5:colcon.colcon_core.verb:set package 'soccer_pubsub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.028s] DEBUG:colcon.colcon_core.verb:Building package 'soccer_pubsub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub', 'merge_install': False, 'path': '/home/mbsaloka/Desktop/ros2_ichiro_task/src/soccer_pubsub', 'symlink_install': False, 'test_result_base': None}
+[2.051s] Level 5:colcon.colcon_core.verb:set package 'sum_two_num_srvcli' build argument 'cmake_args' from command line to 'None'
+[2.051s] Level 5:colcon.colcon_core.verb:set package 'sum_two_num_srvcli' build argument 'cmake_target' from command line to 'None'
+[2.051s] Level 5:colcon.colcon_core.verb:set package 'sum_two_num_srvcli' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.051s] Level 5:colcon.colcon_core.verb:set package 'sum_two_num_srvcli' build argument 'cmake_clean_cache' from command line to 'False'
+[2.051s] Level 5:colcon.colcon_core.verb:set package 'sum_two_num_srvcli' build argument 'cmake_clean_first' from command line to 'False'
+[2.051s] Level 5:colcon.colcon_core.verb:set package 'sum_two_num_srvcli' build argument 'cmake_force_configure' from command line to 'False'
+[2.051s] Level 5:colcon.colcon_core.verb:set package 'sum_two_num_srvcli' build argument 'ament_cmake_args' from command line to 'None'
+[2.051s] Level 5:colcon.colcon_core.verb:set package 'sum_two_num_srvcli' build argument 'catkin_cmake_args' from command line to 'None'
+[2.051s] Level 5:colcon.colcon_core.verb:set package 'sum_two_num_srvcli' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.051s] DEBUG:colcon.colcon_core.verb:Building package 'sum_two_num_srvcli' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli', 'merge_install': False, 'path': '/home/mbsaloka/Desktop/ros2_ichiro_task/src/sum_two_num_srvcli', 'symlink_install': False, 'test_result_base': None}
+[2.066s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.084s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.085s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces' with build type 'ament_cmake'
+[2.086s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces'
+[2.116s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.117s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.117s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.178s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_package' with build type 'ament_cmake'
+[2.179s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_package'
+[2.215s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.215s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.297s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mbsaloka/Desktop/ros2_ichiro_task/src/odd_num_pubsub' with build type 'ament_cmake'
+[2.297s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mbsaloka/Desktop/ros2_ichiro_task/src/odd_num_pubsub'
+[2.320s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.320s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.374s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mbsaloka/Desktop/ros2_ichiro_task/src/soccer_pubsub' with build type 'ament_cmake'
+[2.375s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mbsaloka/Desktop/ros2_ichiro_task/src/soccer_pubsub'
+[2.406s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.406s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.459s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mbsaloka/Desktop/ros2_ichiro_task/src/sum_two_num_srvcli' with build type 'ament_cmake'
+[2.459s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mbsaloka/Desktop/ros2_ichiro_task/src/sum_two_num_srvcli'
+[2.476s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.476s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces -- -j16 -l16
+[2.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/mbsaloka/Desktop/ros2_ichiro_task/src/my_package -DCMAKE_INSTALL_PREFIX=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package
+[2.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub -- -j16 -l16
+[2.554s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/mbsaloka/Desktop/ros2_ichiro_task/src/soccer_pubsub -DCMAKE_INSTALL_PREFIX=/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub
+[2.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli -- -j16 -l16
+[2.734s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub -- -j16 -l16
+[2.737s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli -- -j16 -l16
+[2.829s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub
+[2.839s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli
+[2.871s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odd_num_pubsub)
+[2.877s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub
+[2.937s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub' for CMake module files
+[2.940s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub' for CMake config files
+[2.941s] Level 1:colcon.colcon_core.shell:create_environment_hook('odd_num_pubsub', 'cmake_prefix_path')
+[2.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/hook/cmake_prefix_path.ps1'
+[2.990s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/hook/cmake_prefix_path.dsv'
+[2.991s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/hook/cmake_prefix_path.sh'
+[2.995s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/lib'
+[2.995s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/bin'
+[2.996s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/lib/pkgconfig/odd_num_pubsub.pc'
+[2.996s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/lib/python3.10/site-packages'
+[2.997s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/bin'
+[3.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/package.ps1'
+[3.031s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/package.dsv'
+[3.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/package.sh'
+[3.036s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/package.bash'
+[3.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/package.zsh'
+[3.041s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/colcon-core/packages/odd_num_pubsub)
+[3.047s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sum_two_num_srvcli)
+[3.048s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli
+[3.076s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli' for CMake module files
+[3.077s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli' for CMake config files
+[3.078s] Level 1:colcon.colcon_core.shell:create_environment_hook('sum_two_num_srvcli', 'cmake_prefix_path')
+[3.107s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/hook/cmake_prefix_path.ps1'
+[3.107s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/hook/cmake_prefix_path.dsv'
+[3.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/hook/cmake_prefix_path.sh'
+[3.109s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/lib'
+[3.109s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/bin'
+[3.109s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/lib/pkgconfig/sum_two_num_srvcli.pc'
+[3.109s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/lib/python3.10/site-packages'
+[3.110s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/bin'
+[3.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.ps1'
+[3.138s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.dsv'
+[3.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.sh'
+[3.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.bash'
+[3.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.zsh'
+[3.141s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/colcon-core/packages/sum_two_num_srvcli)
+[3.174s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odd_num_pubsub)
+[3.201s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub' for CMake module files
+[3.201s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub' for CMake config files
+[3.202s] Level 1:colcon.colcon_core.shell:create_environment_hook('odd_num_pubsub', 'cmake_prefix_path')
+[3.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/hook/cmake_prefix_path.ps1'
+[3.224s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/hook/cmake_prefix_path.dsv'
+[3.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/hook/cmake_prefix_path.sh'
+[3.227s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/lib'
+[3.227s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/bin'
+[3.227s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/lib/pkgconfig/odd_num_pubsub.pc'
+[3.228s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/lib/python3.10/site-packages'
+[3.228s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/bin'
+[3.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/package.ps1'
+[3.254s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/package.dsv'
+[3.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/package.sh'
+[3.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/package.bash'
+[3.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/package.zsh'
+[3.256s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/colcon-core/packages/odd_num_pubsub)
+[3.282s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sum_two_num_srvcli)
+[3.318s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli' for CMake module files
+[3.319s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli' for CMake config files
+[3.319s] Level 1:colcon.colcon_core.shell:create_environment_hook('sum_two_num_srvcli', 'cmake_prefix_path')
+[3.357s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/hook/cmake_prefix_path.ps1'
+[3.359s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/hook/cmake_prefix_path.dsv'
+[3.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/hook/cmake_prefix_path.sh'
+[3.361s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/lib'
+[3.361s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/bin'
+[3.361s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/lib/pkgconfig/sum_two_num_srvcli.pc'
+[3.362s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/lib/python3.10/site-packages'
+[3.362s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/bin'
+[3.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.ps1'
+[3.403s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.dsv'
+[3.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.sh'
+[3.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.bash'
+[3.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.zsh'
+[3.407s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/colcon-core/packages/sum_two_num_srvcli)
+[3.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces -- -j16 -l16
+[3.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces
+[3.672s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_interfaces)
+[3.673s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces
+[3.699s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces' for CMake module files
+[3.700s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces' for CMake config files
+[3.701s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_interfaces', 'cmake_prefix_path')
+[3.720s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/cmake_prefix_path.ps1'
+[3.720s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/cmake_prefix_path.dsv'
+[3.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/cmake_prefix_path.sh'
+[3.722s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib'
+[3.722s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_interfaces', 'ld_library_path_lib')
+[3.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/ld_library_path_lib.ps1'
+[3.750s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/ld_library_path_lib.dsv'
+[3.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/ld_library_path_lib.sh'
+[3.751s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/bin'
+[3.751s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/pkgconfig/my_interfaces.pc'
+[3.752s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages'
+[3.752s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_interfaces', 'pythonpath')
+[3.770s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/pythonpath.ps1'
+[3.771s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/pythonpath.dsv'
+[3.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/pythonpath.sh'
+[3.772s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/bin'
+[3.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/package.ps1'
+[3.798s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/package.dsv'
+[3.798s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/package.sh'
+[3.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/package.bash'
+[3.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/package.zsh'
+[3.800s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/colcon-core/packages/my_interfaces)
+[3.922s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_interfaces)
+[3.948s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces' for CMake module files
+[3.948s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces' for CMake config files
+[3.949s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_interfaces', 'cmake_prefix_path')
+[3.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/cmake_prefix_path.ps1'
+[3.968s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/cmake_prefix_path.dsv'
+[3.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/cmake_prefix_path.sh'
+[3.969s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib'
+[3.970s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_interfaces', 'ld_library_path_lib')
+[3.994s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/ld_library_path_lib.ps1'
+[3.995s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/ld_library_path_lib.dsv'
+[3.996s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/ld_library_path_lib.sh'
+[3.996s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/bin'
+[3.996s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/pkgconfig/my_interfaces.pc'
+[3.996s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages'
+[3.997s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_interfaces', 'pythonpath')
+[4.016s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/pythonpath.ps1'
+[4.016s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/pythonpath.dsv'
+[4.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/hook/pythonpath.sh'
+[4.018s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/bin'
+[4.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/package.ps1'
+[4.047s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/package.dsv'
+[4.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/package.sh'
+[4.048s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/package.bash'
+[4.049s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/package.zsh'
+[4.049s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/colcon-core/packages/my_interfaces)
+[5.218s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/mbsaloka/Desktop/ros2_ichiro_task/src/soccer_pubsub -DCMAKE_INSTALL_PREFIX=/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub
+[5.219s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub -- -j16 -l16
+[7.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/mbsaloka/Desktop/ros2_ichiro_task/src/my_package -DCMAKE_INSTALL_PREFIX=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package
+[7.634s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_package -- -j16 -l16
+[17.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub -- -j16 -l16
+[17.998s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(soccer_pubsub)
+[18.019s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub' for CMake module files
+[18.020s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub' for CMake config files
+[18.020s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/bin'
+[18.020s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/pkgconfig/soccer_pubsub.pc'
+[18.021s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/python3.10/site-packages'
+[18.021s] Level 1:colcon.colcon_core.environment:checking '/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/bin'
+[18.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/package.ps1'
+[18.044s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/package.dsv'
+[18.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/package.sh'
+[18.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/package.bash'
+[18.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/package.zsh'
+[18.049s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/colcon-core/packages/soccer_pubsub)
+[21.262s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[21.262s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[21.262s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[21.262s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[21.309s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[21.310s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[21.310s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[21.400s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[21.439s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/local_setup.ps1'
+[21.442s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mbsaloka/Desktop/ros2_ichiro_task/install/_local_setup_util_ps1.py'
+[21.445s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/setup.ps1'
+[21.488s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/local_setup.sh'
+[21.489s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mbsaloka/Desktop/ros2_ichiro_task/install/_local_setup_util_sh.py'
+[21.490s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/setup.sh'
+[21.569s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/local_setup.bash'
+[21.571s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/setup.bash'
+[21.605s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/local_setup.zsh'
+[21.606s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mbsaloka/Desktop/ros2_ichiro_task/install/setup.zsh'
