@@ -70,6 +70,10 @@ CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/pose.hpp
 CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/pose__builder.hpp
 CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/pose__struct.hpp
 CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/pose__traits.hpp
+CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/velocity.hpp
+CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/velocity__builder.hpp
+CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/velocity__struct.hpp
+CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/velocity__traits.hpp
 
 rosidl_generator_cpp/my_interfaces/msg/pose.hpp: /opt/ros/iron/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/my_interfaces/msg/pose.hpp: /opt/ros/iron/lib/python3.10/site-packages/rosidl_generator_cpp/__init__.py
@@ -87,6 +91,7 @@ rosidl_generator_cpp/my_interfaces/msg/pose.hpp: /opt/ros/iron/share/rosidl_gene
 rosidl_generator_cpp/my_interfaces/msg/pose.hpp: /opt/ros/iron/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/my_interfaces/msg/pose.hpp: /opt/ros/iron/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/my_interfaces/msg/pose.hpp: rosidl_adapter/my_interfaces/msg/Pose.idl
+rosidl_generator_cpp/my_interfaces/msg/pose.hpp: rosidl_adapter/my_interfaces/msg/Velocity.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/iron/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp__arguments.json
 
@@ -99,11 +104,27 @@ rosidl_generator_cpp/my_interfaces/msg/detail/pose__struct.hpp: rosidl_generator
 rosidl_generator_cpp/my_interfaces/msg/detail/pose__traits.hpp: rosidl_generator_cpp/my_interfaces/msg/pose.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_interfaces/msg/detail/pose__traits.hpp
 
+rosidl_generator_cpp/my_interfaces/msg/velocity.hpp: rosidl_generator_cpp/my_interfaces/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_interfaces/msg/velocity.hpp
+
+rosidl_generator_cpp/my_interfaces/msg/detail/velocity__builder.hpp: rosidl_generator_cpp/my_interfaces/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_interfaces/msg/detail/velocity__builder.hpp
+
+rosidl_generator_cpp/my_interfaces/msg/detail/velocity__struct.hpp: rosidl_generator_cpp/my_interfaces/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_interfaces/msg/detail/velocity__struct.hpp
+
+rosidl_generator_cpp/my_interfaces/msg/detail/velocity__traits.hpp: rosidl_generator_cpp/my_interfaces/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_interfaces/msg/detail/velocity__traits.hpp
+
 my_interfaces__cpp: CMakeFiles/my_interfaces__cpp
 my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/pose__builder.hpp
 my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/pose__struct.hpp
 my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/pose__traits.hpp
+my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/velocity__builder.hpp
+my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/velocity__struct.hpp
+my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/velocity__traits.hpp
 my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/pose.hpp
+my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/velocity.hpp
 my_interfaces__cpp: CMakeFiles/my_interfaces__cpp.dir/build.make
 .PHONY : my_interfaces__cpp
 

@@ -4,8 +4,8 @@
 
 #include <string.h>
 
-#include "my_interfaces/msg/detail/pose__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "my_interfaces/msg/detail/pose__functions.h"
 #include "my_interfaces/msg/detail/pose__struct.h"
 #include "my_interfaces/msg/detail/pose__type_support.h"
 

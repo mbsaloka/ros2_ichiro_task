@@ -657,7 +657,7 @@ CMakeFiles/listener.dir/src/pose_subscriber.cpp.o: \
  /opt/ros/iron/include/rclcpp/rclcpp/parameter_map.hpp \
  /opt/ros/iron/include/rclcpp/rclcpp/parameter_event_handler.hpp \
  /opt/ros/iron/include/rclcpp/rclcpp/parameter_service.hpp \
- /opt/ros/iron/include/std_msgs/std_msgs/msg/string.hpp \
- /opt/ros/iron/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
- /opt/ros/iron/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
- /opt/ros/iron/include/std_msgs/std_msgs/msg/detail/string__traits.hpp
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/pose.hpp \
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__struct.hpp \
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__builder.hpp \
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__traits.hpp

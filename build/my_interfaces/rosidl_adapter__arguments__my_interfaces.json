@@ -1,6 +1,7 @@
 {
   "package_name": "my_interfaces",
   "non_idl_tuples": [
-    "/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces:msg/Pose.msg"
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces:msg/Pose.msg",
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces:msg/Velocity.msg"
   ]
 }

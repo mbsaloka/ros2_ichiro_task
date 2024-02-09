@@ -54,7 +54,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/talker")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/talker"
-         OLD_RPATH "/opt/ros/iron/lib:"
+         OLD_RPATH "/opt/ros/iron/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/talker")
@@ -74,7 +74,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/listener")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/listener"
-         OLD_RPATH "/opt/ros/iron/lib:"
+         OLD_RPATH "/opt/ros/iron/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/listener")

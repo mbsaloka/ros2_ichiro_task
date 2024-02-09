@@ -269,7 +269,7 @@ SITE:STRING=mbsaloka-LOQ-15IRH8
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/iron/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/iron/share/ament_cmake/cmake
@@ -375,6 +375,9 @@ foonathan_memory_DIR:PATH=/opt/ros/iron/lib/foonathan_memory/cmake
 
 //The directory containing a CMake configuration file for libstatistics_collector.
 libstatistics_collector_DIR:PATH=/opt/ros/iron/share/libstatistics_collector/cmake
+
+//The directory containing a CMake configuration file for my_interfaces.
+my_interfaces_DIR:PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so

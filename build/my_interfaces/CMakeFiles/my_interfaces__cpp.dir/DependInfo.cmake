@@ -15,6 +15,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/detail/pose__builder.hpp" "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/pose.hpp"
   "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/detail/pose__struct.hpp" "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/pose.hpp"
   "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/detail/pose__traits.hpp" "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/pose.hpp"
+  "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/detail/velocity__builder.hpp" "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/pose.hpp"
+  "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/detail/velocity__struct.hpp" "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/pose.hpp"
+  "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/detail/velocity__traits.hpp" "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/pose.hpp"
+  "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/velocity.hpp" "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/pose.hpp"
   )
 
 

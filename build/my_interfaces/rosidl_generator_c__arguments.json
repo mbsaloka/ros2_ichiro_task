@@ -3,10 +3,12 @@
   "output_dir": "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_c/my_interfaces",
   "template_dir": "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Pose.idl"
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Pose.idl",
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Velocity.idl"
   ],
   "ros_interface_files": [
-    "/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces/msg/Pose.msg"
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces/msg/Pose.msg",
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces/msg/Velocity.msg"
   ],
   "target_dependencies": [
     "/opt/ros/iron/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -28,9 +30,11 @@
     "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
     "/opt/ros/iron/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Pose.idl"
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Pose.idl",
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Velocity.idl"
   ],
   "type_description_tuples": [
-    "msg/Pose.idl:/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_type_description/my_interfaces/msg/Pose.json"
+    "msg/Pose.idl:/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_type_description/my_interfaces/msg/Pose.json",
+    "msg/Velocity.idl:/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_type_description/my_interfaces/msg/Velocity.json"
   ]
 }

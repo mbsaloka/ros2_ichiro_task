@@ -7,13 +7,13 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
+find_package(my_interfaces REQUIRED)
 
 add_executable(talker src/pose_publisher.cpp)
-ament_target_dependencies(talker rclcpp std_msgs)
+ament_target_dependencies(talker rclcpp my_interfaces)
 
 add_executable(listener src/pose_subscriber.cpp)
-ament_target_dependencies(listener rclcpp std_msgs)
+ament_target_dependencies(listener rclcpp my_interfaces)
 
 install(TARGETS
   talker

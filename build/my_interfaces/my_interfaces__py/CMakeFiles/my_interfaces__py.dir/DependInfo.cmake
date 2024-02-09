@@ -17,6 +17,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_py/my_interfaces/msg/__init__.py" "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_py/my_interfaces/msg/_pose.py" "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_py/my_interfaces/msg/_pose_s.c" "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_py/my_interfaces/msg/_velocity.py" "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_py/my_interfaces/msg/_velocity_s.c" "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

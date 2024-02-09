@@ -1,0 +1,17 @@
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/talker
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/listener
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/ament_index/resource_index/package_run_dependencies/soccer_pubsub
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/ament_index/resource_index/parent_prefix_path/soccer_pubsub
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/environment/ament_prefix_path.sh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/environment/ament_prefix_path.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/environment/path.sh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/environment/path.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/local_setup.bash
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/local_setup.sh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/local_setup.zsh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/local_setup.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/package.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/ament_index/resource_index/packages/soccer_pubsub
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/cmake/soccer_pubsubConfig.cmake
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/cmake/soccer_pubsubConfig-version.cmake
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/package.xml

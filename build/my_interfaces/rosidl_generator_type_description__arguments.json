@@ -2,6 +2,7 @@
   "package_name": "my_interfaces",
   "output_dir": "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_type_description/my_interfaces",
   "idl_tuples": [
-    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Pose.idl"
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Pose.idl",
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Velocity.idl"
   ]
 }
