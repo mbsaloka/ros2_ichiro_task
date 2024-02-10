@@ -1,5 +1,6 @@
 import os
 import launch
+from launch_ros.actions import Node
 from launch import LaunchDescription
 from ament_index_python.packages import get_package_share_directory
 from webots_ros2_driver.webots_launcher import WebotsLauncher
@@ -21,9 +22,21 @@ def generate_launch_description():
         ]
     )
 
+    # robot_controller = Node(
+    #     package='robot_localization',
+    #     executable='robot_controller',
+    #     output='screen',
+    # )   
+
+    robot_controller = launch.actions.ExecuteProcess(
+        cmd=['gnome-terminal', '--', 'ros2', 'run', 'robot_localization', 'robot_controller'],
+        output='screen'
+    )
+
     return LaunchDescription([
         webots,
         my_robot_driver,
+        robot_controller,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,

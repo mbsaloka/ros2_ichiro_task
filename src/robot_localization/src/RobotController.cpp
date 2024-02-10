@@ -49,7 +49,7 @@ int main(int argc, char** argv) {
 }
 
 void RobotController::keyLoop() {
-    char c;
+    char c, last_c = 0;
     bool dirty = false;
 
     // get the console in raw mode
@@ -75,36 +75,40 @@ void RobotController::keyLoop() {
         linear_ = angular_ = 0;
         // ROS_DEBUG("value: 0x%02X\n", c);
 
-        switch (c) {
-            case 'a':
-                std::cout << "LEFT" << std::endl;
-                angular_ = 1;
-                dirty = true;
-                break;
-            case 'd':
-                // ROS_DEBUG("RIGHT");
-                std::cout << "RIGHT" << std::endl;
-                angular_ = -1;
-                dirty = true;
-                break;
-            case 'w':
-                // ROS_DEBUG("UP");
-                std::cout << "UP" << std::endl;
-                linear_ = 0.1;
-                dirty = true;
-                break;
-            case 's':
-                // ROS_DEBUG("DOWN");
-                std::cout << "DOWN" << std::endl;
-                linear_ = -0.1;
-                dirty = true;
-                break;
-            case 'b':
-                std::cout << "BREAK" << std::endl;
-                linear_ = 0;
-                angular_ = 0;
-                dirty = true;
-                break;
+        if (last_c != c) {
+            switch (c) {
+                case 'a':
+                    std::cout << "LEFT" << std::endl;
+                    angular_ = 1;
+                    dirty = true;
+                    last_c = c;
+                    break;
+                case 'd':
+                    std::cout << "RIGHT" << std::endl;
+                    angular_ = -1;
+                    dirty = true;
+                    last_c = c;
+                    break;
+                case 'w':
+                    std::cout << "UP" << std::endl;
+                    linear_ = 0.1;
+                    dirty = true;
+                    last_c = c;
+                    break;
+                case 's':
+                    std::cout << "DOWN" << std::endl;
+                    linear_ = -0.1;
+                    dirty = true;
+                    last_c = c;
+                    break;
+                case 'b':
+                    std::cout << "BREAK" << std::endl;
+                    linear_ = 0;
+                    angular_ = 0;
+                    dirty = true;
+                    last_c = c;
+                    break;
+            }
         }
 
         my_interfaces::msg::Velocity msg;
