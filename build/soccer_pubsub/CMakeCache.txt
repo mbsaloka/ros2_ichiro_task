@@ -490,9 +490,6 @@ soccer_pubsub_SOURCE_DIR:STATIC=/home/mbsaloka/Desktop/ros2_ichiro_task/src/socc
 //The directory containing a CMake configuration file for statistics_msgs.
 statistics_msgs_DIR:PATH=/opt/ros/iron/share/statistics_msgs/cmake
 
-//The directory containing a CMake configuration file for std_msgs.
-std_msgs_DIR:PATH=/opt/ros/iron/share/std_msgs/cmake
-
 //The directory containing a CMake configuration file for tracetools.
 tracetools_DIR:PATH=/opt/ros/iron/share/tracetools/cmake
 

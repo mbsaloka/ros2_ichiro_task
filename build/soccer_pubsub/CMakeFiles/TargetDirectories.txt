@@ -1,7 +1,9 @@
 /home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/CMakeFiles/uninstall.dir
 /home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/CMakeFiles/soccer_pubsub_uninstall.dir
-/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/CMakeFiles/talker.dir
-/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/CMakeFiles/listener.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/CMakeFiles/pose_talker.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/CMakeFiles/pose_listener.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/CMakeFiles/velocity_talker.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/CMakeFiles/velocity_listener.dir
 /home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/CMakeFiles/test.dir
 /home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/CMakeFiles/edit_cache.dir
 /home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/CMakeFiles/rebuild_cache.dir

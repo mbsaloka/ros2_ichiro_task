@@ -9,15 +9,23 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(my_interfaces REQUIRED)
 
-add_executable(talker src/pose_publisher.cpp)
-ament_target_dependencies(talker rclcpp my_interfaces)
+add_executable(pose_talker src/pose_publisher.cpp)
+ament_target_dependencies(pose_talker rclcpp my_interfaces)
 
-add_executable(listener src/pose_subscriber.cpp)
-ament_target_dependencies(listener rclcpp my_interfaces)
+add_executable(pose_listener src/pose_subscriber.cpp)
+ament_target_dependencies(pose_listener rclcpp my_interfaces)
+
+add_executable(velocity_talker src/velocity_publisher.cpp)
+ament_target_dependencies(velocity_talker rclcpp my_interfaces)
+
+add_executable(velocity_listener src/velocity_subscriber.cpp)
+ament_target_dependencies(velocity_listener rclcpp my_interfaces)
 
 install(TARGETS
-  talker
-  listener
+  pose_talker
+  pose_listener
+  velocity_talker
+  velocity_listener
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

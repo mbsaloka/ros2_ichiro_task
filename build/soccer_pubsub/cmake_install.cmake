@@ -43,41 +43,81 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/talker" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/talker")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/pose_talker" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/pose_talker")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/talker"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/pose_talker"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub" TYPE EXECUTABLE FILES "/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/talker")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/talker" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/talker")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub" TYPE EXECUTABLE FILES "/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/pose_talker")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/pose_talker" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/pose_talker")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/talker"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/pose_talker"
          OLD_RPATH "/opt/ros/iron/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/talker")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/pose_talker")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/listener" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/listener")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/pose_listener" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/pose_listener")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/listener"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/pose_listener"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub" TYPE EXECUTABLE FILES "/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/listener")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/listener" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/listener")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub" TYPE EXECUTABLE FILES "/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/pose_listener")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/pose_listener" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/pose_listener")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/listener"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/pose_listener"
          OLD_RPATH "/opt/ros/iron/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/listener")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/pose_listener")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/velocity_talker" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/velocity_talker")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/velocity_talker"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub" TYPE EXECUTABLE FILES "/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/velocity_talker")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/velocity_talker" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/velocity_talker")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/velocity_talker"
+         OLD_RPATH "/opt/ros/iron/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/velocity_talker")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/velocity_listener" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/velocity_listener")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/velocity_listener"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub" TYPE EXECUTABLE FILES "/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub/velocity_listener")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/velocity_listener" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/velocity_listener")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/velocity_listener"
+         OLD_RPATH "/opt/ros/iron/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/soccer_pubsub/velocity_listener")
     endif()
   endif()
 endif()

@@ -259,8 +259,15 @@ CMakeFiles/my_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my
   rosidl_generator_c/my_interfaces/msg/detail/pose__type_support.h \
   rosidl_generator_c/my_interfaces/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/my_interfaces/msg/detail/pose__struct.h \
-  rosidl_generator_c/my_interfaces/msg/detail/pose__functions.h
+  rosidl_generator_c/my_interfaces/msg/detail/pose__functions.h \
+  rosidl_generator_c/my_interfaces/msg/detail/velocity__type_support.h \
+  rosidl_generator_c/my_interfaces/msg/detail/velocity__struct.h \
+  rosidl_generator_c/my_interfaces/msg/detail/velocity__functions.h
 
+
+rosidl_generator_c/my_interfaces/msg/detail/velocity__functions.h:
+
+rosidl_generator_c/my_interfaces/msg/detail/velocity__type_support.h:
 
 rosidl_generator_c/my_interfaces/msg/detail/pose__functions.h:
 
@@ -365,6 +372,8 @@ rosidl_generator_c/my_interfaces/msg/detail/pose__struct.h:
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+rosidl_generator_c/my_interfaces/msg/detail/velocity__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 

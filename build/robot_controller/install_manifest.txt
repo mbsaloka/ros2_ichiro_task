@@ -1,0 +1,16 @@
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/lib/robot_controller/robot_controller
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/ament_index/resource_index/package_run_dependencies/robot_controller
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/ament_index/resource_index/parent_prefix_path/robot_controller
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/environment/ament_prefix_path.sh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/environment/ament_prefix_path.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/environment/path.sh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/environment/path.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/local_setup.bash
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/local_setup.sh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/local_setup.zsh
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/local_setup.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/package.dsv
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/ament_index/resource_index/packages/robot_controller
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig.cmake
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig-version.cmake
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/package.xml

@@ -1,0 +1,8 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/robot_controller.dir/src/RobotController.cpp.o[0m
+[01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_controller/src/RobotController.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krobot_controller/RobotController.hpp: No such file or directory
+    1 | #include [01;31m[K"robot_controller/RobotController.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/robot_controller.dir/build.make:76: CMakeFiles/robot_controller.dir/src/RobotController.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

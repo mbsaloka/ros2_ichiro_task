@@ -198,37 +198,63 @@ soccer_pubsub_uninstall/fast:
 .PHONY : soccer_pubsub_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named talker
+# Target rules for targets named pose_talker
 
 # Build rule for target.
-talker: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 talker
-.PHONY : talker
+pose_talker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pose_talker
+.PHONY : pose_talker
 
 # fast build rule for target.
-talker/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
-.PHONY : talker/fast
+pose_talker/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_talker.dir/build.make CMakeFiles/pose_talker.dir/build
+.PHONY : pose_talker/fast
 
 #=============================================================================
-# Target rules for targets named listener
+# Target rules for targets named pose_listener
 
 # Build rule for target.
-listener: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 listener
-.PHONY : listener
+pose_listener: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pose_listener
+.PHONY : pose_listener
 
 # fast build rule for target.
-listener/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/build
-.PHONY : listener/fast
+pose_listener/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_listener.dir/build.make CMakeFiles/pose_listener.dir/build
+.PHONY : pose_listener/fast
+
+#=============================================================================
+# Target rules for targets named velocity_talker
+
+# Build rule for target.
+velocity_talker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 velocity_talker
+.PHONY : velocity_talker
+
+# fast build rule for target.
+velocity_talker/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/velocity_talker.dir/build.make CMakeFiles/velocity_talker.dir/build
+.PHONY : velocity_talker/fast
+
+#=============================================================================
+# Target rules for targets named velocity_listener
+
+# Build rule for target.
+velocity_listener: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 velocity_listener
+.PHONY : velocity_listener
+
+# fast build rule for target.
+velocity_listener/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/velocity_listener.dir/build.make CMakeFiles/velocity_listener.dir/build
+.PHONY : velocity_listener/fast
 
 src/pose_publisher.o: src/pose_publisher.cpp.o
 .PHONY : src/pose_publisher.o
 
 # target to build an object file
 src/pose_publisher.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/pose_publisher.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_talker.dir/build.make CMakeFiles/pose_talker.dir/src/pose_publisher.cpp.o
 .PHONY : src/pose_publisher.cpp.o
 
 src/pose_publisher.i: src/pose_publisher.cpp.i
@@ -236,7 +262,7 @@ src/pose_publisher.i: src/pose_publisher.cpp.i
 
 # target to preprocess a source file
 src/pose_publisher.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/pose_publisher.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_talker.dir/build.make CMakeFiles/pose_talker.dir/src/pose_publisher.cpp.i
 .PHONY : src/pose_publisher.cpp.i
 
 src/pose_publisher.s: src/pose_publisher.cpp.s
@@ -244,7 +270,7 @@ src/pose_publisher.s: src/pose_publisher.cpp.s
 
 # target to generate assembly for a file
 src/pose_publisher.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/pose_publisher.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_talker.dir/build.make CMakeFiles/pose_talker.dir/src/pose_publisher.cpp.s
 .PHONY : src/pose_publisher.cpp.s
 
 src/pose_subscriber.o: src/pose_subscriber.cpp.o
@@ -252,7 +278,7 @@ src/pose_subscriber.o: src/pose_subscriber.cpp.o
 
 # target to build an object file
 src/pose_subscriber.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/pose_subscriber.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_listener.dir/build.make CMakeFiles/pose_listener.dir/src/pose_subscriber.cpp.o
 .PHONY : src/pose_subscriber.cpp.o
 
 src/pose_subscriber.i: src/pose_subscriber.cpp.i
@@ -260,7 +286,7 @@ src/pose_subscriber.i: src/pose_subscriber.cpp.i
 
 # target to preprocess a source file
 src/pose_subscriber.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/pose_subscriber.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_listener.dir/build.make CMakeFiles/pose_listener.dir/src/pose_subscriber.cpp.i
 .PHONY : src/pose_subscriber.cpp.i
 
 src/pose_subscriber.s: src/pose_subscriber.cpp.s
@@ -268,8 +294,56 @@ src/pose_subscriber.s: src/pose_subscriber.cpp.s
 
 # target to generate assembly for a file
 src/pose_subscriber.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/pose_subscriber.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_listener.dir/build.make CMakeFiles/pose_listener.dir/src/pose_subscriber.cpp.s
 .PHONY : src/pose_subscriber.cpp.s
+
+src/velocity_publisher.o: src/velocity_publisher.cpp.o
+.PHONY : src/velocity_publisher.o
+
+# target to build an object file
+src/velocity_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/velocity_talker.dir/build.make CMakeFiles/velocity_talker.dir/src/velocity_publisher.cpp.o
+.PHONY : src/velocity_publisher.cpp.o
+
+src/velocity_publisher.i: src/velocity_publisher.cpp.i
+.PHONY : src/velocity_publisher.i
+
+# target to preprocess a source file
+src/velocity_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/velocity_talker.dir/build.make CMakeFiles/velocity_talker.dir/src/velocity_publisher.cpp.i
+.PHONY : src/velocity_publisher.cpp.i
+
+src/velocity_publisher.s: src/velocity_publisher.cpp.s
+.PHONY : src/velocity_publisher.s
+
+# target to generate assembly for a file
+src/velocity_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/velocity_talker.dir/build.make CMakeFiles/velocity_talker.dir/src/velocity_publisher.cpp.s
+.PHONY : src/velocity_publisher.cpp.s
+
+src/velocity_subscriber.o: src/velocity_subscriber.cpp.o
+.PHONY : src/velocity_subscriber.o
+
+# target to build an object file
+src/velocity_subscriber.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/velocity_listener.dir/build.make CMakeFiles/velocity_listener.dir/src/velocity_subscriber.cpp.o
+.PHONY : src/velocity_subscriber.cpp.o
+
+src/velocity_subscriber.i: src/velocity_subscriber.cpp.i
+.PHONY : src/velocity_subscriber.i
+
+# target to preprocess a source file
+src/velocity_subscriber.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/velocity_listener.dir/build.make CMakeFiles/velocity_listener.dir/src/velocity_subscriber.cpp.i
+.PHONY : src/velocity_subscriber.cpp.i
+
+src/velocity_subscriber.s: src/velocity_subscriber.cpp.s
+.PHONY : src/velocity_subscriber.s
+
+# target to generate assembly for a file
+src/velocity_subscriber.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/velocity_listener.dir/build.make CMakeFiles/velocity_listener.dir/src/velocity_subscriber.cpp.s
+.PHONY : src/velocity_subscriber.cpp.s
 
 # Help Target
 help:
@@ -286,14 +360,22 @@ help:
 	@echo "... test"
 	@echo "... soccer_pubsub_uninstall"
 	@echo "... uninstall"
-	@echo "... listener"
-	@echo "... talker"
+	@echo "... pose_listener"
+	@echo "... pose_talker"
+	@echo "... velocity_listener"
+	@echo "... velocity_talker"
 	@echo "... src/pose_publisher.o"
 	@echo "... src/pose_publisher.i"
 	@echo "... src/pose_publisher.s"
 	@echo "... src/pose_subscriber.o"
 	@echo "... src/pose_subscriber.i"
 	@echo "... src/pose_subscriber.s"
+	@echo "... src/velocity_publisher.o"
+	@echo "... src/velocity_publisher.i"
+	@echo "... src/velocity_publisher.s"
+	@echo "... src/velocity_subscriber.o"
+	@echo "... src/velocity_subscriber.i"
+	@echo "... src/velocity_subscriber.s"
 .PHONY : help
 
 

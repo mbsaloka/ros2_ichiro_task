@@ -1,5 +1,7 @@
-/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/talker
-/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/listener
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/pose_talker
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/pose_listener
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/velocity_talker
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/velocity_listener
 /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/ament_index/resource_index/package_run_dependencies/soccer_pubsub
 /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/ament_index/resource_index/parent_prefix_path/soccer_pubsub
 /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/environment/ament_prefix_path.sh

@@ -9,10 +9,11 @@
                 "/opt/ros/iron/include/**",
                 "/home/mbsaloka/Desktop/ros2_ichiro_task/src/odd_num_pubsub/include/**",
                 "/usr/include/**",
-                "/opt/ros/iron/include/std_msgs",
                 "${workspaceFolder}/install/my_interfaces/include/my_interfaces",
                 "${workspaceFolder}/src/my_package/include",
-                "${workspaceFolder}/src/my_package/include"
+                "/opt/ros/iron/include/rclcpp",
+                "${workspaceFolder}/src/robot_localization/include",
+                "${workspaceFolder}/src/robot_controller/include"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",
