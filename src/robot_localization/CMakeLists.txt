@@ -8,14 +8,16 @@ endif()
 # Besides the package specific dependencies we also need the `pluginlib` and `webots_ros2_driver`
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-# find_package(std_msgs REQUIRED)
-# find_package(geometry_msgs REQUIRED)
 find_package(my_interfaces REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(webots_ros2_driver REQUIRED)
 
 # Export the plugin configuration file
 pluginlib_export_plugin_description_file(webots_ros2_driver my_robot_driver.xml)
+
+# RobotController
+add_executable(robot_controller src/RobotController.cpp)
+ament_target_dependencies(robot_controller rclcpp my_interfaces)
 
 # MyRobotDriver library
 add_library(
@@ -37,9 +39,11 @@ ament_target_dependencies(
 )
 install(TARGETS
   ${PROJECT_NAME}
+  robot_controller
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin
+  DESTINATION lib/${PROJECT_NAME}
 )
 # Install additional directories.
 install(DIRECTORY

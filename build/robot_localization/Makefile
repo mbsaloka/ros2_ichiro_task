@@ -198,6 +198,19 @@ robot_localization_uninstall/fast:
 .PHONY : robot_localization_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named robot_controller
+
+# Build rule for target.
+robot_controller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 robot_controller
+.PHONY : robot_controller
+
+# fast build rule for target.
+robot_controller/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/build
+.PHONY : robot_controller/fast
+
+#=============================================================================
 # Target rules for targets named robot_localization
 
 # Build rule for target.
@@ -234,6 +247,30 @@ src/MyRobotDriver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_localization.dir/build.make CMakeFiles/robot_localization.dir/src/MyRobotDriver.cpp.s
 .PHONY : src/MyRobotDriver.cpp.s
 
+src/RobotController.o: src/RobotController.cpp.o
+.PHONY : src/RobotController.o
+
+# target to build an object file
+src/RobotController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/src/RobotController.cpp.o
+.PHONY : src/RobotController.cpp.o
+
+src/RobotController.i: src/RobotController.cpp.i
+.PHONY : src/RobotController.i
+
+# target to preprocess a source file
+src/RobotController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/src/RobotController.cpp.i
+.PHONY : src/RobotController.cpp.i
+
+src/RobotController.s: src/RobotController.cpp.s
+.PHONY : src/RobotController.s
+
+# target to generate assembly for a file
+src/RobotController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/src/RobotController.cpp.s
+.PHONY : src/RobotController.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -249,10 +286,14 @@ help:
 	@echo "... test"
 	@echo "... robot_localization_uninstall"
 	@echo "... uninstall"
+	@echo "... robot_controller"
 	@echo "... robot_localization"
 	@echo "... src/MyRobotDriver.o"
 	@echo "... src/MyRobotDriver.i"
 	@echo "... src/MyRobotDriver.s"
+	@echo "... src/RobotController.o"
+	@echo "... src/RobotController.i"
+	@echo "... src/RobotController.s"
 .PHONY : help
 
 

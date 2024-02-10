@@ -10,7 +10,7 @@ WorldInfo {
 Viewpoint {
   orientation 0.18358727229744 0.7335640193319748 -0.6543542946996708 0.7305828564707115
   position -6.42712261215129 4.598719547628803 5.855483711245088
-  follow "e-puck"
+  follow "my_epuck"
 }
 TexturedBackground {
 }

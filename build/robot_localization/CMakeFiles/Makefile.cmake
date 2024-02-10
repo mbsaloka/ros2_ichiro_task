@@ -980,5 +980,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/robot_localization_uninstall.dir/DependInfo.cmake"
+  "CMakeFiles/robot_controller.dir/DependInfo.cmake"
   "CMakeFiles/robot_localization.dir/DependInfo.cmake"
   )

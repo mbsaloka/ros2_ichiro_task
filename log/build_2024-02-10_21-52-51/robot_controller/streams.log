@@ -1,0 +1,63 @@
+[0.341s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_controller': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib /usr/bin/cmake /home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_controller -DCMAKE_INSTALL_PREFIX=/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller
+[0.528s] -- The C compiler identification is GNU 11.4.0
+[0.673s] -- The CXX compiler identification is GNU 11.4.0
+[0.687s] -- Detecting C compiler ABI info
+[0.805s] -- Detecting C compiler ABI info - done
+[0.817s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.818s] -- Detecting C compile features
+[0.818s] -- Detecting C compile features - done
+[0.823s] -- Detecting CXX compiler ABI info
+[0.952s] -- Detecting CXX compiler ABI info - done
+[0.965s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.966s] -- Detecting CXX compile features
+[0.966s] -- Detecting CXX compile features - done
+[0.972s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[1.255s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.402s] -- Found rclcpp: 21.0.4 (/opt/ros/iron/share/rclcpp/cmake)
+[1.473s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[1.494s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[1.530s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.560s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.842s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[1.846s] -- Found rmw_fastrtps_cpp: 7.1.2 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[2.014s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.054s] -- Found FastRTPS: /opt/ros/iron/include  
+[2.129s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.408s] -- Found my_interfaces: 0.0.0 (/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake)
+[2.435s] -- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[2.562s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.562s] -- Configured cppcheck include dirs: 
+[2.562s] -- Configured cppcheck exclude dirs and/or files: 
+[2.564s] -- Added test 'lint_cmake' to check CMake code style
+[2.565s] -- Added test 'uncrustify' to check C / C++ code style
+[2.565s] -- Configured uncrustify additional arguments: 
+[2.566s] -- Added test 'xmllint' to check XML markup files
+[2.568s] -- Configuring done
+[2.584s] -- Generating done
+[2.587s] -- Build files have been written to: /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_controller
+[2.602s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib /usr/bin/cmake /home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_controller -DCMAKE_INSTALL_PREFIX=/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller
+[2.604s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_controller': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_controller -- -j16 -l16
+[2.675s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_controller.dir/src/RobotController.cpp.o[0m
+[9.209s] [100%] [32m[1mLinking CXX executable robot_controller[0m
+[9.558s] [100%] Built target robot_controller
+[9.576s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_controller -- -j16 -l16
+[9.614s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_controller': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_controller
+[9.627s] -- Install configuration: ""
+[9.627s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/lib/robot_controller/robot_controller
+[9.630s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/lib/robot_controller/robot_controller" to ""
+[9.630s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/ament_index/resource_index/package_run_dependencies/robot_controller
+[9.630s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/ament_index/resource_index/parent_prefix_path/robot_controller
+[9.631s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/environment/ament_prefix_path.sh
+[9.631s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/environment/ament_prefix_path.dsv
+[9.632s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/environment/path.sh
+[9.632s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/environment/path.dsv
+[9.632s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/local_setup.bash
+[9.633s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/local_setup.sh
+[9.634s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/local_setup.zsh
+[9.634s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/local_setup.dsv
+[9.635s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/package.dsv
+[9.635s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/ament_index/resource_index/packages/robot_controller
+[9.635s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig.cmake
+[9.636s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig-version.cmake
+[9.636s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller/share/robot_controller/package.xml
+[9.642s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_package/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_controller

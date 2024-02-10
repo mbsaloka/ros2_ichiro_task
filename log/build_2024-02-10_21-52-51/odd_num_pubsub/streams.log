@@ -1,0 +1,24 @@
+[0.220s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub -- -j16 -l16
+[0.327s] [ 50%] Built target talker
+[0.330s] [100%] Built target listener
+[0.357s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub -- -j16 -l16
+[0.427s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub
+[0.439s] -- Install configuration: ""
+[0.439s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/lib/odd_num_pubsub/talker
+[0.439s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/lib/odd_num_pubsub/listener
+[0.440s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/ament_index/resource_index/package_run_dependencies/odd_num_pubsub
+[0.440s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/ament_index/resource_index/parent_prefix_path/odd_num_pubsub
+[0.440s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/environment/ament_prefix_path.sh
+[0.440s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/environment/ament_prefix_path.dsv
+[0.440s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/environment/path.sh
+[0.440s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/environment/path.dsv
+[0.441s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/local_setup.bash
+[0.441s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/local_setup.sh
+[0.441s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/local_setup.zsh
+[0.441s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/local_setup.dsv
+[0.441s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/package.dsv
+[0.442s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/ament_index/resource_index/packages/odd_num_pubsub
+[0.442s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/cmake/odd_num_pubsubConfig.cmake
+[0.442s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/cmake/odd_num_pubsubConfig-version.cmake
+[0.442s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub/share/odd_num_pubsub/package.xml
+[0.547s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/odd_num_pubsub
