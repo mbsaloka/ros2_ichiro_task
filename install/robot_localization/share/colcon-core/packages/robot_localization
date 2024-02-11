@@ -1,1 +1,1 @@
-my_interfaces:pluginlib:rclcpp:webots_ros2_driver
+my_interfaces:pluginlib:rclcpp:vision_msgs:webots_ros2_driver

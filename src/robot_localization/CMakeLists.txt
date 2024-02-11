@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(my_interfaces REQUIRED)
+find_package(vision_msgs REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(webots_ros2_driver REQUIRED)
 
@@ -18,6 +19,26 @@ pluginlib_export_plugin_description_file(webots_ros2_driver my_robot_driver.xml)
 # RobotController
 add_executable(robot_controller src/RobotController.cpp)
 ament_target_dependencies(robot_controller rclcpp my_interfaces)
+
+# ObjectRecognizer
+include_directories(
+  include
+)
+add_executable(object_recognizer
+  src/ObjectRecognizer.cpp
+)
+ament_target_dependencies(object_recognizer
+  rclcpp
+  vision_msgs
+)
+install(TARGETS
+  object_recognizer
+  DESTINATION lib/${PROJECT_NAME}
+)
+install(
+  DIRECTORY include/
+  DESTINATION include
+)
 
 # MyRobotDriver library
 add_library(
@@ -35,11 +56,13 @@ ament_target_dependencies(
   pluginlib
   rclcpp
   my_interfaces
+  vision_msgs
   webots_ros2_driver
 )
 install(TARGETS
   ${PROJECT_NAME}
   robot_controller
+  object_recognizer
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin

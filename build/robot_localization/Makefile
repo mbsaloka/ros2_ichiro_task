@@ -211,6 +211,19 @@ robot_controller/fast:
 .PHONY : robot_controller/fast
 
 #=============================================================================
+# Target rules for targets named object_recognizer
+
+# Build rule for target.
+object_recognizer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 object_recognizer
+.PHONY : object_recognizer
+
+# fast build rule for target.
+object_recognizer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_recognizer.dir/build.make CMakeFiles/object_recognizer.dir/build
+.PHONY : object_recognizer/fast
+
+#=============================================================================
 # Target rules for targets named robot_localization
 
 # Build rule for target.
@@ -246,6 +259,30 @@ src/MyRobotDriver.s: src/MyRobotDriver.cpp.s
 src/MyRobotDriver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_localization.dir/build.make CMakeFiles/robot_localization.dir/src/MyRobotDriver.cpp.s
 .PHONY : src/MyRobotDriver.cpp.s
+
+src/ObjectRecognizer.o: src/ObjectRecognizer.cpp.o
+.PHONY : src/ObjectRecognizer.o
+
+# target to build an object file
+src/ObjectRecognizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_recognizer.dir/build.make CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o
+.PHONY : src/ObjectRecognizer.cpp.o
+
+src/ObjectRecognizer.i: src/ObjectRecognizer.cpp.i
+.PHONY : src/ObjectRecognizer.i
+
+# target to preprocess a source file
+src/ObjectRecognizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_recognizer.dir/build.make CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.i
+.PHONY : src/ObjectRecognizer.cpp.i
+
+src/ObjectRecognizer.s: src/ObjectRecognizer.cpp.s
+.PHONY : src/ObjectRecognizer.s
+
+# target to generate assembly for a file
+src/ObjectRecognizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_recognizer.dir/build.make CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.s
+.PHONY : src/ObjectRecognizer.cpp.s
 
 src/RobotController.o: src/RobotController.cpp.o
 .PHONY : src/RobotController.o
@@ -286,11 +323,15 @@ help:
 	@echo "... test"
 	@echo "... robot_localization_uninstall"
 	@echo "... uninstall"
+	@echo "... object_recognizer"
 	@echo "... robot_controller"
 	@echo "... robot_localization"
 	@echo "... src/MyRobotDriver.o"
 	@echo "... src/MyRobotDriver.i"
 	@echo "... src/MyRobotDriver.s"
+	@echo "... src/ObjectRecognizer.o"
+	@echo "... src/ObjectRecognizer.i"
+	@echo "... src/ObjectRecognizer.s"
 	@echo "... src/RobotController.o"
 	@echo "... src/RobotController.i"
 	@echo "... src/RobotController.s"

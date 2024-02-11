@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localizat
 
 # The main recursive "all" target.
 all: CMakeFiles/robot_controller.dir/all
+all: CMakeFiles/object_recognizer.dir/all
 all: CMakeFiles/robot_localization.dir/all
 .PHONY : all
 
@@ -75,6 +76,7 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/robot_localization_uninstall.dir/clean
 clean: CMakeFiles/robot_controller.dir/clean
+clean: CMakeFiles/object_recognizer.dir/clean
 clean: CMakeFiles/robot_localization.dir/clean
 .PHONY : clean
 
@@ -137,7 +139,7 @@ CMakeFiles/robot_localization_uninstall.dir/clean:
 CMakeFiles/robot_controller.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization/CMakeFiles --progress-num=1,2 "Built target robot_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization/CMakeFiles --progress-num=3,4 "Built target robot_controller"
 .PHONY : CMakeFiles/robot_controller.dir/all
 
 # Build rule for subdir invocation for target.
@@ -157,13 +159,39 @@ CMakeFiles/robot_controller.dir/clean:
 .PHONY : CMakeFiles/robot_controller.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/object_recognizer.dir
+
+# All Build rule for target.
+CMakeFiles/object_recognizer.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_recognizer.dir/build.make CMakeFiles/object_recognizer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_recognizer.dir/build.make CMakeFiles/object_recognizer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization/CMakeFiles --progress-num=1,2 "Built target object_recognizer"
+.PHONY : CMakeFiles/object_recognizer.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/object_recognizer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/object_recognizer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization/CMakeFiles 0
+.PHONY : CMakeFiles/object_recognizer.dir/rule
+
+# Convenience name for target.
+object_recognizer: CMakeFiles/object_recognizer.dir/rule
+.PHONY : object_recognizer
+
+# clean rule for target.
+CMakeFiles/object_recognizer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_recognizer.dir/build.make CMakeFiles/object_recognizer.dir/clean
+.PHONY : CMakeFiles/object_recognizer.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/robot_localization.dir
 
 # All Build rule for target.
 CMakeFiles/robot_localization.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_localization.dir/build.make CMakeFiles/robot_localization.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_localization.dir/build.make CMakeFiles/robot_localization.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization/CMakeFiles --progress-num=3,4 "Built target robot_localization"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization/CMakeFiles --progress-num=5,6 "Built target robot_localization"
 .PHONY : CMakeFiles/robot_localization.dir/all
 
 # Build rule for subdir invocation for target.

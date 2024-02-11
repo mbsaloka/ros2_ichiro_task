@@ -1,0 +1,31 @@
+-- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+-- Found rclcpp: 21.0.4 (/opt/ros/iron/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 7.1.2 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found my_interfaces: 0.0.0 (/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake)
+-- Found vision_msgs: 4.1.0 (/opt/ros/iron/share/vision_msgs/cmake)
+-- Found pluginlib: 5.2.2 (/opt/ros/iron/share/pluginlib/cmake)
+-- Found webots_ros2_driver: 2023.1.1 (/opt/ros/iron/share/webots_ros2_driver/cmake)
+-- Found eigen3_cmake_module: 0.2.2 (/opt/ros/iron/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization
+[35m[1mConsolidate compiler generated dependencies of target robot_controller[0m
+[35m[1mConsolidate compiler generated dependencies of target robot_localization[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o[0m
+[01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/ObjectRecognizer.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krobot_localization/ObjectRecognizer.hpp: No such file or directory
+    1 | #include [01;31m[K"robot_localization/ObjectRecognizer.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/object_recognizer.dir/build.make:76: CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o] Error 1
+[ 50%] Built target robot_controller
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/object_recognizer.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 83%] Built target robot_localization
+gmake: *** [Makefile:146: all] Error 2

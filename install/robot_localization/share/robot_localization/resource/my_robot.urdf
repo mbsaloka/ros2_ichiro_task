@@ -2,8 +2,9 @@
 <robot name="My epuck">
     <webots>
         <device reference="my_camera" type="Camera">
+            <recognition/>
             <ros>
-                <topicName>/camera</topicName>
+                <topicName>/robot_vision</topicName>
                 <alwaysOn>true</alwaysOn>
             </ros>
         </device>

@@ -24,6 +24,21 @@ E-puck {
   rotation 0 0 1 -0.785395307179586
   controller "<extern>"
   name "my_epuck"
+  turretSlot [
+    Camera {
+      translation 0.044 0 -0.0206
+      name "my_camera"
+      recognitionColors [
+        1 1 1
+      ]
+      width 256
+      height 144
+      recognition Recognition {
+      }
+    }
+    InertialUnit {
+    }
+  ]
 }
 DEF LANDMARK_1 Solid {
   translation 0 0 0.2
