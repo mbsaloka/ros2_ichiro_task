@@ -33,13 +33,8 @@ def generate_launch_description():
         output='screen'
     )
 
-    # def close_terminals(event):
-    #     subprocess.call(['pkill', 'gnome-terminal'])
-
     def close_terminals(event):
-        # Menutup terminal robot_controller
         subprocess.call(['pkill', '-f', 'ros2 run robot_localization robot_controller'])
-        # Menutup terminal object_recognizer
         subprocess.call(['pkill', '-f', 'ros2 run robot_localization object_recognizer'])
 
 

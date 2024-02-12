@@ -2,11 +2,12 @@
 #include <vector>
 
 #include "rclcpp/rclcpp.hpp"
-#include "vision_msgs/msg/detection2_d_array.hpp"
+// #include "vision_msgs/msg/detection2_d_array.hpp"
+#include "webots_ros2_msgs/msg/camera_recognition_objects.hpp"
 
 typedef struct RecognizedObject {
-    const double *x;
-    const double *y;
+    double x;
+    double y;
 } RecognizedObject;
 
 class ObjectRecognizer : public rclcpp::Node {
@@ -15,10 +16,10 @@ public:
 
 private:
     void cameraCallback(
-        const vision_msgs::msg::Detection2DArray::SharedPtr msg);
+        const webots_ros2_msgs::msg::CameraRecognitionObjects::SharedPtr msg);
 
-    rclcpp::Subscription<vision_msgs::msg::Detection2DArray>::SharedPtr
-        camera_sub_;
+    rclcpp::Subscription<
+        webots_ros2_msgs::msg::CameraRecognitionObjects>::SharedPtr camera_sub_;
 
     std::vector<RecognizedObject> recognized_objects_;
 };

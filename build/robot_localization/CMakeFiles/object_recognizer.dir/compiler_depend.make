@@ -727,33 +727,33 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: /home/mbsaloka/Desk
   /opt/ros/iron/include/rclcpp/rclcpp/parameter_map.hpp \
   /opt/ros/iron/include/rclcpp/rclcpp/parameter_event_handler.hpp \
   /opt/ros/iron/include/rclcpp/rclcpp/parameter_service.hpp \
-  /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detection2_d_array.hpp \
-  /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__struct.hpp \
+  /opt/ros/iron/include/webots_ros2_msgs/webots_ros2_msgs/msg/camera_recognition_objects.hpp \
+  /opt/ros/iron/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__struct.hpp \
   /opt/ros/iron/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
-  /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/detection2_d__struct.hpp \
-  /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__struct.hpp \
-  /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__struct.hpp \
-  /opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
+  /opt/ros/iron/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_object__struct.hpp \
+  /opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
   /opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
   /opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
   /opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
   /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d__struct.hpp \
   /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/pose2_d__struct.hpp \
   /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/point2_d__struct.hpp \
-  /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__builder.hpp \
-  /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__traits.hpp \
+  /opt/ros/iron/include/std_msgs/std_msgs/msg/detail/color_rgba__struct.hpp \
+  /opt/ros/iron/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__builder.hpp \
+  /opt/ros/iron/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__traits.hpp \
   /opt/ros/iron/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
-  /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/detection2_d__traits.hpp \
-  /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__traits.hpp \
-  /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__traits.hpp \
-  /opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+  /opt/ros/iron/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_object__traits.hpp \
+  /opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
   /opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
   /opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
   /opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
   /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d__traits.hpp \
   /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/pose2_d__traits.hpp \
-  /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/point2_d__traits.hpp
+  /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/point2_d__traits.hpp \
+  /opt/ros/iron/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp
 
+
+/opt/ros/iron/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp:
 
 /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/pose2_d__traits.hpp:
 
@@ -761,13 +761,7 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: /home/mbsaloka/Desk
 
 /opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp:
 
-/opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__traits.hpp:
-
-/opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__traits.hpp:
-
-/opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/detection2_d__traits.hpp:
-
-/opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__traits.hpp:
+/opt/ros/iron/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_object__traits.hpp:
 
 /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/point2_d__struct.hpp:
 
@@ -777,13 +771,11 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: /home/mbsaloka/Desk
 
 /opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
 
-/opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
+/opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
 
-/opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__struct.hpp:
+/opt/ros/iron/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_object__struct.hpp:
 
-/opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/detection2_d__struct.hpp:
-
-/opt/ros/iron/include/vision_msgs/vision_msgs/msg/detection2_d_array.hpp:
+/opt/ros/iron/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__struct.hpp:
 
 /opt/ros/iron/include/rclcpp/rclcpp/parameter_service.hpp:
 
@@ -909,6 +901,8 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: /home/mbsaloka/Desk
 
 /opt/ros/iron/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
 
+/opt/ros/iron/include/std_msgs/std_msgs/msg/detail/color_rgba__struct.hpp:
+
 /opt/ros/iron/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
 
 /opt/ros/iron/include/rclcpp/rclcpp/node_interfaces/node_clock_interface.hpp:
@@ -965,8 +959,6 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: /home/mbsaloka/Desk
 
 /usr/include/c++/11/numeric:
 
-/opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__struct.hpp:
-
 /opt/ros/iron/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
 
 /opt/ros/iron/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
@@ -992,6 +984,8 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: /home/mbsaloka/Desk
 /usr/include/c++/11/bits/specfun.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/opt/ros/iron/include/webots_ros2_msgs/webots_ros2_msgs/msg/camera_recognition_objects.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
@@ -1033,6 +1027,8 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: /home/mbsaloka/Desk
 
 /usr/include/c++/11/bits/codecvt.h:
 
+/opt/ros/iron/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__builder.hpp:
+
 /usr/include/c++/11/bits/hashtable.h:
 
 /opt/ros/iron/include/rmw/rmw/events_statuses/message_lost.h:
@@ -1052,6 +1048,8 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: /home/mbsaloka/Desk
 /usr/include/c++/11/ext/string_conversions.h:
 
 /opt/ros/iron/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
+
+/opt/ros/iron/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__traits.hpp:
 
 /usr/include/c++/11/thread:
 
@@ -1401,8 +1399,6 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: /home/mbsaloka/Desk
 
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
 
-/opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__builder.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/c++/11/bits/stl_iterator.h:
@@ -1562,8 +1558,6 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: /home/mbsaloka/Desk
 /usr/include/c++/11/algorithm:
 
 /opt/ros/iron/include/rmw/rmw/macros.h:
-
-/opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
@@ -1861,6 +1855,8 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: /home/mbsaloka/Desk
 
 /opt/ros/iron/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
 
+/opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp:
+
 /opt/ros/iron/include/rcutils/rcutils/logging.h:
 
 /opt/ros/iron/include/rcutils/rcutils/error_handling.h:
@@ -1968,8 +1964,6 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: /home/mbsaloka/Desk
 /opt/ros/iron/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
 
 /opt/ros/iron/include/rcl/rcl/domain_id.h:
-
-/opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__struct.hpp:
 
 /opt/ros/iron/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__struct.h:
 

@@ -1,0 +1,14 @@
+[0.095s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization': AMENT_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization -- -j16 -l16
+[0.255s] [35m[1mConsolidate compiler generated dependencies of target object_recognizer[0m
+[0.288s] [ 33%] Built target robot_controller
+[0.289s] [ 66%] Built target robot_localization
+[0.298s] [ 83%] [32mBuilding CXX object CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o[0m
+[0.844s] In file included from [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/ObjectRecognizer.cpp:1[m[K:
+[0.844s] [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/include/robot_localization/ObjectRecognizer.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kwebots_ros2_msgs/msg/camera_recognition_object.hpp: No such file or directory
+[0.845s]     6 | #include [01;31m[K"webots_ros2_msgs/msg/camera_recognition_object.hpp"[m[K
+[0.845s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.845s] compilation terminated.
+[0.848s] gmake[2]: *** [CMakeFiles/object_recognizer.dir/build.make:76: CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o] Error 1
+[0.849s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/object_recognizer.dir/all] Error 2
+[0.849s] gmake: *** [Makefile:146: all] Error 2
+[0.853s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization' returned '2': AMENT_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization -- -j16 -l16
