@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_interfaces__cpp"
+  "rosidl_generator_cpp/my_interfaces/msg/boolean.hpp"
+  "rosidl_generator_cpp/my_interfaces/msg/detail/boolean__builder.hpp"
+  "rosidl_generator_cpp/my_interfaces/msg/detail/boolean__struct.hpp"
+  "rosidl_generator_cpp/my_interfaces/msg/detail/boolean__traits.hpp"
   "rosidl_generator_cpp/my_interfaces/msg/detail/object__builder.hpp"
   "rosidl_generator_cpp/my_interfaces/msg/detail/object__struct.hpp"
   "rosidl_generator_cpp/my_interfaces/msg/detail/object__traits.hpp"

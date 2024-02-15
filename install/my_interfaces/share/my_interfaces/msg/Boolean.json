@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "my_interfaces/msg/Boolean",
+      "fields": [
+        {
+          "name": "flag",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "my_interfaces/msg/Boolean",
+      "hash_string": "RIHS01_9c9f03543e65e7a52a60d53da31bc07e7a58932218a526a86bfd064934fa9f3d"
+    }
+  ]
+}

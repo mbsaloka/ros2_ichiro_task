@@ -1,6 +1,7 @@
 #include <memory>
 
 #include "my_interfaces/msg/velocity.hpp"
+#include "my_interfaces/msg/boolean.hpp"
 #include "rclcpp/rclcpp.hpp"
 
 #include <signal.h>
@@ -18,12 +19,15 @@ private:
     std::shared_ptr<rclcpp::Node> nh_;
     double linear_, angular_;
     rclcpp::Publisher<my_interfaces::msg::Velocity>::SharedPtr velocity_pub_;
+    rclcpp::Publisher<my_interfaces::msg::Boolean>::SharedPtr restart_pub_;
 };
 
 RobotController::RobotController(std::shared_ptr<rclcpp::Node> nh)
     : nh_(nh), linear_(0), angular_(0) {
     velocity_pub_ =
         nh_->create_publisher<my_interfaces::msg::Velocity>("/velocity", 1);
+    restart_pub_ =
+        nh_->create_publisher<my_interfaces::msg::Boolean>("/restart", 1);
 }
 
 int kb = 0;
@@ -63,7 +67,7 @@ void RobotController::keyLoop() {
 
     puts("Reading from keyboard");
     puts("---------------------------");
-    puts("Use \"wasd\" to move e-puck. 'b' to brake.");
+    puts("Use \"wasd\" to move e-puck.\n'b' to brake. 'r' to restart.");
 
     for (;;) {
         // get the next event from the keyboard
@@ -108,6 +112,11 @@ void RobotController::keyLoop() {
                     dirty = true;
                     last_c = c;
                     break;
+                case 'r':
+                    std::cout << "RESTART" << std::endl;
+                    dirty = true;
+                    last_c = c;
+                    break;
             }
         }
 
@@ -116,7 +125,13 @@ void RobotController::keyLoop() {
         msg.angular = angular_;
 
         if (dirty == true) {
-            velocity_pub_->publish(msg);
+            if (c == 'r') {
+                my_interfaces::msg::Boolean restart_msg;
+                restart_msg.flag = true;
+                restart_pub_->publish(restart_msg);
+            } else {
+                velocity_pub_->publish(msg);
+            }
             dirty = false;
         }
     }

@@ -73,11 +73,13 @@ my_interfaces__py/CMakeFiles/my_interfaces__py: rosidl_generator_py/my_interface
 my_interfaces__py/CMakeFiles/my_interfaces__py: rosidl_generator_py/my_interfaces/msg/_velocity.py
 my_interfaces__py/CMakeFiles/my_interfaces__py: rosidl_generator_py/my_interfaces/msg/_object.py
 my_interfaces__py/CMakeFiles/my_interfaces__py: rosidl_generator_py/my_interfaces/msg/_vector_objects.py
+my_interfaces__py/CMakeFiles/my_interfaces__py: rosidl_generator_py/my_interfaces/msg/_boolean.py
 my_interfaces__py/CMakeFiles/my_interfaces__py: rosidl_generator_py/my_interfaces/msg/__init__.py
 my_interfaces__py/CMakeFiles/my_interfaces__py: rosidl_generator_py/my_interfaces/msg/_pose_s.c
 my_interfaces__py/CMakeFiles/my_interfaces__py: rosidl_generator_py/my_interfaces/msg/_velocity_s.c
 my_interfaces__py/CMakeFiles/my_interfaces__py: rosidl_generator_py/my_interfaces/msg/_object_s.c
 my_interfaces__py/CMakeFiles/my_interfaces__py: rosidl_generator_py/my_interfaces/msg/_vector_objects_s.c
+my_interfaces__py/CMakeFiles/my_interfaces__py: rosidl_generator_py/my_interfaces/msg/_boolean_s.c
 
 rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/iron/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/iron/lib/python3.10/site-packages/rosidl_generator_py/__init__.py
@@ -96,6 +98,7 @@ rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtp
 rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_interfaces/msg/Velocity.idl
 rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_interfaces/msg/Object.idl
 rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_interfaces/msg/VectorObjects.idl
+rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_interfaces/msg/Boolean.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/my_interfaces__py && /usr/bin/python3 /opt/ros/iron/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -117,6 +120,9 @@ rosidl_generator_py/my_interfaces/msg/_object.py: rosidl_generator_py/my_interfa
 rosidl_generator_py/my_interfaces/msg/_vector_objects.py: rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_interfaces/msg/_vector_objects.py
 
+rosidl_generator_py/my_interfaces/msg/_boolean.py: rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_interfaces/msg/_boolean.py
+
 rosidl_generator_py/my_interfaces/msg/__init__.py: rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_interfaces/msg/__init__.py
 
@@ -132,11 +138,16 @@ rosidl_generator_py/my_interfaces/msg/_object_s.c: rosidl_generator_py/my_interf
 rosidl_generator_py/my_interfaces/msg/_vector_objects_s.c: rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_interfaces/msg/_vector_objects_s.c
 
+rosidl_generator_py/my_interfaces/msg/_boolean_s.c: rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_interfaces/msg/_boolean_s.c
+
 my_interfaces__py: my_interfaces__py/CMakeFiles/my_interfaces__py
 my_interfaces__py: rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_c.c
 my_interfaces__py: rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 my_interfaces__py: rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 my_interfaces__py: rosidl_generator_py/my_interfaces/msg/__init__.py
+my_interfaces__py: rosidl_generator_py/my_interfaces/msg/_boolean.py
+my_interfaces__py: rosidl_generator_py/my_interfaces/msg/_boolean_s.c
 my_interfaces__py: rosidl_generator_py/my_interfaces/msg/_object.py
 my_interfaces__py: rosidl_generator_py/my_interfaces/msg/_object_s.c
 my_interfaces__py: rosidl_generator_py/my_interfaces/msg/_pose.py

@@ -736,8 +736,16 @@ CMakeFiles/localization.dir/src/RobotLocalization.cpp.o: /home/mbsaloka/Desktop/
   /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/object__struct.hpp \
   /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/vector_objects__builder.hpp \
   /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/vector_objects__traits.hpp \
-  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/object__traits.hpp
+  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/object__traits.hpp \
+  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/boolean.hpp \
+  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/boolean__struct.hpp \
+  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/boolean__builder.hpp \
+  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/boolean__traits.hpp
 
+
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/boolean__traits.hpp:
+
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/boolean__builder.hpp:
 
 /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/vector_objects__builder.hpp:
 
@@ -968,6 +976,8 @@ CMakeFiles/localization.dir/src/RobotLocalization.cpp.o: /home/mbsaloka/Desktop/
 /opt/ros/iron/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
 
 /opt/ros/iron/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
+
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/boolean.hpp:
 
 /opt/ros/iron/include/rclcpp/rclcpp/subscription_options.hpp:
 
@@ -1434,6 +1444,8 @@ CMakeFiles/localization.dir/src/RobotLocalization.cpp.o: /home/mbsaloka/Desktop/
 /usr/include/c++/11/bits/sstream.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
+
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/boolean__struct.hpp:
 
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
 

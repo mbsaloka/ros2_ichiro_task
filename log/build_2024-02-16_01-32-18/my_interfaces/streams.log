@@ -1,0 +1,51 @@
+[0.028s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces -- -j16 -l16
+[0.063s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.153s] -- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+[0.155s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.181s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.201s] -- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+[0.305s] [31mCMake Error at /opt/ros/iron/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[0.305s]   execute_process(/usr/bin/python3.10 -m rosidl_adapter --package-name
+[0.305s]   my_interfaces --arguments-file
+[0.305s]   /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter__arguments__my_interfaces.json
+[0.305s]   --output-dir
+[0.305s]   /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces
+[0.305s]   --output-file
+[0.305s]   /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces.idls)
+[0.305s]   returned error code 1:
+[0.305s] 
+[0.305s]   Error processing 'bool flag;' of 'my_interfaces/Boolean': ''flag;' is an
+[0.305s]   invalid field name.  It should have the pattern
+[0.305s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[0.305s] 
+[0.305s]   Traceback (most recent call last):
+[0.305s] 
+[0.305s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[0.306s]       return _run_code(code, main_globals, None,
+[0.306s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[0.306s]       exec(code, run_globals)
+[0.306s]     File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.306s]       sys.exit(main())
+[0.306s]     File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/main.py", line 53, in main
+[0.306s]       abs_idl_file = convert_to_idl(
+[0.306s]     File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[0.306s]       return convert_msg_to_idl(
+[0.306s]     File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[0.306s]       msg = parse_message_string(package_name, input_file.stem, content)
+[0.306s]     File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/parser.py", line 520, in parse_message_string
+[0.306s]       fields.append(Field(
+[0.306s]     File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/parser.py", line 355, in __init__
+[0.306s]       raise NameError(
+[0.306s] 
+[0.306s]   NameError: 'flag;' is an invalid field name.  It should have the pattern
+[0.306s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[0.306s] 
+[0.306s] Call Stack (most recent call first):
+[0.306s]   /opt/ros/iron/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[0.306s]   CMakeLists.txt:12 (rosidl_generate_interfaces)
+[0.306s] 
+[0.306s] [0m
+[0.306s] -- Configuring incomplete, errors occurred!
+[0.306s] See also "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/CMakeFiles/CMakeOutput.log".
+[0.310s] gmake: *** [Makefile:1625: cmake_check_build_system] Error 1
+[0.311s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces -- -j16 -l16

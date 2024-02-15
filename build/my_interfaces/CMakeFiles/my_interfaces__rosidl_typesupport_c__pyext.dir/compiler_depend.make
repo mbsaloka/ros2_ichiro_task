@@ -268,8 +268,17 @@ CMakeFiles/my_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my
   rosidl_generator_c/my_interfaces/msg/detail/object__functions.h \
   rosidl_generator_c/my_interfaces/msg/detail/vector_objects__type_support.h \
   rosidl_generator_c/my_interfaces/msg/detail/vector_objects__struct.h \
-  rosidl_generator_c/my_interfaces/msg/detail/vector_objects__functions.h
+  rosidl_generator_c/my_interfaces/msg/detail/vector_objects__functions.h \
+  rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.h \
+  rosidl_generator_c/my_interfaces/msg/detail/boolean__struct.h \
+  rosidl_generator_c/my_interfaces/msg/detail/boolean__functions.h
 
+
+rosidl_generator_c/my_interfaces/msg/detail/boolean__functions.h:
+
+rosidl_generator_c/my_interfaces/msg/detail/boolean__struct.h:
+
+rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.h:
 
 rosidl_generator_c/my_interfaces/msg/detail/vector_objects__functions.h:
 

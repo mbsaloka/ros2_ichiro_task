@@ -11,6 +11,10 @@ RobotLocalization::RobotLocalization() : Node("robot_localization") {
         "/velocity", 1,
         std::bind(&RobotLocalization::velocityCallback, this,
                   std::placeholders::_1));
+    res_sub_ = create_subscription<my_interfaces::msg::Boolean>(
+        "/restart", 1,
+        std::bind(&RobotLocalization::restartCallback, this,
+                  std::placeholders::_1));
 
     init_particles();
     lastTime = std::chrono::high_resolution_clock::now();
@@ -46,6 +50,13 @@ void RobotLocalization::velocityCallback(
     // std::cout << ">>>>>>>>>>>>>>>>>>>>>>" << std::endl;
 }
 
+void RobotLocalization::restartCallback(
+    const my_interfaces::msg::Boolean::SharedPtr msg) {
+    init_particles();
+    robot_pose_[0] = 0.0;
+    robot_pose_[1] = 0.0;
+}
+
 void RobotLocalization::mcl() {
     // std::cout << "[MCL TEST A]" << std::endl;
     // init_particles();
@@ -67,7 +78,7 @@ void RobotLocalization::mcl() {
         timer = currentTime;
         robot_pose_[0] += linear_vel_ * cos(robot_pose_[2]) * dt;
         robot_pose_[1] += linear_vel_ * sin(robot_pose_[2]) * dt;
-        robot_pose_[2] -= angular_vel_ * dt * 0.905;
+        robot_pose_[2] += angular_vel_ * dt * 0.905;
 
         if (robot_pose_[2] > M_PI) {
             robot_pose_[2] -= 2 * M_PI;
@@ -130,7 +141,6 @@ void RobotLocalization::mcl() {
     } else if (num_particles_ == 0) {
         // std::cout << "[MCL TEST K]" << std::endl;
         init_particles();
-        num_particles_ = particles_.size();
     } else {
         // std::cout << "[MCL TEST L]" << std::endl;
         std::cout << iteration << " iteration" << std::endl;
@@ -191,6 +201,7 @@ void RobotLocalization::init_particles() {
     }
 
     particles_ = new_particles;
+    num_particles_ = particles_.size();
 }
 
 void RobotLocalization::resample_particles() {

@@ -1,0 +1,10 @@
+In file included from [01m[K/opt/ros/iron/include/webots/cpp/webots/Device.hpp:20[m[K,
+                 from [01m[K/opt/ros/iron/include/webots/cpp/webots/Motor.hpp:18[m[K,
+                 from [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/include/robot_localization/MyRobotDriver.hpp:12[m[K,
+                 from [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/MyRobotDriver.cpp:1[m[K:
+[01m[K/opt/ros/iron/include/webots/cpp/webots/../../c/webots/types.h:25:2:[m[K [01;35m[Kwarning: [m[K#warning "mixing the C and C++ APIs in the same controller is not supported." [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   25 | #[01;35m[Kwarning[m[K "mixing the C and C++ APIs in the same controller is not supported."
+      |  [01;35m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/localization.dir/build.make:76: CMakeFiles/localization.dir/src/RobotLocalization.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/localization.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

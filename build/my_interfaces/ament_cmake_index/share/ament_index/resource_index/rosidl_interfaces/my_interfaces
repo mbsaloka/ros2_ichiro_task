@@ -1,3 +1,5 @@
+msg/Boolean.idl
+msg/Boolean.msg
 msg/Object.idl
 msg/Object.msg
 msg/Pose.idl

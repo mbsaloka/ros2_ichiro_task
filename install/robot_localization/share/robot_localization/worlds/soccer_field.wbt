@@ -20,8 +20,8 @@ RobocupSoccerField {
   size "kid"
 }
 E-puck {
-  translation 0 0 0.00993604
-  rotation 0 0 1 0
+  translation 1.24215 0.230636 0.00993604
+  rotation 0 0 1 -0.785395307179586
   controller "<extern>"
   name "my_epuck"
   turretSlot [

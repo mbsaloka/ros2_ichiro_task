@@ -82,6 +82,10 @@ CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/vector_obj
 CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/vector_objects__builder.hpp
 CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/vector_objects__struct.hpp
 CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/vector_objects__traits.hpp
+CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/boolean.hpp
+CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/boolean__builder.hpp
+CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/boolean__struct.hpp
+CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/boolean__traits.hpp
 
 rosidl_generator_cpp/my_interfaces/msg/pose.hpp: /opt/ros/iron/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/my_interfaces/msg/pose.hpp: /opt/ros/iron/lib/python3.10/site-packages/rosidl_generator_cpp/__init__.py
@@ -102,6 +106,7 @@ rosidl_generator_cpp/my_interfaces/msg/pose.hpp: rosidl_adapter/my_interfaces/ms
 rosidl_generator_cpp/my_interfaces/msg/pose.hpp: rosidl_adapter/my_interfaces/msg/Velocity.idl
 rosidl_generator_cpp/my_interfaces/msg/pose.hpp: rosidl_adapter/my_interfaces/msg/Object.idl
 rosidl_generator_cpp/my_interfaces/msg/pose.hpp: rosidl_adapter/my_interfaces/msg/VectorObjects.idl
+rosidl_generator_cpp/my_interfaces/msg/pose.hpp: rosidl_adapter/my_interfaces/msg/Boolean.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/iron/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_cpp__arguments.json
 
@@ -150,7 +155,23 @@ rosidl_generator_cpp/my_interfaces/msg/detail/vector_objects__struct.hpp: rosidl
 rosidl_generator_cpp/my_interfaces/msg/detail/vector_objects__traits.hpp: rosidl_generator_cpp/my_interfaces/msg/pose.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_interfaces/msg/detail/vector_objects__traits.hpp
 
+rosidl_generator_cpp/my_interfaces/msg/boolean.hpp: rosidl_generator_cpp/my_interfaces/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_interfaces/msg/boolean.hpp
+
+rosidl_generator_cpp/my_interfaces/msg/detail/boolean__builder.hpp: rosidl_generator_cpp/my_interfaces/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_interfaces/msg/detail/boolean__builder.hpp
+
+rosidl_generator_cpp/my_interfaces/msg/detail/boolean__struct.hpp: rosidl_generator_cpp/my_interfaces/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_interfaces/msg/detail/boolean__struct.hpp
+
+rosidl_generator_cpp/my_interfaces/msg/detail/boolean__traits.hpp: rosidl_generator_cpp/my_interfaces/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_interfaces/msg/detail/boolean__traits.hpp
+
 my_interfaces__cpp: CMakeFiles/my_interfaces__cpp
+my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/boolean.hpp
+my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/boolean__builder.hpp
+my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/boolean__struct.hpp
+my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/boolean__traits.hpp
 my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/object__builder.hpp
 my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/object__struct.hpp
 my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/msg/detail/object__traits.hpp

@@ -14,6 +14,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Velocity.msg"
   "msg/Object.msg"
   "msg/VectorObjects.msg"
+  "msg/Boolean.msg"
 )
 
 if(BUILD_TESTING)
