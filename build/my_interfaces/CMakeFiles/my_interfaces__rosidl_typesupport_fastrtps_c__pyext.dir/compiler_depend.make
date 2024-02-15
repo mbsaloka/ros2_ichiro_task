@@ -262,8 +262,20 @@ CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_genera
   rosidl_generator_c/my_interfaces/msg/detail/pose__functions.h \
   rosidl_generator_c/my_interfaces/msg/detail/velocity__type_support.h \
   rosidl_generator_c/my_interfaces/msg/detail/velocity__struct.h \
-  rosidl_generator_c/my_interfaces/msg/detail/velocity__functions.h
+  rosidl_generator_c/my_interfaces/msg/detail/velocity__functions.h \
+  rosidl_generator_c/my_interfaces/msg/detail/object__type_support.h \
+  rosidl_generator_c/my_interfaces/msg/detail/object__struct.h \
+  rosidl_generator_c/my_interfaces/msg/detail/object__functions.h \
+  rosidl_generator_c/my_interfaces/msg/detail/vector_objects__type_support.h \
+  rosidl_generator_c/my_interfaces/msg/detail/vector_objects__struct.h \
+  rosidl_generator_c/my_interfaces/msg/detail/vector_objects__functions.h
 
+
+rosidl_generator_c/my_interfaces/msg/detail/vector_objects__functions.h:
+
+rosidl_generator_c/my_interfaces/msg/detail/object__functions.h:
+
+rosidl_generator_c/my_interfaces/msg/detail/object__type_support.h:
 
 rosidl_generator_c/my_interfaces/msg/detail/velocity__functions.h:
 
@@ -362,6 +374,8 @@ rosidl_generator_c/my_interfaces/msg/detail/pose__struct.h:
 /usr/include/python3.10/cpython/unicodeobject.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+rosidl_generator_c/my_interfaces/msg/detail/vector_objects__struct.h:
 
 /usr/include/python3.10/cpython/compile.h:
 
@@ -784,6 +798,10 @@ rosidl_generator_c/my_interfaces/msg/detail/pose__type_support.h:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
 /opt/ros/iron/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
+
+rosidl_generator_c/my_interfaces/msg/detail/vector_objects__type_support.h:
+
+rosidl_generator_c/my_interfaces/msg/detail/object__struct.h:
 
 /opt/ros/iron/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h:
 

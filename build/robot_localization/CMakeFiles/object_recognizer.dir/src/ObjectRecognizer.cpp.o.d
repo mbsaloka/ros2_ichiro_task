@@ -681,4 +681,12 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: \
  /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d__traits.hpp \
  /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/pose2_d__traits.hpp \
  /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/point2_d__traits.hpp \
- /opt/ros/iron/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp
+ /opt/ros/iron/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp \
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/vector_objects.hpp \
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/vector_objects__struct.hpp \
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/object__struct.hpp \
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/vector_objects__builder.hpp \
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/vector_objects__traits.hpp \
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/object__traits.hpp \
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/object.hpp \
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/object__builder.hpp

@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from my_interfaces/msg/Objects.msg
+// generated code does not contain a copyright notice
+
+#include "my_interfaces/msg/Object.idl"
+
+module my_interfaces {
+  module msg {
+    struct Objects {
+      sequence<my_interfaces::msg::Object> objects;
+    };
+  };
+};

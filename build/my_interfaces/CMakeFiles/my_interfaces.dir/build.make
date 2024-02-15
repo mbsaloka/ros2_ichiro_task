@@ -68,6 +68,8 @@ include CMakeFiles/my_interfaces.dir/progress.make
 
 CMakeFiles/my_interfaces: /home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces/msg/Pose.msg
 CMakeFiles/my_interfaces: /home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces/msg/Velocity.msg
+CMakeFiles/my_interfaces: /home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces/msg/Object.msg
+CMakeFiles/my_interfaces: /home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces/msg/VectorObjects.msg
 
 my_interfaces: CMakeFiles/my_interfaces
 my_interfaces: CMakeFiles/my_interfaces.dir/build.make

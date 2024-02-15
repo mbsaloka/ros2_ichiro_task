@@ -2,8 +2,9 @@
 #include <vector>
 
 #include "rclcpp/rclcpp.hpp"
-// #include "vision_msgs/msg/detection2_d_array.hpp"
 #include "webots_ros2_msgs/msg/camera_recognition_objects.hpp"
+#include "my_interfaces/msg/vector_objects.hpp"
+#include "my_interfaces/msg/object.hpp"
 
 typedef struct RecognizedObject {
     double x;
@@ -20,6 +21,8 @@ private:
 
     rclcpp::Subscription<
         webots_ros2_msgs::msg::CameraRecognitionObjects>::SharedPtr camera_sub_;
+
+    rclcpp::Publisher<my_interfaces::msg::VectorObjects>::SharedPtr object_pub_;
 
     std::vector<RecognizedObject> recognized_objects_;
 };

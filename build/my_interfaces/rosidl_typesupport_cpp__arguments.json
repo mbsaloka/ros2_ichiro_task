@@ -4,7 +4,9 @@
   "template_dir": "/opt/ros/iron/share/rosidl_typesupport_cpp/resource",
   "idl_tuples": [
     "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Pose.idl",
-    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Velocity.idl"
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Velocity.idl",
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Object.idl",
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/VectorObjects.idl"
   ],
   "target_dependencies": [
     "/opt/ros/iron/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
@@ -14,6 +16,8 @@
     "/opt/ros/iron/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/iron/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
     "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Pose.idl",
-    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Velocity.idl"
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Velocity.idl",
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Object.idl",
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/VectorObjects.idl"
   ]
 }

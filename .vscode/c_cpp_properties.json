@@ -13,7 +13,8 @@
                 "${workspaceFolder}/src/my_package/include",
                 "/opt/ros/iron/include/rclcpp",
                 "${workspaceFolder}/src/robot_localization/include",
-                "${workspaceFolder}/src/robot_controller/include"
+                "${workspaceFolder}/src/robot_controller/include",
+                "/opt/ros/iron/include/webots/cpp"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",

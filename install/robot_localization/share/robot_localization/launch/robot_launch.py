@@ -1,7 +1,6 @@
 import os
 import launch
 import subprocess
-from launch_ros.actions import Node
 from launch import LaunchDescription
 from ament_index_python.packages import get_package_share_directory
 from webots_ros2_driver.webots_launcher import WebotsLauncher
@@ -33,17 +32,22 @@ def generate_launch_description():
         output='screen'
     )
 
+    localization = launch.actions.ExecuteProcess(
+        cmd=['gnome-terminal', '--geometry=50x12+1100+800', '--', 'ros2', 'run', 'robot_localization', 'localization'],
+        output='screen'
+    )
+
     def close_terminals(event):
         subprocess.call(['pkill', '-f', 'ros2 run robot_localization robot_controller'])
         subprocess.call(['pkill', '-f', 'ros2 run robot_localization object_recognizer'])
-
-
+        subprocess.call(['pkill', '-f', 'ros2 run robot_localization localization'])
 
     return LaunchDescription([
         webots,
         my_robot_driver,
         robot_controller,
         object_recognizer,
+        localization,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=my_robot_driver,  # Attach event handler to my_robot_driver process

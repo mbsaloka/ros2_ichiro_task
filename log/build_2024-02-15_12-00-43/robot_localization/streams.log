@@ -1,0 +1,46 @@
+[0.143s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization': AMENT_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization -- -j16 -l16
+[0.312s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.715s] -- Found rclcpp: 21.0.4 (/opt/ros/iron/share/rclcpp/cmake)
+[0.789s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.815s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.855s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.897s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.302s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[1.305s] -- Found rmw_fastrtps_cpp: 7.1.2 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[1.498s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.763s] -- Found my_interfaces: 0.0.0 (/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake)
+[1.783s] -- Found webots_ros2_msgs: 2023.1.1 (/opt/ros/iron/share/webots_ros2_msgs/cmake)
+[2.423s] -- Found pluginlib: 5.2.2 (/opt/ros/iron/share/pluginlib/cmake)
+[2.466s] -- Found webots_ros2_driver: 2023.1.1 (/opt/ros/iron/share/webots_ros2_driver/cmake)
+[2.753s] -- Found eigen3_cmake_module: 0.2.2 (/opt/ros/iron/share/eigen3_cmake_module/cmake)
+[2.756s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.263s] -- Configuring done
+[4.397s] -- Generating done
+[4.403s] -- Build files have been written to: /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization
+[4.478s] [35m[1mConsolidate compiler generated dependencies of target robot_controller[0m
+[4.478s] [35m[1mConsolidate compiler generated dependencies of target object_recognizer[0m
+[4.480s] [35m[1mConsolidate compiler generated dependencies of target robot_localization[0m
+[4.530s] [ 16%] [32mBuilding CXX object CMakeFiles/robot_controller.dir/src/RobotController.cpp.o[0m
+[4.530s] [ 33%] [32mBuilding CXX object CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o[0m
+[4.533s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_localization.dir/src/MyRobotDriver.cpp.o[0m
+[5.107s] In file included from [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/ObjectRecognizer.cpp:1[m[K:
+[5.108s] [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/include/robot_localization/ObjectRecognizer.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kmy_interfaces/msg/vector_objects.hpp: No such file or directory
+[5.108s]     6 | #include [01;31m[K"my_interfaces/msg/vector_objects.hpp"[m[K
+[5.108s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.108s] compilation terminated.
+[5.112s] gmake[2]: *** [CMakeFiles/object_recognizer.dir/build.make:76: CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o] Error 1
+[5.113s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/object_recognizer.dir/all] Error 2
+[5.113s] gmake[1]: *** Waiting for unfinished jobs....
+[5.134s] In file included from [01m[K/opt/ros/iron/include/webots/cpp/webots/Device.hpp:20[m[K,
+[5.134s]                  from [01m[K/opt/ros/iron/include/webots/cpp/webots/Motor.hpp:18[m[K,
+[5.134s]                  from [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/include/robot_localization/MyRobotDriver.hpp:12[m[K,
+[5.134s]                  from [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/MyRobotDriver.cpp:1[m[K:
+[5.134s] [01m[K/opt/ros/iron/include/webots/cpp/webots/../../c/webots/types.h:25:2:[m[K [01;35m[Kwarning: [m[K#warning "mixing the C and C++ APIs in the same controller is not supported." [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+[5.134s]    25 | #[01;35m[Kwarning[m[K "mixing the C and C++ APIs in the same controller is not supported."
+[5.134s]       |  [01;35m[K^~~~~~~[m[K
+[12.015s] [ 66%] [32m[1mLinking CXX executable robot_controller[0m
+[12.376s] [ 66%] Built target robot_controller
+[16.721s] [ 83%] [32m[1mLinking CXX shared library librobot_localization.so[0m
+[17.574s] [ 83%] Built target robot_localization
+[17.576s] gmake: *** [Makefile:146: all] Error 2
+[17.579s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization' returned '2': AMENT_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization -- -j16 -l16

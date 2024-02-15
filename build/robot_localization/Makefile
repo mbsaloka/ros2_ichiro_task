@@ -224,6 +224,19 @@ object_recognizer/fast:
 .PHONY : object_recognizer/fast
 
 #=============================================================================
+# Target rules for targets named localization
+
+# Build rule for target.
+localization: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 localization
+.PHONY : localization
+
+# fast build rule for target.
+localization/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/localization.dir/build.make CMakeFiles/localization.dir/build
+.PHONY : localization/fast
+
+#=============================================================================
 # Target rules for targets named robot_localization
 
 # Build rule for target.
@@ -308,6 +321,30 @@ src/RobotController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/src/RobotController.cpp.s
 .PHONY : src/RobotController.cpp.s
 
+src/RobotLocalization.o: src/RobotLocalization.cpp.o
+.PHONY : src/RobotLocalization.o
+
+# target to build an object file
+src/RobotLocalization.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/localization.dir/build.make CMakeFiles/localization.dir/src/RobotLocalization.cpp.o
+.PHONY : src/RobotLocalization.cpp.o
+
+src/RobotLocalization.i: src/RobotLocalization.cpp.i
+.PHONY : src/RobotLocalization.i
+
+# target to preprocess a source file
+src/RobotLocalization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/localization.dir/build.make CMakeFiles/localization.dir/src/RobotLocalization.cpp.i
+.PHONY : src/RobotLocalization.cpp.i
+
+src/RobotLocalization.s: src/RobotLocalization.cpp.s
+.PHONY : src/RobotLocalization.s
+
+# target to generate assembly for a file
+src/RobotLocalization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/localization.dir/build.make CMakeFiles/localization.dir/src/RobotLocalization.cpp.s
+.PHONY : src/RobotLocalization.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -323,6 +360,7 @@ help:
 	@echo "... test"
 	@echo "... robot_localization_uninstall"
 	@echo "... uninstall"
+	@echo "... localization"
 	@echo "... object_recognizer"
 	@echo "... robot_controller"
 	@echo "... robot_localization"
@@ -335,6 +373,9 @@ help:
 	@echo "... src/RobotController.o"
 	@echo "... src/RobotController.i"
 	@echo "... src/RobotController.s"
+	@echo "... src/RobotLocalization.o"
+	@echo "... src/RobotLocalization.i"
+	@echo "... src/RobotLocalization.s"
 .PHONY : help
 
 

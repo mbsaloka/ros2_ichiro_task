@@ -1,0 +1,3 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o[0m
+[ 50%] Built target robot_localization
+[ 83%] Built target robot_controller

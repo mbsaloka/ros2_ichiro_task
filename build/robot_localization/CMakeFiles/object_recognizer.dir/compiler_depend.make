@@ -750,12 +750,30 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: /home/mbsaloka/Desk
   /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d__traits.hpp \
   /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/pose2_d__traits.hpp \
   /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/point2_d__traits.hpp \
-  /opt/ros/iron/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp
+  /opt/ros/iron/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp \
+  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/vector_objects.hpp \
+  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/vector_objects__struct.hpp \
+  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/object__struct.hpp \
+  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/vector_objects__builder.hpp \
+  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/vector_objects__traits.hpp \
+  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/object__traits.hpp \
+  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/object.hpp \
+  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/object__builder.hpp
 
+
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/object__traits.hpp:
+
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/vector_objects__builder.hpp:
+
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/object__struct.hpp:
+
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/vector_objects.hpp:
 
 /opt/ros/iron/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp:
 
 /opt/ros/iron/include/vision_msgs/vision_msgs/msg/detail/pose2_d__traits.hpp:
+
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/vector_objects__struct.hpp:
 
 /opt/ros/iron/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
 
@@ -953,11 +971,15 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: /home/mbsaloka/Desk
 
 /opt/ros/iron/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
 
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/vector_objects__traits.hpp:
+
 /opt/ros/iron/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
 
 /usr/include/c++/11/pstl/glue_numeric_defs.h:
 
 /usr/include/c++/11/numeric:
+
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/object.hpp:
 
 /opt/ros/iron/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
 
@@ -2144,6 +2166,8 @@ CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o: /home/mbsaloka/Desk
 /opt/ros/iron/include/rclcpp/rclcpp/init_options.hpp:
 
 /opt/ros/iron/include/rclcpp/rclcpp/qos.hpp:
+
+/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/object__builder.hpp:
 
 /opt/ros/iron/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
 

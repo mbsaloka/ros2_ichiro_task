@@ -1,4 +1,8 @@
+msg/Object.idl
+msg/Object.msg
 msg/Pose.idl
 msg/Pose.msg
+msg/VectorObjects.idl
+msg/VectorObjects.msg
 msg/Velocity.idl
 msg/Velocity.msg

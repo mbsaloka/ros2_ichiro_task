@@ -1,0 +1,9 @@
+[31mCMake Error at CMakeLists.txt:66 (add_library):
+  add_library cannot create target "robot_localization" because another
+  target with the same name already exists.  The existing target is an
+  executable created in source directory
+  "/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization".  See
+  documentation for policy CMP0002 for more details.
+
+[0m
+gmake: *** [Makefile:349: cmake_check_build_system] Error 1

@@ -5,5 +5,8 @@ my_interfaces.egg-info/SOURCES.txt
 my_interfaces.egg-info/dependency_links.txt
 my_interfaces.egg-info/top_level.txt
 my_interfaces/msg/__init__.py
+my_interfaces/msg/_object.py
+my_interfaces/msg/_objects.py
 my_interfaces/msg/_pose.py
+my_interfaces/msg/_vector_objects.py
 my_interfaces/msg/_velocity.py

@@ -8,6 +8,13 @@
                 <alwaysOn>true</alwaysOn>
             </ros>
         </device>
+        <!-- <device reference="inertial unit" type="InertialUnit">
+            <recognition/>
+            <ros>
+                <topicName>/orientation</topicName>
+                <alwaysOn>true</alwaysOn>
+            </ros>
+        </device> -->
         <plugin type="my_robot_driver::MyRobotDriver" />
     </webots>
 </robot>

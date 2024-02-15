@@ -9,7 +9,6 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(my_interfaces REQUIRED)
-# find_package(vision_msgs REQUIRED)
 find_package(webots_ros2_msgs REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(webots_ros2_driver REQUIRED)
@@ -30,11 +29,31 @@ add_executable(object_recognizer
 )
 ament_target_dependencies(object_recognizer
   rclcpp
-  # vision_msgs
   webots_ros2_msgs
+  my_interfaces
 )
 install(TARGETS
   object_recognizer
+  DESTINATION lib/${PROJECT_NAME}
+)
+install(
+  DIRECTORY include/
+  DESTINATION include
+)
+
+# RobotLocalization
+include_directories(
+  include
+)
+add_executable(localization
+  src/RobotLocalization.cpp
+)
+ament_target_dependencies(localization
+  rclcpp
+  my_interfaces
+)
+install(TARGETS
+  localization
   DESTINATION lib/${PROJECT_NAME}
 )
 install(
@@ -58,7 +77,6 @@ ament_target_dependencies(
   pluginlib
   rclcpp
   my_interfaces
-  # vision_msgs
   webots_ros2_driver
   webots_ros2_msgs
 )

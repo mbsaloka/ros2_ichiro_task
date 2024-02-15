@@ -1,0 +1,8 @@
+In file included from [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/ObjectRecognizer.cpp:1[m[K:
+[01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/include/robot_localization/ObjectRecognizer.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kmy_interfaces/msg/vector_objects.hpp: No such file or directory
+    6 | #include [01;31m[K"my_interfaces/msg/vector_objects.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/object_recognizer.dir/build.make:76: CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/object_recognizer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

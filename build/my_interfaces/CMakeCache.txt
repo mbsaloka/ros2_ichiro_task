@@ -253,7 +253,7 @@ PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
 SITE:STRING=mbsaloka-LOQ-15IRH8
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/iron/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/opt/ros/iron/lib/librosidl_typesupport_cpp.so
 
 //Path to a file.
 _numpy_h:FILEPATH=/usr/include/python3.10/numpy/numpyconfig.h
@@ -359,6 +359,9 @@ fastrtps_cmake_module_DIR:PATH=/opt/ros/iron/share/fastrtps_cmake_module/cmake
 
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/iron/share/geometry_msgs/cmake
+
+//The directory containing a CMake configuration file for message_generation.
+message_generation_DIR:PATH=message_generation_DIR-NOTFOUND
 
 //Value Computed by CMake
 my_interfaces_BINARY_DIR:STATIC=/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces

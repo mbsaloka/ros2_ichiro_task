@@ -2,6 +2,7 @@
 /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization/CMakeFiles/robot_localization_uninstall.dir
 /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization/CMakeFiles/robot_controller.dir
 /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization/CMakeFiles/object_recognizer.dir
+/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization/CMakeFiles/localization.dir
 /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization/CMakeFiles/robot_localization.dir
 /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization/CMakeFiles/test.dir
 /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization/CMakeFiles/edit_cache.dir
