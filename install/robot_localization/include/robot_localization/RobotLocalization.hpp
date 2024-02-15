@@ -10,7 +10,7 @@
 #include "my_interfaces/msg/velocity.hpp"
 #include "my_interfaces/msg/vector_objects.hpp"
 
-#define TIME_STEP 64
+#define TIME_STEP 32
 #define MAX_SPEED 6.28
 #define FIELD_WIDTH 450
 #define FIELD_LENGTH 600
@@ -63,4 +63,9 @@ private:
         {450.0, 250.0}, {450.0, -250.0}, {450.0, 300.0}, {450.0, -300.0},
         {450.0, 130.0}, {450.0, -130.0},
     };
+
+    std::chrono::time_point<std::chrono::high_resolution_clock> lastTime,
+        currentTime, timer;
+    double firstIteration;
+    int iteration;
 };

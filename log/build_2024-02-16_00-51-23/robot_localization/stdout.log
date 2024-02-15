@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target localization[0m
+[ 37%] Built target robot_controller
+[ 50%] Built target object_recognizer
+[ 75%] Built target robot_localization
+[ 87%] [32mBuilding CXX object CMakeFiles/localization.dir/src/RobotLocalization.cpp.o[0m

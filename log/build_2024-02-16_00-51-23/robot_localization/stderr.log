@@ -1,0 +1,10 @@
+[01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/RobotLocalization.cpp:[m[K In member function ‘[01m[Kvoid RobotLocalization::mcl()[m[K’:
+[01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/RobotLocalization.cpp:113:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kf[m[K’ was not declared in this scope
+  113 |             [01;31m[Kf[m[K for (int i = 0; i < num_particles_; ++i) {
+      |             [01;31m[K^[m[K
+[01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/RobotLocalization.cpp:113:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+  113 |             f for (int i = 0; [01;31m[Ki[m[K < num_particles_; ++i) {
+      |                               [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/localization.dir/build.make:76: CMakeFiles/localization.dir/src/RobotLocalization.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/localization.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

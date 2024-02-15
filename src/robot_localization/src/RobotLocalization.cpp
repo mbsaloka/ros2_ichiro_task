@@ -11,6 +11,12 @@ RobotLocalization::RobotLocalization() : Node("robot_localization") {
         "/velocity", 1,
         std::bind(&RobotLocalization::velocityCallback, this,
                   std::placeholders::_1));
+
+    init_particles();
+    lastTime = std::chrono::high_resolution_clock::now();
+    timer = std::chrono::high_resolution_clock::now();
+    firstIteration = true;
+    iteration = 0;
 }
 
 void RobotLocalization::objectsCallback(
@@ -23,9 +29,11 @@ void RobotLocalization::objectsCallback(
         recognized_obj.y = detection.y;
         recognized_objects_.push_back(recognized_obj);
         // std::cout << "[object] X: " << recognized_obj.x
-        //           << " Y: " << recognized_obj.y << std::endl;
+        //   << " Y: " << recognized_obj.y << std::endl;
     }
     // std::cout << "-------------------------" << std::endl;
+
+    mcl();
 }
 
 void RobotLocalization::velocityCallback(
@@ -39,89 +47,115 @@ void RobotLocalization::velocityCallback(
 }
 
 void RobotLocalization::mcl() {
-    init_particles();
-    auto lastTime = std::chrono::high_resolution_clock::now();
-    double firstIteration = true;
-    int iteration = 0;
+    // std::cout << "[MCL TEST A]" << std::endl;
+    // init_particles();
+    // auto lastTime = std::chrono::high_resolution_clock::now();
+    // double firstIteration = true;
+    // int iteration = 0;
 
-    while (true) {
-        auto start = std::chrono::high_resolution_clock::now();
+    // while (true) {
+    currentTime = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration = currentTime - lastTime;
+    double seconds = duration.count();
 
-        auto currentTime = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double> duration = currentTime - lastTime;
-        double seconds = duration.count();
+    // std::cout << "[MCL TEST B]" << std::endl;
 
-        robot_pose_[0] += linear_vel_ * cos(robot_pose_[2]);
-        robot_pose_[1] += linear_vel_ * sin(robot_pose_[2]);
-        robot_pose_[2] += angular_vel_;
+    std::chrono::duration<double> duration_vel = currentTime - timer;
+    double dt = duration_vel.count();
+    if (dt >= 0.032) {
+        // std::cout << "[MCL TEST C]" << std::endl;
+        timer = currentTime;
+        robot_pose_[0] += linear_vel_ * cos(robot_pose_[2]) * dt;
+        robot_pose_[1] += linear_vel_ * sin(robot_pose_[2]) * dt;
+        robot_pose_[2] -= angular_vel_ * dt * 0.905;
 
-        if (seconds >= 1.0 || firstIteration) {
-            firstIteration = false;
-            lastTime = currentTime;
-            iteration++;
-
-            for (int i = 0; i < num_particles_; ++i) {
-                particles_[i].x = particles_[i].base_x + robot_pose_[0] * 100;
-                particles_[i].y = particles_[i].base_y + robot_pose_[1] * 100;
-                particles_[i].theta = particles_[i].base_theta + robot_pose_[2];
-            }
-
-            if (num_particles_ > 3) {
-                for (int i = 0; i < num_particles_; ++i) {
-                    double likelihood = 0.0;
-                    if (recognized_objects_.size() > 0) {
-                        // Likelihood evaluation
-                        likelihood = calculate_total_likelihood(particles_[i]);
-                    }
-
-                    // Assign likelihood as weight to the particle
-                    particles_[i].weight = likelihood;
-                }
-
-                // Normalize weights
-                double sum_weights = 0.0;
-                for (int i = 0; i < num_particles_; ++i) {
-                    sum_weights += particles_[i].weight;
-                }
-
-                for (int i = 0; i < num_particles_; ++i) {
-                    particles_[i].weight /= sum_weights;
-                }
-            }
-            // Print particles
-            std::cout << iteration << " iteration" << std::endl;
-            print_particles();
-            std::cout << "Num particles: " << num_particles_ << std::endl;
-
-            // Resampling particles based on weights
-            resample_particles();
-            num_particles_ = particles_.size();
-        } else if (num_particles_ == 0) {
-            init_particles();
-            num_particles_ = particles_.size();
-        } else {
-            std::cout << iteration << " iteration" << std::endl;
-            print_particles();
-            std::cout << "Num particles: " << num_particles_ << std::endl;
-        }
-
-        // Print odometry
-        std::cout << "----------------------------------------" << std::endl;
-        std::cout << "Robot pose: [" << robot_pose_[0] << " " << robot_pose_[1]
-                  << " " << robot_pose_[2] << "]" << std::endl;
-        std::cout << ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-                  << std::endl;
-
-        // Delay to maintain constant time step
-        auto end = std::chrono::high_resolution_clock::now();
-        auto elapsed =
-            std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
-        auto remaining_time = std::chrono::milliseconds(TIME_STEP) - elapsed;
-
-        if (remaining_time.count() > 0) {
-            std::this_thread::sleep_for(remaining_time);
+        if (robot_pose_[2] > M_PI) {
+            robot_pose_[2] -= 2 * M_PI;
+        } else if (robot_pose_[2] < -M_PI) {
+            robot_pose_[2] += 2 * M_PI;
         }
     }
+
+    // std::cout << "[MCL TEST D]" << std::endl;
+
+    if (seconds >= 1.0 || firstIteration) {
+        // std::cout << "[MCL TEST E]" << std::endl;
+        firstIteration = false;
+        lastTime = currentTime;
+        iteration++;
+
+        for (int i = 0; i < num_particles_; ++i) {
+            // std::cout << "[MCL TEST F]" << std::endl;
+            particles_[i].x = particles_[i].base_x + robot_pose_[0] * 100;
+            particles_[i].y = particles_[i].base_y + robot_pose_[1] * 100;
+            particles_[i].theta = particles_[i].base_theta + robot_pose_[2];
+        }
+
+        // std::cout << "[MCL TEST G]" << std::endl;
+        if (num_particles_ > 3) {
+            std::cout
+                << "[Calculating likelihood for each particle. Please wait...]"
+                << std::endl;
+            for (int i = 0; i < num_particles_; ++i) {
+                double likelihood = 0.0;
+                if (recognized_objects_.size() > 0) {
+                    // Likelihood evaluation
+                    likelihood = calculate_total_likelihood(particles_[i]);
+                }
+
+                // Assign likelihood as weight to the particle
+                particles_[i].weight = likelihood;
+            }
+            // std::cout << "[MCL TEST I]" << std::endl;
+
+            // Normalize weights
+            double sum_weights = 0.0;
+            for (int i = 0; i < num_particles_; ++i) {
+                sum_weights += particles_[i].weight;
+            }
+
+            for (int i = 0; i < num_particles_; ++i) {
+                particles_[i].weight /= sum_weights;
+            }
+        }
+        // Print particles
+        // std::cout << "[MCL TEST J]" << std::endl;
+        std::cout << iteration << " iteration" << std::endl;
+        print_particles();
+        std::cout << "Num particles: " << num_particles_ << std::endl;
+
+        // Resampling particles based on weights
+        resample_particles();
+        num_particles_ = particles_.size();
+    } else if (num_particles_ == 0) {
+        // std::cout << "[MCL TEST K]" << std::endl;
+        init_particles();
+        num_particles_ = particles_.size();
+    } else {
+        // std::cout << "[MCL TEST L]" << std::endl;
+        std::cout << iteration << " iteration" << std::endl;
+        print_particles();
+        std::cout << "Num particles: " << num_particles_ << std::endl;
+    }
+    // std::cout << "[MCL TEST M]" << std::endl;
+
+    // Print odometry
+    std::cout << "----------------------------------------" << std::endl;
+    std::cout << "Robot pose: [" << robot_pose_[0] << " " << robot_pose_[1]
+              << " " << robot_pose_[2] << "]" << std::endl;
+    std::cout << ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" << std::endl;
+
+    // Delay to maintain constant time step
+    // auto end = std::chrono::high_resolution_clock::now();
+    // auto elapsed =
+    //     std::chrono::duration_cast<std::chrono::milliseconds>(end -
+    //     start);
+    // auto remaining_time = std::chrono::milliseconds(TIME_STEP) - elapsed;
+
+    // if (remaining_time.count() > 0) {
+    //     std::this_thread::sleep_for(remaining_time);
+    // }
+    // }
 }
 
 void RobotLocalization::init_particles() {
@@ -163,7 +197,7 @@ void RobotLocalization::resample_particles() {
     std::vector<Particle> new_particles;
 
     for (size_t i = 0; i < particles_.size(); ++i) {
-        if (particles_[i].weight > 0.001) {
+        if (particles_[i].weight > 0.0001) {
             new_particles.push_back(particles_[i]);
         }
     }
@@ -263,13 +297,16 @@ void spinThread() {
 int main(int argc, char **argv) {
     rclcpp::init(argc, argv);
 
-    std::thread spin_thread(spinThread);
-    signal(SIGINT, quit);
+    auto node = std::make_shared<RobotLocalization>();
+    rclcpp::spin(node);
 
-    RobotLocalization localization;
-    localization.mcl();
+    // std::thread spin_thread(spinThread);
+    // signal(SIGINT, quit);
 
-    spin_thread.join();
+    // RobotLocalization localization;
+    // localization.mcl();
+
+    // spin_thread.join();
 
     rclcpp::shutdown();
 

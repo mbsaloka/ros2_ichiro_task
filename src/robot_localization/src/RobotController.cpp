@@ -79,25 +79,25 @@ void RobotController::keyLoop() {
             switch (c) {
                 case 'a':
                     std::cout << "LEFT" << std::endl;
-                    angular_ = 1;
+                    angular_ = 0.2;
                     dirty = true;
                     last_c = c;
                     break;
                 case 'd':
                     std::cout << "RIGHT" << std::endl;
-                    angular_ = -1;
+                    angular_ = -0.2;
                     dirty = true;
                     last_c = c;
                     break;
                 case 'w':
                     std::cout << "UP" << std::endl;
-                    linear_ = 0.1;
+                    linear_ = 0.06;
                     dirty = true;
                     last_c = c;
                     break;
                 case 's':
                     std::cout << "DOWN" << std::endl;
-                    linear_ = -0.1;
+                    linear_ = -0.06;
                     dirty = true;
                     last_c = c;
                     break;

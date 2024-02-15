@@ -33,7 +33,7 @@ def generate_launch_description():
     )
 
     localization = launch.actions.ExecuteProcess(
-        cmd=['gnome-terminal', '--geometry=50x12+1100+800', '--', 'ros2', 'run', 'robot_localization', 'localization'],
+        cmd=['gnome-terminal', '--geometry=70x16+1100+800', '--', 'ros2', 'run', 'robot_localization', 'localization'],
         output='screen'
     )
 
