@@ -77,7 +77,6 @@ void RobotController::keyLoop() {
         }
 
         linear_ = angular_ = 0;
-        // ROS_DEBUG("value: 0x%02X\n", c);
 
         if (last_c != c) {
             switch (c) {
