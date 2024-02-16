@@ -1,6 +1,7 @@
 import os
 import launch
 import subprocess
+from launch_ros.actions import Node
 from launch import LaunchDescription
 from ament_index_python.packages import get_package_share_directory
 from webots_ros2_driver.webots_launcher import WebotsLauncher
@@ -37,6 +38,11 @@ def generate_launch_description():
         output='screen'
     )
 
+    odometry = Node(
+        package='robot_localization',
+        executable='odometry',
+    )
+
     def close_terminals(event):
         subprocess.call(['pkill', '-f', 'ros2 run robot_localization robot_controller'])
         subprocess.call(['pkill', '-f', 'ros2 run robot_localization object_recognizer'])
@@ -48,6 +54,7 @@ def generate_launch_description():
         robot_controller,
         object_recognizer,
         localization,
+        odometry,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=my_robot_driver,  # Attach event handler to my_robot_driver process

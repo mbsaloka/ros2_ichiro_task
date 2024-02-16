@@ -61,6 +61,26 @@ install(
   DESTINATION include
 )
 
+# Odometry
+include_directories(
+  include
+)
+add_executable(odometry
+  src/Odometry.cpp
+)
+ament_target_dependencies(odometry
+  rclcpp
+  my_interfaces
+)
+install(TARGETS
+  odometry
+  DESTINATION lib/${PROJECT_NAME}
+)
+install(
+  DIRECTORY include/
+  DESTINATION include
+)
+
 # MyRobotDriver library
 add_library(
   ${PROJECT_NAME}

@@ -237,6 +237,19 @@ localization/fast:
 .PHONY : localization/fast
 
 #=============================================================================
+# Target rules for targets named odometry
+
+# Build rule for target.
+odometry: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 odometry
+.PHONY : odometry
+
+# fast build rule for target.
+odometry/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/odometry.dir/build.make CMakeFiles/odometry.dir/build
+.PHONY : odometry/fast
+
+#=============================================================================
 # Target rules for targets named robot_localization
 
 # Build rule for target.
@@ -296,6 +309,30 @@ src/ObjectRecognizer.s: src/ObjectRecognizer.cpp.s
 src/ObjectRecognizer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_recognizer.dir/build.make CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.s
 .PHONY : src/ObjectRecognizer.cpp.s
+
+src/Odometry.o: src/Odometry.cpp.o
+.PHONY : src/Odometry.o
+
+# target to build an object file
+src/Odometry.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/odometry.dir/build.make CMakeFiles/odometry.dir/src/Odometry.cpp.o
+.PHONY : src/Odometry.cpp.o
+
+src/Odometry.i: src/Odometry.cpp.i
+.PHONY : src/Odometry.i
+
+# target to preprocess a source file
+src/Odometry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/odometry.dir/build.make CMakeFiles/odometry.dir/src/Odometry.cpp.i
+.PHONY : src/Odometry.cpp.i
+
+src/Odometry.s: src/Odometry.cpp.s
+.PHONY : src/Odometry.s
+
+# target to generate assembly for a file
+src/Odometry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/odometry.dir/build.make CMakeFiles/odometry.dir/src/Odometry.cpp.s
+.PHONY : src/Odometry.cpp.s
 
 src/RobotController.o: src/RobotController.cpp.o
 .PHONY : src/RobotController.o
@@ -362,6 +399,7 @@ help:
 	@echo "... uninstall"
 	@echo "... localization"
 	@echo "... object_recognizer"
+	@echo "... odometry"
 	@echo "... robot_controller"
 	@echo "... robot_localization"
 	@echo "... src/MyRobotDriver.o"
@@ -370,6 +408,9 @@ help:
 	@echo "... src/ObjectRecognizer.o"
 	@echo "... src/ObjectRecognizer.i"
 	@echo "... src/ObjectRecognizer.s"
+	@echo "... src/Odometry.o"
+	@echo "... src/Odometry.i"
+	@echo "... src/Odometry.s"
 	@echo "... src/RobotController.o"
 	@echo "... src/RobotController.i"
 	@echo "... src/RobotController.s"

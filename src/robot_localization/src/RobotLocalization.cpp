@@ -15,6 +15,10 @@ RobotLocalization::RobotLocalization() : Node("robot_localization") {
         "/restart", 1,
         std::bind(&RobotLocalization::restartCallback, this,
                   std::placeholders::_1));
+    odom_sub_ = create_subscription<my_interfaces::msg::Pose>(
+        "/odometry", 1,
+        std::bind(&RobotLocalization::odometryCallback, this,
+                  std::placeholders::_1));
 
     init_particles();
     lastTime = std::chrono::high_resolution_clock::now();
@@ -36,8 +40,6 @@ void RobotLocalization::objectsCallback(
         //   << " Y: " << recognized_obj.y << std::endl;
     }
     // std::cout << "-------------------------" << std::endl;
-
-    mcl();
 }
 
 void RobotLocalization::velocityCallback(
@@ -53,8 +55,15 @@ void RobotLocalization::velocityCallback(
 void RobotLocalization::restartCallback(
     const my_interfaces::msg::Boolean::SharedPtr msg) {
     init_particles();
-    robot_pose_[0] = 0.0;
-    robot_pose_[1] = 0.0;
+}
+
+void RobotLocalization::odometryCallback(
+    const my_interfaces::msg::Pose::SharedPtr msg) {
+    robot_pose_[0] = msg->x;
+    robot_pose_[1] = msg->y;
+    robot_pose_[2] = msg->theta;
+
+    mcl();
 }
 
 void RobotLocalization::mcl() {
@@ -70,7 +79,7 @@ void RobotLocalization::mcl() {
     double seconds = duration.count();
 
     // std::cout << "[MCL TEST B]" << std::endl;
-
+    /*
     std::chrono::duration<double> duration_vel = currentTime - timer;
     double dt = duration_vel.count();
     if (dt >= 0.032) {
@@ -86,6 +95,7 @@ void RobotLocalization::mcl() {
             robot_pose_[2] += 2 * M_PI;
         }
     }
+    */
 
     // std::cout << "[MCL TEST D]" << std::endl;
 
@@ -151,8 +161,9 @@ void RobotLocalization::mcl() {
 
     // Print odometry
     std::cout << "----------------------------------------" << std::endl;
-    std::cout << "Robot pose: [" << robot_pose_[0] << " " << robot_pose_[1]
-              << " " << robot_pose_[2] << "]" << std::endl;
+    std::cout << "Robot move: [" << robot_pose_[0] * 100.0 << " "
+              << robot_pose_[1] * 100.0 << " " << robot_pose_[2] << "]"
+              << std::endl;
     std::cout << ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" << std::endl;
 
     // Delay to maintain constant time step

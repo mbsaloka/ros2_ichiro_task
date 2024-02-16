@@ -983,5 +983,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/robot_controller.dir/DependInfo.cmake"
   "CMakeFiles/object_recognizer.dir/DependInfo.cmake"
   "CMakeFiles/localization.dir/DependInfo.cmake"
+  "CMakeFiles/odometry.dir/DependInfo.cmake"
   "CMakeFiles/robot_localization.dir/DependInfo.cmake"
   )

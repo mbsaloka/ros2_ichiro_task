@@ -10,6 +10,7 @@
 #include "my_interfaces/msg/velocity.hpp"
 #include "my_interfaces/msg/vector_objects.hpp"
 #include "my_interfaces/msg/boolean.hpp"
+#include "my_interfaces/msg/pose.hpp"
 
 #define TIME_STEP 32
 #define MAX_SPEED 6.28
@@ -42,6 +43,7 @@ private:
         const my_interfaces::msg::VectorObjects::SharedPtr msg);
     void velocityCallback(const my_interfaces::msg::Velocity::SharedPtr msg);
     void restartCallback(const my_interfaces::msg::Boolean::SharedPtr msg);
+    void odometryCallback(const my_interfaces::msg::Pose::SharedPtr msg);
 
     void init_particles();
     void resample_particles();
@@ -53,6 +55,7 @@ private:
     rclcpp::Subscription<my_interfaces::msg::VectorObjects>::SharedPtr obj_sub_;
     rclcpp::Subscription<my_interfaces::msg::Velocity>::SharedPtr vel_sub_;
     rclcpp::Subscription<my_interfaces::msg::Boolean>::SharedPtr res_sub_;
+    rclcpp::Subscription<my_interfaces::msg::Pose>::SharedPtr odom_sub_;
 
     double robot_pose_[3] = {0.0, 0.0, 0.0};
     std::vector<Particle> particles_;
