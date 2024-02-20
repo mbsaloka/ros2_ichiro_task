@@ -190,7 +190,7 @@ double RobotLocalization::calculate_object_likelihood(
 
     double best_likelihood = 0.0;
     for (int i = 0; i < 14; i++) {
-        double relative_position_x = particle.x + measurement.x * 100;
+        double relative_position_x = particle.x + (measurement.x + 0.04) * 100;
         double relative_position_y = particle.y + measurement.y * 100;
 
         double dx = relative_position_x - particle.x;

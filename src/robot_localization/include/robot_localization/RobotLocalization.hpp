@@ -17,6 +17,7 @@
 #define FIELD_WIDTH 450
 #define FIELD_LENGTH 600
 #define NUM_ANGLE 24
+#define CAM_POSE_X 0.04
 
 typedef struct recognizedObj_t {
     double x;
@@ -72,6 +73,6 @@ private:
 
     std::chrono::time_point<std::chrono::high_resolution_clock> lastTime,
         currentTime, timer;
-    double firstIteration;
-    int iteration;
+    bool firstIteration;
+    unsigned iteration;
 };
