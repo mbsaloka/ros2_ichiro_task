@@ -23,11 +23,12 @@ void Odometry::velocityCallback(
 
 void Odometry::timer_callback() {
     auto message = my_interfaces::msg::Pose();
+    const double dt = 0.032;
+    const double ang_corr = 0.905;
 
-    double dt = 0.032;
     robot_pose_[0] += linear_vel_ * cos(robot_pose_[2]) * dt;
     robot_pose_[1] += linear_vel_ * sin(robot_pose_[2]) * dt;
-    robot_pose_[2] += angular_vel_ * dt * 0.905;
+    robot_pose_[2] += angular_vel_ * dt * ang_corr;
 
     if (robot_pose_[2] > M_PI) {
         robot_pose_[2] -= 2 * M_PI;

@@ -5,6 +5,7 @@
 #include <chrono>
 #include <thread>
 #include <signal.h>
+#include <random>
 
 #include "rclcpp/rclcpp.hpp"
 #include "my_interfaces/msg/velocity.hpp"
@@ -12,12 +13,18 @@
 #include "my_interfaces/msg/boolean.hpp"
 #include "my_interfaces/msg/pose.hpp"
 
-#define TIME_STEP 32
+#define TIME_STEP 0.032
 #define MAX_SPEED 6.28
 #define FIELD_WIDTH 450
 #define FIELD_LENGTH 600
-#define NUM_ANGLE 24
+#define NUM_PARTICLES 1000
 #define CAM_POSE_X 0.04
+#define START_X 0
+#define START_Y 0
+#define START_W 0
+#define VAR_X 10
+#define VAR_Y 10
+#define VAR_W 0.05
 
 typedef struct recognizedObj_t {
     double x;
@@ -61,18 +68,15 @@ private:
     double robot_pose_[3] = {0.0, 0.0, 0.0};
     std::vector<Particle> particles_;
     std::vector<RecognizedObject> recognized_objects_;
-    int num_particles_;
-    double linear_vel_;
-    double angular_vel_;
+    unsigned num_particles_, iteration_ = 0;
+    bool firstIteration_ = true;
+    double linear_vel_, angular_vel_;
     double LANDMARK[14][2] = {
         {0.0, 0.0},     {0.0, 80.0},     {0.0, -80.0},   {0.0, 300.0},
         {0.0, -300.0},  {240.0, 0.0},    {350.0, 250.0}, {350.0, -250.0},
         {450.0, 250.0}, {450.0, -250.0}, {450.0, 300.0}, {450.0, -300.0},
         {450.0, 130.0}, {450.0, -130.0},
     };
-
-    std::chrono::time_point<std::chrono::high_resolution_clock> lastTime,
-        currentTime, timer;
-    bool firstIteration;
-    unsigned iteration;
+    std::chrono::time_point<std::chrono::high_resolution_clock> lastTime_,
+        currentTime_, timer_;
 };

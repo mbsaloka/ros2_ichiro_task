@@ -21,10 +21,8 @@ RobotLocalization::RobotLocalization() : Node("robot_localization") {
                   std::placeholders::_1));
 
     init_particles();
-    lastTime = std::chrono::high_resolution_clock::now();
-    timer = std::chrono::high_resolution_clock::now();
-    firstIteration = true;
-    iteration = 0;
+    lastTime_ = std::chrono::high_resolution_clock::now();
+    timer_ = std::chrono::high_resolution_clock::now();
 }
 
 void RobotLocalization::objectsCallback(
@@ -60,61 +58,50 @@ void RobotLocalization::odometryCallback(
 }
 
 void RobotLocalization::mcl() {
-    currentTime = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> duration = currentTime - lastTime;
+    // Setup timer
+    currentTime_ = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration = currentTime_ - lastTime_;
     double seconds = duration.count();
 
-    if (seconds >= 1.0 || firstIteration) {
-        firstIteration = false;
-        lastTime = currentTime;
-        iteration++;
-
-        for (int i = 0; i < num_particles_; ++i) {
-            particles_[i].x = particles_[i].base_x + robot_pose_[0] * 100;
-            particles_[i].y = particles_[i].base_y + robot_pose_[1] * 100;
-            particles_[i].theta = particles_[i].base_theta + robot_pose_[2];
-        }
-
-        if (num_particles_ > 3) {
-            std::cout
-                << "[Calculating likelihood for each particle. Please wait...]"
-                << std::endl;
-            for (int i = 0; i < num_particles_; ++i) {
-                double likelihood = 0.0;
-                if (recognized_objects_.size() > 0) {
-                    // Likelihood evaluation
-                    likelihood = calculate_total_likelihood(particles_[i]);
-                }
-
-                // Assign likelihood as weight to the particle
-                particles_[i].weight = likelihood;
-            }
-
-            // Normalize weights
-            double sum_weights = 0.0;
-            for (int i = 0; i < num_particles_; ++i) {
-                sum_weights += particles_[i].weight;
-            }
-
-            for (int i = 0; i < num_particles_; ++i) {
-                particles_[i].weight /= sum_weights;
-            }
-        }
-        // Print particles
-        std::cout << iteration << " iteration" << std::endl;
-        print_particles();
-        std::cout << "Num particles: " << num_particles_ << std::endl;
-
-        // Resampling particles based on weights
-        resample_particles();
-        num_particles_ = particles_.size();
-    } else if (num_particles_ == 0) {
-        init_particles();
-    } else {
-        std::cout << iteration << " iteration" << std::endl;
-        print_particles();
-        std::cout << "Num particles: " << num_particles_ << std::endl;
+    // Update particles poses
+    for (int i = 0; i < num_particles_; ++i) {
+        particles_[i].x = particles_[i].base_x + robot_pose_[0] * 100;
+        particles_[i].y = particles_[i].base_y + robot_pose_[1] * 100;
+        particles_[i].theta = particles_[i].base_theta + robot_pose_[2];
     }
+
+    if ((seconds >= 1.0 || firstIteration_) && recognized_objects_.size() > 0) {
+        lastTime_ = currentTime_;
+        iteration_++;
+
+        // Resampling particle
+        if (!firstIteration_) {
+            resample_particles();
+        } else {
+            firstIteration_ = false;
+        }
+
+        // Likelihood evaluation
+        double sum_weights = 0.0;
+        for (int i = 0; i < num_particles_; ++i) {
+            double likelihood = calculate_total_likelihood(particles_[i]);
+            particles_[i].weight = likelihood;
+            sum_weights += particles_[i].weight;
+        }
+
+        // Normalize weights
+        for (int i = 0; i < num_particles_; ++i) {
+            particles_[i].weight /= sum_weights;
+        }
+
+    } else if (num_particles_ == 0) {
+        std::cout << "[ERROR : No particles, please restart]" << std::endl;
+    }
+
+    // Print particles
+    std::cout << "Iteration " << iteration_ << std::endl;
+    print_particles();
+    std::cout << "Num particles: " << num_particles_ << std::endl;
 
     // Print odometry
     std::cout << "----------------------------------------" << std::endl;
@@ -126,50 +113,57 @@ void RobotLocalization::mcl() {
 
 void RobotLocalization::init_particles() {
     std::vector<Particle> new_particles;
-    std::vector<double> angles;
+    std::random_device xrd, yrd, wrd;
+    std::normal_distribution<double> xrg(START_X, VAR_X), yrg(START_Y, VAR_Y),
+        wrg(START_W, VAR_W);
 
-    num_particles_ = FIELD_WIDTH * FIELD_LENGTH * NUM_ANGLE;
-
-    for (int i = 0; i < 12; i++) {
-        double angle = (double)i / 12 * M_PI;
-        angles.push_back(angle);
-    }
-
-    for (int i = 12; i > 0; i--) {
-        double angle = (double)i / 12 * M_PI * -1;
-        angles.push_back(angle);
-    }
-
-    for (auto angle : angles) {
-        for (int i = 0; i < FIELD_WIDTH; ++i) {
-            for (int j = -FIELD_LENGTH / 2; j < FIELD_LENGTH / 2; ++j) {
-                Particle particle;
-                particle.base_x = i;
-                particle.base_y = j;
-                particle.x = i;
-                particle.y = j;
-                particle.base_theta = angle;
-                particle.theta = angle;
-                particle.weight = 1.0 / num_particles_;
-                new_particles.push_back(particle);
-            }
-        }
+    for (int i = 0; i < NUM_PARTICLES; i++) {
+        Particle p;
+        p.base_x = xrg(xrd);
+        p.base_y = yrg(yrd);
+        p.base_theta = wrg(wrd);
+        p.x = p.base_x;
+        p.y = p.base_y;
+        p.theta = p.base_theta;
+        p.weight = 1.0 / NUM_PARTICLES;
+        new_particles.push_back(p);
     }
 
     particles_ = new_particles;
-    num_particles_ = particles_.size();
+    num_particles_ = NUM_PARTICLES;
 }
 
 void RobotLocalization::resample_particles() {
     std::vector<Particle> new_particles;
+    std::random_device xrd, yrd, wrd;
 
     for (size_t i = 0; i < particles_.size(); ++i) {
-        if (particles_[i].weight > 0.0001) {
+        if (particles_[i].weight > (double)1 / (double)particles_.size()) {
             new_particles.push_back(particles_[i]);
+
+            int n = int(particles_[i].weight * 100);
+            std::normal_distribution<double> xrg(particles_[i].base_x, 5),
+                yrg(particles_[i].base_y, 5),
+                wrg(particles_[i].base_theta, 0.01);
+            for (int i = 0; i < n; i++) {
+                Particle p;
+                p.base_x = xrg(xrd);
+                p.base_y = yrg(yrd);
+                p.base_theta = wrg(wrd);
+                p.x = p.base_x + robot_pose_[0] * 100;
+                p.y = p.base_y + robot_pose_[1] * 100;
+                p.theta = p.base_theta + robot_pose_[2];
+                p.weight = particles_[i].weight / n;
+
+                new_particles.push_back(p);
+            }
         }
     }
 
-    particles_ = new_particles;
+    if (new_particles.size() > 10) {
+        particles_ = new_particles;
+        num_particles_ = particles_.size();
+    }
 }
 
 double RobotLocalization::calculate_total_likelihood(const Particle &particle) {
@@ -185,8 +179,8 @@ double RobotLocalization::calculate_total_likelihood(const Particle &particle) {
 
 double RobotLocalization::calculate_object_likelihood(
     const RecognizedObject &measurement, const Particle &particle) {
-    double sigma_x = 1.0;
-    double sigma_y = 1.0;
+    const double sigma_x = 1.0;
+    const double sigma_y = 1.0;
 
     double best_likelihood = 0.0;
     for (int i = 0; i < 14; i++) {

@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target localization[0m
+[ 20%] Built target odometry
+[ 40%] Built target robot_controller
+[ 50%] [32mBuilding CXX object CMakeFiles/localization.dir/src/RobotLocalization.cpp.o[0m
+[ 70%] Built target object_recognizer
+[ 90%] Built target robot_localization
+[01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/RobotLocalization.cpp:[m[K In member function ‘[01m[Kvoid RobotLocalization::init_particles()[m[K’:
+[01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/RobotLocalization.cpp:126:27:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<particle_t> new_particles[m[K’
+  126 |     std::vector<Particle> [01;31m[Knew_particles[m[K;
+      |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/RobotLocalization.cpp:121:27:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector<particle_t> new_particles[m[K’ previously declared here
+  121 |     std::vector<Particle> [01;36m[Knew_particles[m[K;
+      |                           [01;36m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/localization.dir/build.make:76: CMakeFiles/localization.dir/src/RobotLocalization.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/localization.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
