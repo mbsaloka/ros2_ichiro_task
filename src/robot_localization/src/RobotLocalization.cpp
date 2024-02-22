@@ -103,15 +103,18 @@ void RobotLocalization::init_particles() {
 void RobotLocalization::resample_particles() {
     std::vector<Particle> new_particles;
     std::random_device xrd, yrd, wrd;
+    const double var_x = 5.0, var_y = 5.0, var_w = 0.01;
+    const int min_num_particle = 10;
+    int n;
 
     for (size_t i = 0; i < particles_.size(); ++i) {
         if (particles_[i].weight > (double)1 / (double)particles_.size()) {
             new_particles.push_back(particles_[i]);
 
-            int n = int(particles_[i].weight * 100);
-            std::normal_distribution<double> xrg(particles_[i].base_x, 5),
-                yrg(particles_[i].base_y, 5),
-                wrg(particles_[i].base_theta, 0.01);
+            n = int(particles_[i].weight * 100);
+            std::normal_distribution<double> xrg(particles_[i].base_x, var_x),
+                yrg(particles_[i].base_y, var_y),
+                wrg(particles_[i].base_theta, var_w);
             for (int i = 0; i < n; i++) {
                 Particle p;
                 p.base_x = xrg(xrd);
@@ -127,7 +130,7 @@ void RobotLocalization::resample_particles() {
         }
     }
 
-    if (new_particles.size() > 10) {
+    if (new_particles.size() > min_num_particle) {
         particles_ = new_particles;
         num_particles_ = particles_.size();
     }
@@ -156,7 +159,6 @@ void RobotLocalization::calculate_weight() {
 
 double RobotLocalization::calculate_total_likelihood(const Particle &particle) {
     double total_likelihood = 1.0;
-
     for (const auto &object_measurement : recognized_objects_) {
         total_likelihood *=
             calculate_object_likelihood(object_measurement, particle);
@@ -167,29 +169,27 @@ double RobotLocalization::calculate_total_likelihood(const Particle &particle) {
 
 double RobotLocalization::calculate_object_likelihood(
     const RecognizedObject &measurement, const Particle &particle) {
-    const double sigma_x = 1.0;
-    const double sigma_y = 1.0;
-
+    const double sigma_x = 1.0, sigma_y = 1.0;
+    double relative_position_x, relative_position_y;
+    double dx, dy, x_rot, y_rot, exponent, likelihood;
     double best_likelihood = 0.0;
+
     for (int i = 0; i < 14; i++) {
-        double relative_position_x = particle.x + (measurement.x + 0.04) * 100;
-        double relative_position_y = particle.y + measurement.y * 100;
+        dx = (measurement.x + CAM_POSE_X) * 100;
+        dy = particle.y + measurement.y * 100;
 
-        double dx = relative_position_x - particle.x;
-        double dy = relative_position_y - particle.y;
+        x_rot = dx * cos(particle.theta) - dy * sin(particle.theta);
+        y_rot = dx * sin(particle.theta) + dy * cos(particle.theta);
 
-        double x_rot = dx * cos(particle.theta) - dy * sin(particle.theta);
-        double y_rot = dx * sin(particle.theta) + dy * cos(particle.theta);
+        relative_position_x = particle.x + x_rot;
+        relative_position_y = particle.y + y_rot;
 
-        relative_position_x = x_rot + particle.x;
-        relative_position_y = y_rot + particle.y;
-
-        double exponent =
+        exponent =
             -0.5 *
             (pow((LANDMARK[i][0] - relative_position_x), 2) / pow(sigma_x, 2) +
              pow((LANDMARK[i][1] - relative_position_y), 2) / pow(sigma_y, 2));
 
-        double likelihood = exp(exponent) / (2 * M_PI * sigma_x * sigma_y);
+        likelihood = exp(exponent) / (2 * M_PI * sigma_x * sigma_y);
 
         if (likelihood > best_likelihood) {
             best_likelihood = likelihood;

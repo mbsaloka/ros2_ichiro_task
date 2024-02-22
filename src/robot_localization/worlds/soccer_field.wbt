@@ -26,7 +26,7 @@ E-puck {
   name "my_epuck"
   turretSlot [
     Camera {
-      translation 0.044 0 -0.0206
+      translation 0.04 0 -0.0206
       name "my_camera"
       recognitionColors [
         1 1 1

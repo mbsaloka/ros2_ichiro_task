@@ -55,9 +55,9 @@ private:
     void odometryCallback(const my_interfaces::msg::Pose::SharedPtr msg);
 
     void init_particles();
+    void resample_particles();
     void motion_update();
     void calculate_weight();
-    void resample_particles();
     double calculate_total_likelihood(const Particle &particle);
     double calculate_object_likelihood(const RecognizedObject &measurement,
                                        const Particle &particle);
