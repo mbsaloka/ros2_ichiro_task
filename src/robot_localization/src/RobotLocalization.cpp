@@ -58,57 +58,24 @@ void RobotLocalization::odometryCallback(
 }
 
 void RobotLocalization::mcl() {
-    // Setup timer
     currentTime_ = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duration = currentTime_ - lastTime_;
     double seconds = duration.count();
 
-    // Update particles poses
-    for (int i = 0; i < num_particles_; ++i) {
-        particles_[i].x = particles_[i].base_x + robot_pose_[0] * 100;
-        particles_[i].y = particles_[i].base_y + robot_pose_[1] * 100;
-        particles_[i].theta = particles_[i].base_theta + robot_pose_[2];
-    }
-
+    motion_update();
     if ((seconds >= 1.0 || firstIteration_) && recognized_objects_.size() > 0) {
-        lastTime_ = currentTime_;
-        iteration_++;
-
-        // Resampling particle
         if (!firstIteration_) {
             resample_particles();
-        } else {
-            firstIteration_ = false;
         }
+        calculate_weight();
 
-        // Likelihood evaluation
-        double sum_weights = 0.0;
-        for (int i = 0; i < num_particles_; ++i) {
-            double likelihood = calculate_total_likelihood(particles_[i]);
-            particles_[i].weight = likelihood;
-            sum_weights += particles_[i].weight;
-        }
-
-        // Normalize weights
-        for (int i = 0; i < num_particles_; ++i) {
-            particles_[i].weight /= sum_weights;
-        }
-
-    } else if (num_particles_ == 0) {
-        std::cout << "[ERROR : No particles, please restart]" << std::endl;
+        lastTime_ = currentTime_;
+        firstIteration_ = false;
+        iteration_++;
     }
 
-    // Print particles
-    std::cout << "Iteration " << iteration_ << std::endl;
     print_particles();
-    std::cout << "Num particles: " << num_particles_ << std::endl;
-
-    // Print odometry
-    std::cout << "----------------------------------------" << std::endl;
-    std::cout << "Robot move: [" << robot_pose_[0] * 100.0 << " "
-              << robot_pose_[1] * 100.0 << " " << robot_pose_[2] << "]"
-              << std::endl;
-    std::cout << ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" << std::endl;
+    print_odometry();
 }
 
 void RobotLocalization::init_particles() {
@@ -166,6 +133,27 @@ void RobotLocalization::resample_particles() {
     }
 }
 
+void RobotLocalization::motion_update() {
+    for (int i = 0; i < num_particles_; ++i) {
+        particles_[i].x = particles_[i].base_x + robot_pose_[0] * 100;
+        particles_[i].y = particles_[i].base_y + robot_pose_[1] * 100;
+        particles_[i].theta = particles_[i].base_theta + robot_pose_[2];
+    }
+}
+
+void RobotLocalization::calculate_weight() {
+    double sum_weights = 0.0;
+    for (int i = 0; i < num_particles_; ++i) {
+        double likelihood = calculate_total_likelihood(particles_[i]);
+        particles_[i].weight = likelihood;
+        sum_weights += particles_[i].weight;
+    }
+
+    for (int i = 0; i < num_particles_; ++i) {
+        particles_[i].weight /= sum_weights;
+    }
+}
+
 double RobotLocalization::calculate_total_likelihood(const Particle &particle) {
     double total_likelihood = 1.0;
 
@@ -215,6 +203,7 @@ void RobotLocalization::print_particles() {
     double sum_samples = 0.0;
     double best_sample_weight = 0.0;
     int best_sample_index = 0;
+
     for (int i = 0; i < num_particles_; i++) {
         if (particles_[i].weight > 0.00001) {
             std::cout << "Particle " << std::setw(5) << i
@@ -234,6 +223,8 @@ void RobotLocalization::print_particles() {
         }
     }
 
+    std::cout << "Iteration " << iteration_ << std::endl;
+    std::cout << "Num particles: " << num_particles_ << std::endl;
     std::cout << "Sum weights: " << sum_samples << std::endl;
     std::cout << "Best sample: " << std::fixed << std::setprecision(5)
               << best_sample_weight << " (particle num " << best_sample_index
@@ -242,6 +233,14 @@ void RobotLocalization::print_particles() {
               << std::setprecision(2) << particles_[best_sample_index].y << ", "
               << std::fixed << std::setprecision(2)
               << particles_[best_sample_index].theta << "])" << std::endl;
+}
+
+void RobotLocalization::print_odometry() {
+    std::cout << "----------------------------------------" << std::endl;
+    std::cout << "Robot move: [" << robot_pose_[0] * 100.0 << " "
+              << robot_pose_[1] * 100.0 << " " << robot_pose_[2] << "]"
+              << std::endl;
+    std::cout << ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" << std::endl;
 }
 
 int main(int argc, char **argv) {

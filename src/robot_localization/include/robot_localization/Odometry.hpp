@@ -1,3 +1,6 @@
+#ifndef ODOMETRY_HPP
+#define ODOMETRY_HPP
+
 #include <memory>
 #include <chrono>
 #include <functional>
@@ -30,3 +33,5 @@ private:
     double angular_vel_;
     double robot_pose_[3] = {0.0, 0.0, 0.0};
 };
+
+#endif  // ODOMETRY_HPP
