@@ -79,25 +79,19 @@ void RobotLocalization::mcl() {
 }
 
 void RobotLocalization::init_particles() {
-    std::vector<Particle> new_particles;
-    std::random_device xrd, yrd, wrd;
-    std::normal_distribution<double> xrg(START_X, VAR_X), yrg(START_Y, VAR_Y),
-        wrg(START_W, VAR_W);
-
+    std::random_device x_rd, y_rd, w_rd;
+    std::uniform_real_distribution<double> x_rgen(0, 450), y_rgen(-300, 300),
+        w_rgen(0.0, 360.0);
     for (int i = 0; i < NUM_PARTICLES; i++) {
         Particle p;
-        p.base_x = xrg(xrd);
-        p.base_y = yrg(yrd);
-        p.base_theta = wrg(wrd);
-        p.x = p.base_x;
-        p.y = p.base_y;
-        p.theta = p.base_theta;
-        p.weight = 1.0 / NUM_PARTICLES;
-        new_particles.push_back(p);
+        p.x = x_rgen(x_rd);
+        p.y = y_rgen(y_rd);
+        p.w = w_rgen(w_rd);
+        p.weight_vis = WEIGHT_VIS / NUM_PARTICLES;
+        p.weight_cmps = WEIGHT_CMPS / NUM_PARTICLES;
+        p.weight_total = 1.0 / NUM_PARTICLES;
+        particles_.push_back(p);
     }
-
-    particles_ = new_particles;
-    num_particles_ = NUM_PARTICLES;
 }
 
 void RobotLocalization::resample_particles() {
@@ -137,10 +131,47 @@ void RobotLocalization::resample_particles() {
 }
 
 void RobotLocalization::motion_update() {
-    for (int i = 0; i < num_particles_; ++i) {
-        particles_[i].x = particles_[i].base_x + robot_pose_[0] * 100;
-        particles_[i].y = particles_[i].base_y + robot_pose_[1] * 100;
-        particles_[i].theta = particles_[i].base_theta + robot_pose_[2];
+    static std::random_device xrd, yrd, wrd;
+    static std::normal_distribution<> xgen(0.0, VAR_X), ygen(0.0, VAR_Y),
+        wgen(0.0, VAR_W);
+    for (auto &p : particles_) {
+        double dx = robot_pose_[0];
+        double dy = robot_pose_[1];
+        double dw = robot_pose_[2] * 180.0 / M_PI;
+
+        double static_noise_x = xgen(xrd) / 5.0;
+        double static_noise_y = ygen(yrd) / 5.0;
+        double static_noise_w = wgen(wrd) / 1.0;
+        double dynamic_noise_x = fabs(dx) * xgen(xrd) / 5.0;
+        double dynamic_noise_y = fabs(dy) * ygen(yrd) / 5.0;
+        double dynamic_noise_w = fabs(dw) * wgen(wrd) / 3.0;
+        double x_yterm =
+            fabs(dy) * xgen(xrd) /
+            30.0;  // dynamic noise on x-direction because of y motion
+        double x_wterm =
+            fabs(dw) * xgen(xrd) /
+            30.0;  // dynamic noise on x-direction because of w motion
+        double y_xterm =
+            fabs(dx) * ygen(yrd) /
+            30.0;  // dynamic noise on y-direction because of x motion
+        double y_wterm =
+            fabs(dw) * ygen(yrd) /
+            30.0;  // dynamic noise on y-direction because of w motion
+        double w_xterm =
+            fabs(dx) * wgen(wrd) /
+            2.0;  // dynamic noise on w-direction because of x motion
+        double w_yterm =
+            fabs(dy) * wgen(wrd) /
+            2.0;  // dynamic noise on w-direction because of y motion
+        p.x += dx + static_noise_x + dynamic_noise_x + x_yterm + x_wterm;
+        p.y += dy + static_noise_y + dynamic_noise_y + y_xterm + y_wterm;
+        p.w += dw + static_noise_w + dynamic_noise_w + w_xterm + w_yterm;
+        while (p.w > 360.) {
+            p.w -= 360.;
+        }
+        while (p.w < 0.) {
+            p.w += 360.;
+        }
     }
 }
 
@@ -176,7 +207,7 @@ double RobotLocalization::calculate_object_likelihood(
 
     for (int i = 0; i < 14; i++) {
         dx = (measurement.x + CAM_POSE_X) * 100;
-        dy = particle.y + measurement.y * 100;
+        dy = measurement.y * 100;
 
         x_rot = dx * cos(particle.theta) - dy * sin(particle.theta);
         y_rot = dx * sin(particle.theta) + dy * cos(particle.theta);

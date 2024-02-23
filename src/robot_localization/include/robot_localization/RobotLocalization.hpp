@@ -14,10 +14,9 @@
 #include "my_interfaces/msg/pose.hpp"
 
 #define TIME_STEP 0.032
-#define MAX_SPEED 6.28
 #define FIELD_WIDTH 450
 #define FIELD_LENGTH 600
-#define NUM_PARTICLES 1000
+#define NUM_PARTICLES 600
 #define NUM_LANDMARK 14
 #define CAM_POSE_X 0.04
 #define START_X 0
@@ -26,6 +25,11 @@
 #define VAR_X 10
 #define VAR_Y 10
 #define VAR_W 0.05
+#define A_FAST 1.0
+#define A_SLOW 0.0005
+#define WEIGHT_CMPS 0.1
+#define WEIGHT_VIS (1 - WEIGHT_CMPS)
+#define TO_RAD M_PI / 180.0
 
 typedef struct recognizedObj_t {
     double x;
@@ -33,13 +37,12 @@ typedef struct recognizedObj_t {
 } RecognizedObject;
 
 typedef struct particle_t {
-    double base_x;
-    double base_y;
-    double base_theta;
     double x;
     double y;
-    double theta;
-    double weight;
+    double w;
+    double weight_vis;
+    double weight_cmps;
+    double weight_total;
 } Particle;
 
 class RobotLocalization : public rclcpp::Node {
@@ -83,6 +86,8 @@ private:
     };
     std::chrono::time_point<std::chrono::high_resolution_clock> lastTime_,
         currentTime_, timer_;
+
+    double w_fast, w_slow;
 };
 
 #endif  // ROBOT_LOCALIZATION_HPP

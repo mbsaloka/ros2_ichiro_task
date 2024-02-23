@@ -25,10 +25,17 @@ void Odometry::timer_callback() {
     auto message = my_interfaces::msg::Pose();
     const double dt = 0.032;
     const double ang_corr = 0.905;
+    double x = robot_pose_[0];
+    double y = robot_pose_[1];
+    double w = robot_pose_[2];
 
+    robot_pose_[2] += angular_vel_ * dt * ang_corr;
     robot_pose_[0] += linear_vel_ * cos(robot_pose_[2]) * dt;
     robot_pose_[1] += linear_vel_ * sin(robot_pose_[2]) * dt;
-    robot_pose_[2] += angular_vel_ * dt * ang_corr;
+
+    double dx = robot_pose_[0] - x;
+    double dy = robot_pose_[1] - y;
+    double dw = robot_pose_[2] - w;
 
     if (robot_pose_[2] > M_PI) {
         robot_pose_[2] -= 2 * M_PI;
@@ -36,9 +43,9 @@ void Odometry::timer_callback() {
         robot_pose_[2] += 2 * M_PI;
     }
 
-    message.x = robot_pose_[0];
-    message.y = robot_pose_[1];
-    message.theta = robot_pose_[2];
+    message.x = dx;
+    message.y = dy;
+    message.theta = dw;
 
     pose_pub_->publish(message);
 }
