@@ -1,0 +1,28 @@
+[0.080s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial:/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters -- -j16 -l16
+[0.135s] [35m[1mConsolidate compiler generated dependencies of target my_node[0m
+[0.166s] [ 50%] [32mBuilding CXX object CMakeFiles/my_node.dir/src/my_node.cpp.o[0m
+[4.174s] [100%] [32m[1mLinking CXX executable my_node[0m
+[4.308s] [100%] Built target my_node
+[4.322s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial:/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters -- -j16 -l16
+[4.367s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial:/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters
+[4.376s] -- Install configuration: ""
+[4.376s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/lib/cpp_parameters/my_node
+[4.377s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/lib/cpp_parameters/my_node" to ""
+[4.377s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/launch
+[4.377s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/launch/launch.py
+[4.377s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/ament_index/resource_index/package_run_dependencies/cpp_parameters
+[4.377s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/ament_index/resource_index/parent_prefix_path/cpp_parameters
+[4.377s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/environment/ament_prefix_path.sh
+[4.377s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/environment/ament_prefix_path.dsv
+[4.377s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/environment/path.sh
+[4.378s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/environment/path.dsv
+[4.378s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/local_setup.bash
+[4.378s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/local_setup.sh
+[4.378s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/local_setup.zsh
+[4.378s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/local_setup.dsv
+[4.378s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/package.dsv
+[4.378s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/ament_index/resource_index/packages/cpp_parameters
+[4.378s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/cmake/cpp_parametersConfig.cmake
+[4.378s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/cmake/cpp_parametersConfig-version.cmake
+[4.378s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/package.xml
+[4.380s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial:/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters

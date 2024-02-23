@@ -23,6 +23,7 @@ def generate_launch_description():
         ]
     )
 
+
     robot_controller = launch.actions.ExecuteProcess(
         cmd=['gnome-terminal', '--geometry=50x12+100+800', '--', 'ros2', 'run', 'robot_localization', 'robot_controller'],
         output='screen'

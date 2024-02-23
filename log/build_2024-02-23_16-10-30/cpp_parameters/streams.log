@@ -1,0 +1,62 @@
+[0.030s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/mbsaloka/Desktop/ros2_ichiro_task/src/cpp_parameters -DCMAKE_INSTALL_PREFIX=/home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters
+[0.123s] -- The C compiler identification is GNU 11.4.0
+[0.206s] -- The CXX compiler identification is GNU 11.4.0
+[0.215s] -- Detecting C compiler ABI info
+[0.279s] -- Detecting C compiler ABI info - done
+[0.283s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.283s] -- Detecting C compile features
+[0.283s] -- Detecting C compile features - done
+[0.285s] -- Detecting CXX compiler ABI info
+[0.328s] -- Detecting CXX compiler ABI info - done
+[0.332s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.332s] -- Detecting CXX compile features
+[0.333s] -- Detecting CXX compile features - done
+[0.340s] -- Found ament_cmake: 2.0.4 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.434s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.496s] -- Found rclcpp: 21.0.5 (/opt/ros/iron/share/rclcpp/cmake)
+[0.533s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.543s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.558s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.572s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.679s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[0.680s] -- Found rmw_fastrtps_cpp: 7.1.3 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[0.763s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.784s] -- Found FastRTPS: /opt/ros/iron/include  
+[0.818s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.933s] -- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[0.994s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.994s] -- Configured cppcheck include dirs: 
+[0.994s] -- Configured cppcheck exclude dirs and/or files: 
+[0.994s] -- Added test 'lint_cmake' to check CMake code style
+[0.995s] -- Added test 'uncrustify' to check C / C++ code style
+[0.995s] -- Configured uncrustify additional arguments: 
+[0.996s] -- Added test 'xmllint' to check XML markup files
+[0.997s] -- Configuring done
+[1.005s] -- Generating done
+[1.006s] -- Build files have been written to: /home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters
+[1.020s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/mbsaloka/Desktop/ros2_ichiro_task/src/cpp_parameters -DCMAKE_INSTALL_PREFIX=/home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters
+[1.022s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters -- -j16 -l16
+[1.070s] [ 50%] [32mBuilding CXX object CMakeFiles/minimal_param_node.dir/src/cpp_parameters_node.cpp.o[0m
+[4.120s] [100%] [32m[1mLinking CXX executable minimal_param_node[0m
+[4.210s] [100%] Built target minimal_param_node
+[4.216s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters -- -j16 -l16
+[4.231s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters
+[4.234s] -- Install configuration: ""
+[4.234s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/lib/cpp_parameters/minimal_param_node
+[4.235s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/lib/cpp_parameters/minimal_param_node" to ""
+[4.235s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/ament_index/resource_index/package_run_dependencies/cpp_parameters
+[4.235s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/ament_index/resource_index/parent_prefix_path/cpp_parameters
+[4.235s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/environment/ament_prefix_path.sh
+[4.235s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/environment/ament_prefix_path.dsv
+[4.235s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/environment/path.sh
+[4.235s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/environment/path.dsv
+[4.235s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/local_setup.bash
+[4.235s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/local_setup.sh
+[4.235s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/local_setup.zsh
+[4.235s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/local_setup.dsv
+[4.235s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/package.dsv
+[4.235s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/ament_index/resource_index/packages/cpp_parameters
+[4.235s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/cmake/cpp_parametersConfig.cmake
+[4.235s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/cmake/cpp_parametersConfig-version.cmake
+[4.235s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters/share/cpp_parameters/package.xml
+[4.237s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters

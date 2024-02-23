@@ -1,0 +1,23 @@
+[0.445s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/src/launch_tutorial': PYTHONPATH=/home/mbsaloka/Desktop/ros2_ichiro_task/build/launch_tutorial/prefix_override:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/launch_tutorial build --build-base /home/mbsaloka/Desktop/ros2_ichiro_task/build/launch_tutorial/build install --record /home/mbsaloka/Desktop/ros2_ichiro_task/build/launch_tutorial/install.log --single-version-externally-managed
+[0.555s] running egg_info
+[0.555s] creating ../../build/launch_tutorial/UNKNOWN.egg-info
+[0.555s] writing ../../build/launch_tutorial/UNKNOWN.egg-info/PKG-INFO
+[0.555s] writing dependency_links to ../../build/launch_tutorial/UNKNOWN.egg-info/dependency_links.txt
+[0.555s] writing top-level names to ../../build/launch_tutorial/UNKNOWN.egg-info/top_level.txt
+[0.555s] writing manifest file '../../build/launch_tutorial/UNKNOWN.egg-info/SOURCES.txt'
+[0.555s] reading manifest file '../../build/launch_tutorial/UNKNOWN.egg-info/SOURCES.txt'
+[0.555s] adding license file 'LICENSE'
+[0.556s] writing manifest file '../../build/launch_tutorial/UNKNOWN.egg-info/SOURCES.txt'
+[0.556s] running build
+[0.556s] running install
+[0.557s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.557s]   warnings.warn(
+[0.557s] running install_data
+[0.557s] creating /home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial/share/launch_tutorial/launch
+[0.557s] copying launch/example_main_launch.py -> /home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial/share/launch_tutorial/launch
+[0.557s] copying launch/example_subtitutions_launch.py -> /home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial/share/launch_tutorial/launch
+[0.557s] running install_egg_info
+[0.559s] Copying ../../build/launch_tutorial/UNKNOWN.egg-info to /home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial/lib/python3.10/site-packages/UNKNOWN-0.0.0-py3.10.egg-info
+[0.559s] running install_scripts
+[0.569s] writing list of installed files to '/home/mbsaloka/Desktop/ros2_ichiro_task/build/launch_tutorial/install.log'
+[0.580s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/src/launch_tutorial' returned '0': PYTHONPATH=/home/mbsaloka/Desktop/ros2_ichiro_task/build/launch_tutorial/prefix_override:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/launch_tutorial build --build-base /home/mbsaloka/Desktop/ros2_ichiro_task/build/launch_tutorial/build install --record /home/mbsaloka/Desktop/ros2_ichiro_task/build/launch_tutorial/install.log --single-version-externally-managed

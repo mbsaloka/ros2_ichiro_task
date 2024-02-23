@@ -1,0 +1,80 @@
+[0.000000] (-) TimerEvent: {}
+[0.000628] (-) JobUnselected: {'identifier': 'launch_tutorial'}
+[0.000704] (-) JobUnselected: {'identifier': 'my_interfaces'}
+[0.000729] (-) JobUnselected: {'identifier': 'odd_num_pubsub'}
+[0.000747] (-) JobUnselected: {'identifier': 'robot_localization'}
+[0.000763] (-) JobUnselected: {'identifier': 'soccer_pubsub'}
+[0.000780] (-) JobUnselected: {'identifier': 'sum_two_num_srvcli'}
+[0.000801] (cpp_parameters) JobQueued: {'identifier': 'cpp_parameters', 'dependencies': OrderedDict()}
+[0.000823] (cpp_parameters) JobStarted: {'identifier': 'cpp_parameters'}
+[0.075048] (cpp_parameters) JobProgress: {'identifier': 'cpp_parameters', 'progress': 'cmake'}
+[0.075256] (cpp_parameters) JobProgress: {'identifier': 'cpp_parameters', 'progress': 'build'}
+[0.076111] (cpp_parameters) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters', '--', '-j16', '-l16'], 'cwd': '/home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mbsaloka'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/mbsaloka'), ('OLDPWD', '/home/mbsaloka'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2919'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mbsaloka'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mbsaloka'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mbsaloka-LOQ-15IRH8:@/tmp/.ICE-unix/2615,unix/mbsaloka-LOQ-15IRH8:/tmp/.ICE-unix/2615'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/70b95f30_083a_4a39_9dfe_951507ccdcde'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial:/home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mbsaloka/Desktop/ros2_ichiro_task/build/cpp_parameters'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial:/opt/ros/iron')]), 'shell': False}
+[0.099264] (-) TimerEvent: {}
+[0.135691] (cpp_parameters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_node\x1b[0m\n'}
+[0.161619] (cpp_parameters) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_node.dir/src/my_node.cpp.o\x1b[0m\n'}
+[0.199463] (-) TimerEvent: {}
+[0.299929] (-) TimerEvent: {}
+[0.400428] (-) TimerEvent: {}
+[0.500927] (-) TimerEvent: {}
+[0.601434] (-) TimerEvent: {}
+[0.701953] (-) TimerEvent: {}
+[0.802485] (-) TimerEvent: {}
+[0.902975] (-) TimerEvent: {}
+[1.003500] (-) TimerEvent: {}
+[1.103943] (-) TimerEvent: {}
+[1.204363] (-) TimerEvent: {}
+[1.304874] (-) TimerEvent: {}
+[1.405399] (-) TimerEvent: {}
+[1.505933] (-) TimerEvent: {}
+[1.606475] (-) TimerEvent: {}
+[1.706947] (-) TimerEvent: {}
+[1.807512] (-) TimerEvent: {}
+[1.908092] (-) TimerEvent: {}
+[2.008483] (-) TimerEvent: {}
+[2.108801] (-) TimerEvent: {}
+[2.209170] (-) TimerEvent: {}
+[2.309561] (-) TimerEvent: {}
+[2.409990] (-) TimerEvent: {}
+[2.510352] (-) TimerEvent: {}
+[2.610732] (-) TimerEvent: {}
+[2.711081] (-) TimerEvent: {}
+[2.811440] (-) TimerEvent: {}
+[2.911872] (-) TimerEvent: {}
+[3.012210] (-) TimerEvent: {}
+[3.112566] (-) TimerEvent: {}
+[3.212988] (-) TimerEvent: {}
+[3.313314] (-) TimerEvent: {}
+[3.413737] (-) TimerEvent: {}
+[3.514174] (-) TimerEvent: {}
+[3.550298] (cpp_parameters) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[3.550670] (cpp_parameters) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[3.550767] (cpp_parameters) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[3.550851] (cpp_parameters) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:165\x1b[m\x1b[K,\n'}
+[3.550925] (cpp_parameters) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/cpp_parameters/src/my_node.cpp:1\x1b[m\x1b[K:\n'}
+[3.550998] (cpp_parameters) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = MyNode; _Args = {double (&)[3]}; _Tp = MyNode]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.551080] (cpp_parameters) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = MyNode; _Args = {double (&)[3]}; _Tp = MyNode; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<MyNode>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.551172] (cpp_parameters) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {double (&)[3]}; _Tp = MyNode; _Alloc = std::allocator<MyNode>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.551245] (cpp_parameters) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = MyNode; _Alloc = std::allocator<MyNode>; _Args = {double (&)[3]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.551320] (cpp_parameters) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<MyNode>; _Args = {double (&)[3]}; _Tp = MyNode; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.551393] (cpp_parameters) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<MyNode>; _Args = {double (&)[3]}; _Tp = MyNode]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.551465] (cpp_parameters) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = MyNode; _Alloc = std::allocator<MyNode>; _Args = {double (&)[3]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.551531] (cpp_parameters) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = MyNode; _Args = {double (&)[3]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.551599] (cpp_parameters) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/cpp_parameters/src/my_node.cpp:31:42:\x1b[m\x1b[K   required from here\n'}
+[3.551666] (cpp_parameters) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KMyNode::MyNode(double [3])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.551734] (cpp_parameters) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[3.551798] (cpp_parameters) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.551872] (cpp_parameters) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/cpp_parameters/src/my_node.cpp:7:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KMyNode::MyNode(const std::array<double, 3>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.551942] (cpp_parameters) StderrLine: {'line': b'    7 |     \x1b[01;36m\x1b[KMyNode\x1b[m\x1b[K(const std::array<double, 3>& arg) : Node("my_node"), my_arg(arg) {\n'}
+[3.552019] (cpp_parameters) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.552087] (cpp_parameters) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/cpp_parameters/src/my_node.cpp:7:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kdouble [3]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<double, 3>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.552157] (cpp_parameters) StderrLine: {'line': b'    7 |     MyNode(\x1b[01;36m\x1b[Kconst std::array<double, 3>& arg\x1b[m\x1b[K) : Node("my_node"), my_arg(arg) {\n'}
+[3.552230] (cpp_parameters) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.614314] (-) TimerEvent: {}
+[3.637692] (cpp_parameters) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/my_node.dir/build.make:76: CMakeFiles/my_node.dir/src/my_node.cpp.o] Error 1\n'}
+[3.637931] (cpp_parameters) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_node.dir/all] Error 2\n'}
+[3.638308] (cpp_parameters) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.640587] (cpp_parameters) CommandEnded: {'returncode': 2}
+[3.714488] (-) TimerEvent: {}
+[3.743627] (cpp_parameters) JobEnded: {'identifier': 'cpp_parameters', 'rc': 2}
+[3.754876] (-) EventReactorShutdown: {}

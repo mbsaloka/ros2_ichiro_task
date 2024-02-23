@@ -1,3 +1,6 @@
+#ifndef OBJECT_RECOGNIZER_HPP
+#define OBJECT_RECOGNIZER_HPP
+
 #include <memory>
 #include <vector>
 
@@ -26,3 +29,5 @@ private:
 
     std::vector<RecognizedObject> recognized_objects_;
 };
+
+#endif  // OBJECT_RECOGNIZER_HPP

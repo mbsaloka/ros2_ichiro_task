@@ -1,0 +1,24 @@
+[0.195s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial:/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli -- -j16 -l16
+[0.231s] [ 50%] Built target server
+[0.231s] [100%] Built target client
+[0.238s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial:/opt/ros/iron /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli -- -j16 -l16
+[0.251s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial:/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli
+[0.255s] -- Install configuration: ""
+[0.255s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/lib/sum_two_num_srvcli/server
+[0.256s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/lib/sum_two_num_srvcli/client
+[0.256s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/ament_index/resource_index/package_run_dependencies/sum_two_num_srvcli
+[0.256s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/ament_index/resource_index/parent_prefix_path/sum_two_num_srvcli
+[0.256s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/environment/ament_prefix_path.sh
+[0.256s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/environment/ament_prefix_path.dsv
+[0.256s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/environment/path.sh
+[0.256s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/environment/path.dsv
+[0.256s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/local_setup.bash
+[0.256s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/local_setup.sh
+[0.256s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/local_setup.zsh
+[0.256s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/local_setup.dsv
+[0.256s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.dsv
+[0.257s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/ament_index/resource_index/packages/sum_two_num_srvcli
+[0.257s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/cmake/sum_two_num_srvcliConfig.cmake
+[0.257s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/cmake/sum_two_num_srvcliConfig-version.cmake
+[0.257s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli/share/sum_two_num_srvcli/package.xml
+[0.283s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial:/opt/ros/iron /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/sum_two_num_srvcli

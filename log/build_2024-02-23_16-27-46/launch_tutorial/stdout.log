@@ -1,0 +1,16 @@
+running egg_info
+writing ../../build/launch_tutorial/UNKNOWN.egg-info/PKG-INFO
+writing dependency_links to ../../build/launch_tutorial/UNKNOWN.egg-info/dependency_links.txt
+writing top-level names to ../../build/launch_tutorial/UNKNOWN.egg-info/top_level.txt
+reading manifest file '../../build/launch_tutorial/UNKNOWN.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/launch_tutorial/UNKNOWN.egg-info/SOURCES.txt'
+running build
+running install
+running install_data
+copying launch/example_subtitutions_launch.py -> /home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial/share/launch_tutorial/launch
+running install_egg_info
+removing '/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial/lib/python3.10/site-packages/UNKNOWN-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/launch_tutorial/UNKNOWN.egg-info to /home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial/lib/python3.10/site-packages/UNKNOWN-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/mbsaloka/Desktop/ros2_ichiro_task/build/launch_tutorial/install.log'

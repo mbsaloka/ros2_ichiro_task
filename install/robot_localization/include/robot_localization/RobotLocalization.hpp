@@ -1,10 +1,10 @@
+#ifndef ROBOT_LOCALIZATION_HPP
+#define ROBOT_LOCALIZATION_HPP
+
 #include <memory>
 #include <vector>
-#include <utility>
 #include <cmath>
 #include <chrono>
-#include <thread>
-#include <signal.h>
 #include <random>
 
 #include "rclcpp/rclcpp.hpp"
@@ -18,6 +18,7 @@
 #define FIELD_WIDTH 450
 #define FIELD_LENGTH 600
 #define NUM_PARTICLES 1000
+#define NUM_LANDMARK 14
 #define CAM_POSE_X 0.04
 #define START_X 0
 #define START_Y 0
@@ -55,10 +56,13 @@ private:
 
     void init_particles();
     void resample_particles();
+    void motion_update();
+    void calculate_weight();
     double calculate_total_likelihood(const Particle &particle);
     double calculate_object_likelihood(const RecognizedObject &measurement,
                                        const Particle &particle);
     void print_particles();
+    void print_odometry();
 
     rclcpp::Subscription<my_interfaces::msg::VectorObjects>::SharedPtr obj_sub_;
     rclcpp::Subscription<my_interfaces::msg::Velocity>::SharedPtr vel_sub_;
@@ -71,7 +75,7 @@ private:
     unsigned num_particles_, iteration_ = 0;
     bool firstIteration_ = true;
     double linear_vel_, angular_vel_;
-    double LANDMARK[14][2] = {
+    const double LANDMARK[NUM_LANDMARK][2] = {
         {0.0, 0.0},     {0.0, 80.0},     {0.0, -80.0},   {0.0, 300.0},
         {0.0, -300.0},  {240.0, 0.0},    {350.0, 250.0}, {350.0, -250.0},
         {450.0, 250.0}, {450.0, -250.0}, {450.0, 300.0}, {450.0, -300.0},
@@ -80,3 +84,5 @@ private:
     std::chrono::time_point<std::chrono::high_resolution_clock> lastTime_,
         currentTime_, timer_;
 };
+
+#endif  // ROBOT_LOCALIZATION_HPP

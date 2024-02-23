@@ -1,0 +1,65 @@
+[0.081s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib PYTHONPATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub -- -j16 -l16
+[0.094s] -- Found ament_cmake: 2.0.4 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.171s] -- Found rclcpp: 21.0.5 (/opt/ros/iron/share/rclcpp/cmake)
+[0.186s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.190s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.197s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.205s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.287s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[0.287s] -- Found rmw_fastrtps_cpp: 7.1.3 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[0.351s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.439s] -- Found my_interfaces: 0.0.0 (/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake)
+[0.450s] -- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[0.490s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.490s] -- Configured cppcheck include dirs: 
+[0.490s] -- Configured cppcheck exclude dirs and/or files: 
+[0.491s] -- Added test 'lint_cmake' to check CMake code style
+[0.491s] -- Added test 'uncrustify' to check C / C++ code style
+[0.491s] -- Configured uncrustify additional arguments: 
+[0.491s] -- Added test 'xmllint' to check XML markup files
+[0.492s] -- Configuring done
+[0.508s] -- Generating done
+[0.509s] -- Build files have been written to: /home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub
+[0.525s] [35m[1mConsolidate compiler generated dependencies of target pose_talker[0m
+[0.525s] [35m[1mConsolidate compiler generated dependencies of target velocity_listener[0m
+[0.525s] [35m[1mConsolidate compiler generated dependencies of target velocity_talker[0m
+[0.525s] [35m[1mConsolidate compiler generated dependencies of target pose_listener[0m
+[0.535s] [ 50%] [32mBuilding CXX object CMakeFiles/velocity_talker.dir/src/velocity_publisher.cpp.o[0m
+[0.535s] [ 50%] [32mBuilding CXX object CMakeFiles/pose_talker.dir/src/pose_publisher.cpp.o[0m
+[0.535s] [ 50%] [32mBuilding CXX object CMakeFiles/pose_listener.dir/src/pose_subscriber.cpp.o[0m
+[0.535s] [ 50%] [32mBuilding CXX object CMakeFiles/velocity_listener.dir/src/velocity_subscriber.cpp.o[0m
+[3.199s] [ 62%] [32m[1mLinking CXX executable velocity_talker[0m
+[3.218s] [ 75%] [32m[1mLinking CXX executable pose_talker[0m
+[3.358s] [ 75%] Built target pose_talker
+[3.359s] [ 75%] Built target velocity_talker
+[4.667s] [ 87%] [32m[1mLinking CXX executable pose_listener[0m
+[4.784s] [100%] [32m[1mLinking CXX executable velocity_listener[0m
+[4.859s] [100%] Built target pose_listener
+[4.983s] [100%] Built target velocity_listener
+[4.990s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub' returned '0': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib PYTHONPATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub -- -j16 -l16
+[5.011s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib PYTHONPATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub
+[5.016s] -- Install configuration: ""
+[5.017s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/pose_talker
+[5.018s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/pose_talker" to ""
+[5.019s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/pose_listener
+[5.021s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/pose_listener" to ""
+[5.022s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/velocity_talker
+[5.023s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/velocity_talker" to ""
+[5.023s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/velocity_listener
+[5.026s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/lib/soccer_pubsub/velocity_listener" to ""
+[5.026s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/ament_index/resource_index/package_run_dependencies/soccer_pubsub
+[5.026s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/ament_index/resource_index/parent_prefix_path/soccer_pubsub
+[5.028s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/environment/ament_prefix_path.sh
+[5.029s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/environment/ament_prefix_path.dsv
+[5.029s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/environment/path.sh
+[5.029s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/environment/path.dsv
+[5.029s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/local_setup.bash
+[5.029s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/local_setup.sh
+[5.029s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/local_setup.zsh
+[5.029s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/local_setup.dsv
+[5.029s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/package.dsv
+[5.030s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/ament_index/resource_index/packages/soccer_pubsub
+[5.030s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/cmake/soccer_pubsubConfig.cmake
+[5.030s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/cmake/soccer_pubsubConfig-version.cmake
+[5.030s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub/share/soccer_pubsub/package.xml
+[5.032s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub' returned '0': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/cpp_parameters:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib PYTHONPATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages:/home/mbsaloka/Desktop/ros2_ichiro_task/install/launch_tutorial/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/soccer_pubsub
