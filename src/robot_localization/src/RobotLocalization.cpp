@@ -118,7 +118,7 @@ void RobotLocalization::init_particles() {
         }
 
         for (auto angle : angles) {
-            for (int i = 0; i < FIELD_WIDTH; i += x_gap) {
+            for (int i = -FIELD_WIDTH / 2; i < FIELD_WIDTH / 2; i += x_gap) {
                 for (int j = -FIELD_LENGTH / 2; j < FIELD_LENGTH / 2;
                      j += y_gap) {
                     Particle p;
@@ -242,7 +242,7 @@ double RobotLocalization::calculate_object_likelihood(
     double dx, dy, x_rot, y_rot, exponent, likelihood;
     double best_likelihood = 0.0;
 
-    for (int i = 0; i < 14; i++) {
+    for (int i = 0; i < NUM_LANDMARK; i++) {
         dx = (measurement.x + CAM_POSE_X) * 100;
         dy = measurement.y * 100;
 
