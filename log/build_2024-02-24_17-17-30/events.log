@@ -1,0 +1,233 @@
+[0.000000] (-) TimerEvent: {}
+[0.000195] (-) JobUnselected: {'identifier': 'cpp_parameters'}
+[0.000233] (-) JobUnselected: {'identifier': 'my_interfaces'}
+[0.000255] (-) JobUnselected: {'identifier': 'odd_num_pubsub'}
+[0.000275] (-) JobUnselected: {'identifier': 'soccer_pubsub'}
+[0.000293] (-) JobUnselected: {'identifier': 'sum_two_num_srvcli'}
+[0.000316] (robot_localization) JobQueued: {'identifier': 'robot_localization', 'dependencies': OrderedDict([('my_interfaces', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces')])}
+[0.000938] (robot_localization) JobStarted: {'identifier': 'robot_localization'}
+[0.086884] (robot_localization) JobProgress: {'identifier': 'robot_localization', 'progress': 'cmake'}
+[0.088594] (robot_localization) JobProgress: {'identifier': 'robot_localization', 'progress': 'build'}
+[0.089777] (robot_localization) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization', '--', '-j16', '-l16'], 'cwd': '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mbsaloka'), ('LC_TIME', 'id_ID.UTF-8'), ('GIO_MODULE_DIR', '/home/mbsaloka/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/mbsaloka'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/152/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/mbsaloka/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/152/usr/share/code/code'), ('MANAGERPID', '2197'), ('SYSTEMD_EXEC_PID', '2634'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10099'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mbsaloka'), ('JOURNAL_STREAM', '8:23301'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'mbsaloka'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mbsaloka-LOQ-15IRH8:@/tmp/.ICE-unix/2615,unix/mbsaloka-LOQ-15IRH8:/tmp/.ICE-unix/2615'), ('GTK_EXE_PREFIX', '/snap/code/152/usr'), ('INVOCATION_ID', 'cf90b013176c4c9d82e46e357b32f56a'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/152/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c3044f75c5.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/mbsaloka/snap/code/152/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/opt/ros/iron'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/mbsaloka/snap/code/152/.local/share:/home/mbsaloka/snap/code/152:/snap/code/152/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/opt/ros/iron')]), 'shell': False}
+[0.099453] (-) TimerEvent: {}
+[0.199865] (-) TimerEvent: {}
+[0.270324] (robot_localization) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target localization\x1b[0m\n'}
+[0.270850] (robot_localization) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target odometry\x1b[0m\n'}
+[0.300011] (-) TimerEvent: {}
+[0.306196] (robot_localization) StdoutLine: {'line': b'[ 20%] Built target object_recognizer\n'}
+[0.306738] (robot_localization) StdoutLine: {'line': b'[ 40%] Built target robot_controller\n'}
+[0.315049] (robot_localization) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/localization.dir/src/RobotLocalization.cpp.o\x1b[0m\n'}
+[0.315355] (robot_localization) StdoutLine: {'line': b'[ 70%] Built target robot_localization\n'}
+[0.315598] (robot_localization) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/odometry.dir/src/Odometry.cpp.o\x1b[0m\n'}
+[0.400287] (-) TimerEvent: {}
+[0.500945] (-) TimerEvent: {}
+[0.601608] (-) TimerEvent: {}
+[0.702163] (-) TimerEvent: {}
+[0.802783] (-) TimerEvent: {}
+[0.903519] (-) TimerEvent: {}
+[1.004340] (-) TimerEvent: {}
+[1.105116] (-) TimerEvent: {}
+[1.205766] (-) TimerEvent: {}
+[1.306780] (-) TimerEvent: {}
+[1.408720] (-) TimerEvent: {}
+[1.510173] (-) TimerEvent: {}
+[1.610732] (-) TimerEvent: {}
+[1.711162] (-) TimerEvent: {}
+[1.811741] (-) TimerEvent: {}
+[1.912279] (-) TimerEvent: {}
+[2.012886] (-) TimerEvent: {}
+[2.113372] (-) TimerEvent: {}
+[2.213894] (-) TimerEvent: {}
+[2.314548] (-) TimerEvent: {}
+[2.415123] (-) TimerEvent: {}
+[2.515688] (-) TimerEvent: {}
+[2.616219] (-) TimerEvent: {}
+[2.716786] (-) TimerEvent: {}
+[2.817328] (-) TimerEvent: {}
+[2.917834] (-) TimerEvent: {}
+[3.018323] (-) TimerEvent: {}
+[3.118877] (-) TimerEvent: {}
+[3.219307] (-) TimerEvent: {}
+[3.319968] (-) TimerEvent: {}
+[3.420509] (-) TimerEvent: {}
+[3.521157] (-) TimerEvent: {}
+[3.621741] (-) TimerEvent: {}
+[3.722504] (-) TimerEvent: {}
+[3.822931] (-) TimerEvent: {}
+[3.923399] (-) TimerEvent: {}
+[4.023776] (-) TimerEvent: {}
+[4.124265] (-) TimerEvent: {}
+[4.224741] (-) TimerEvent: {}
+[4.325235] (-) TimerEvent: {}
+[4.425699] (-) TimerEvent: {}
+[4.526198] (-) TimerEvent: {}
+[4.626685] (-) TimerEvent: {}
+[4.727060] (-) TimerEvent: {}
+[4.827479] (-) TimerEvent: {}
+[4.927913] (-) TimerEvent: {}
+[5.028527] (-) TimerEvent: {}
+[5.129151] (-) TimerEvent: {}
+[5.229607] (-) TimerEvent: {}
+[5.330198] (-) TimerEvent: {}
+[5.430818] (-) TimerEvent: {}
+[5.531408] (-) TimerEvent: {}
+[5.632174] (-) TimerEvent: {}
+[5.732608] (-) TimerEvent: {}
+[5.833029] (-) TimerEvent: {}
+[5.933547] (-) TimerEvent: {}
+[6.034129] (-) TimerEvent: {}
+[6.134654] (-) TimerEvent: {}
+[6.235254] (-) TimerEvent: {}
+[6.335684] (-) TimerEvent: {}
+[6.436233] (-) TimerEvent: {}
+[6.536701] (-) TimerEvent: {}
+[6.637206] (-) TimerEvent: {}
+[6.737650] (-) TimerEvent: {}
+[6.838182] (-) TimerEvent: {}
+[6.938760] (-) TimerEvent: {}
+[7.039342] (-) TimerEvent: {}
+[7.139890] (-) TimerEvent: {}
+[7.240354] (-) TimerEvent: {}
+[7.340934] (-) TimerEvent: {}
+[7.441677] (-) TimerEvent: {}
+[7.542301] (-) TimerEvent: {}
+[7.642802] (-) TimerEvent: {}
+[7.743208] (-) TimerEvent: {}
+[7.843594] (-) TimerEvent: {}
+[7.944053] (-) TimerEvent: {}
+[8.044560] (-) TimerEvent: {}
+[8.145092] (-) TimerEvent: {}
+[8.245538] (-) TimerEvent: {}
+[8.345928] (-) TimerEvent: {}
+[8.446317] (-) TimerEvent: {}
+[8.546717] (-) TimerEvent: {}
+[8.647133] (-) TimerEvent: {}
+[8.747541] (-) TimerEvent: {}
+[8.847958] (-) TimerEvent: {}
+[8.948463] (-) TimerEvent: {}
+[9.048918] (-) TimerEvent: {}
+[9.149308] (-) TimerEvent: {}
+[9.249684] (-) TimerEvent: {}
+[9.350052] (-) TimerEvent: {}
+[9.450535] (-) TimerEvent: {}
+[9.551022] (-) TimerEvent: {}
+[9.651421] (-) TimerEvent: {}
+[9.751833] (-) TimerEvent: {}
+[9.852375] (-) TimerEvent: {}
+[9.952864] (-) TimerEvent: {}
+[10.053354] (-) TimerEvent: {}
+[10.153728] (-) TimerEvent: {}
+[10.254205] (-) TimerEvent: {}
+[10.354586] (-) TimerEvent: {}
+[10.455047] (-) TimerEvent: {}
+[10.555543] (-) TimerEvent: {}
+[10.656154] (-) TimerEvent: {}
+[10.756751] (-) TimerEvent: {}
+[10.857239] (-) TimerEvent: {}
+[10.957672] (-) TimerEvent: {}
+[11.058132] (-) TimerEvent: {}
+[11.158669] (-) TimerEvent: {}
+[11.259260] (-) TimerEvent: {}
+[11.359873] (-) TimerEvent: {}
+[11.460413] (-) TimerEvent: {}
+[11.560907] (-) TimerEvent: {}
+[11.661413] (-) TimerEvent: {}
+[11.761855] (-) TimerEvent: {}
+[11.862352] (-) TimerEvent: {}
+[11.962834] (-) TimerEvent: {}
+[12.063324] (-) TimerEvent: {}
+[12.163731] (-) TimerEvent: {}
+[12.264206] (-) TimerEvent: {}
+[12.364682] (-) TimerEvent: {}
+[12.465184] (-) TimerEvent: {}
+[12.565612] (-) TimerEvent: {}
+[12.666199] (-) TimerEvent: {}
+[12.766899] (-) TimerEvent: {}
+[12.867519] (-) TimerEvent: {}
+[12.967949] (-) TimerEvent: {}
+[13.068451] (-) TimerEvent: {}
+[13.168914] (-) TimerEvent: {}
+[13.269368] (-) TimerEvent: {}
+[13.369849] (-) TimerEvent: {}
+[13.470307] (-) TimerEvent: {}
+[13.570849] (-) TimerEvent: {}
+[13.671359] (-) TimerEvent: {}
+[13.771836] (-) TimerEvent: {}
+[13.872405] (-) TimerEvent: {}
+[13.973047] (-) TimerEvent: {}
+[14.073960] (-) TimerEvent: {}
+[14.174630] (-) TimerEvent: {}
+[14.275224] (-) TimerEvent: {}
+[14.375697] (-) TimerEvent: {}
+[14.476209] (-) TimerEvent: {}
+[14.576709] (-) TimerEvent: {}
+[14.677211] (-) TimerEvent: {}
+[14.777768] (-) TimerEvent: {}
+[14.878133] (-) TimerEvent: {}
+[14.978599] (-) TimerEvent: {}
+[15.079187] (-) TimerEvent: {}
+[15.179994] (-) TimerEvent: {}
+[15.280625] (-) TimerEvent: {}
+[15.381300] (-) TimerEvent: {}
+[15.481656] (-) TimerEvent: {}
+[15.582149] (-) TimerEvent: {}
+[15.682700] (-) TimerEvent: {}
+[15.783074] (-) TimerEvent: {}
+[15.883511] (-) TimerEvent: {}
+[15.983963] (-) TimerEvent: {}
+[16.084442] (-) TimerEvent: {}
+[16.184920] (-) TimerEvent: {}
+[16.285460] (-) TimerEvent: {}
+[16.386109] (-) TimerEvent: {}
+[16.486637] (-) TimerEvent: {}
+[16.586874] (-) TimerEvent: {}
+[16.687158] (-) TimerEvent: {}
+[16.787381] (-) TimerEvent: {}
+[16.887639] (-) TimerEvent: {}
+[16.987888] (-) TimerEvent: {}
+[17.088146] (-) TimerEvent: {}
+[17.188465] (-) TimerEvent: {}
+[17.288963] (-) TimerEvent: {}
+[17.389956] (-) TimerEvent: {}
+[17.490842] (-) TimerEvent: {}
+[17.591576] (-) TimerEvent: {}
+[17.692429] (-) TimerEvent: {}
+[17.718929] (robot_localization) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable odometry\x1b[0m\n'}
+[17.792613] (-) TimerEvent: {}
+[17.893288] (-) TimerEvent: {}
+[17.993745] (-) TimerEvent: {}
+[18.094517] (-) TimerEvent: {}
+[18.194737] (-) TimerEvent: {}
+[18.197000] (robot_localization) StdoutLine: {'line': b'[ 90%] Built target odometry\n'}
+[18.294850] (-) TimerEvent: {}
+[18.395066] (-) TimerEvent: {}
+[18.495391] (-) TimerEvent: {}
+[18.595650] (-) TimerEvent: {}
+[18.695891] (-) TimerEvent: {}
+[18.796237] (-) TimerEvent: {}
+[18.896544] (-) TimerEvent: {}
+[18.996820] (-) TimerEvent: {}
+[19.097181] (-) TimerEvent: {}
+[19.197457] (-) TimerEvent: {}
+[19.297839] (-) TimerEvent: {}
+[19.398208] (-) TimerEvent: {}
+[19.498590] (-) TimerEvent: {}
+[19.598961] (-) TimerEvent: {}
+[19.699336] (-) TimerEvent: {}
+[19.799741] (-) TimerEvent: {}
+[19.852619] (robot_localization) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable localization\x1b[0m\n'}
+[19.899913] (-) TimerEvent: {}
+[20.000372] (-) TimerEvent: {}
+[20.100783] (-) TimerEvent: {}
+[20.201224] (-) TimerEvent: {}
+[20.260148] (robot_localization) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/localization.dir/src/RobotLocalization.cpp.o: in function `RobotLocalization::mcl()':\n"}
+[20.260332] (robot_localization) StderrLine: {'line': b"RobotLocalization.cpp:(.text+0xff7): undefined reference to `RobotLocalization::calculate_weight()'\n"}
+[20.301367] (-) TimerEvent: {}
+[20.305574] (robot_localization) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[20.306634] (robot_localization) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/localization.dir/build.make:174: localization] Error 1\n'}
+[20.306779] (robot_localization) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/localization.dir/all] Error 2\n'}
+[20.306944] (robot_localization) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[20.311202] (robot_localization) CommandEnded: {'returncode': 2}
+[20.401445] (-) TimerEvent: {}
+[20.410517] (robot_localization) JobEnded: {'identifier': 'robot_localization', 'rc': 2}
+[20.420890] (-) EventReactorShutdown: {}

@@ -27,8 +27,6 @@
 #define VAR_W 0.05
 #define A_FAST 1.0
 #define A_SLOW 0.0005
-#define WEIGHT_CMPS 0.1
-#define WEIGHT_VIS (1 - WEIGHT_CMPS)
 #define TO_RAD M_PI / 180.0
 
 typedef struct recognizedObj_t {
@@ -40,9 +38,7 @@ typedef struct particle_t {
     double x;
     double y;
     double w;
-    double weight_vis;
-    double weight_cmps;
-    double weight_total;
+    double weight;
 } Particle;
 
 class RobotLocalization : public rclcpp::Node {
@@ -60,10 +56,11 @@ private:
     void init_particles();
     void resample_particles();
     void motion_update();
-    void calculate_weight();
+    void sensor_update();
     double calculate_total_likelihood(const Particle &particle);
     double calculate_object_likelihood(const RecognizedObject &measurement,
                                        const Particle &particle);
+    void estimation();
     void print_particles();
     void print_odometry();
 
@@ -88,6 +85,7 @@ private:
         currentTime_, timer_;
 
     double w_fast, w_slow;
+    Particle pose_estimation_;
 };
 
 #endif  // ROBOT_LOCALIZATION_HPP

@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/localization.dir/src/RobotLocalization.cpp.o: in function `RobotLocalization::mcl()':
+RobotLocalization.cpp:(.text+0xff7): undefined reference to `RobotLocalization::calculate_weight()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/localization.dir/build.make:174: localization] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/localization.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

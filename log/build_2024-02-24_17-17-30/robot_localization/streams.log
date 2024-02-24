@@ -1,0 +1,18 @@
+[0.090s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization': AMENT_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization -- -j16 -l16
+[0.270s] [35m[1mConsolidate compiler generated dependencies of target localization[0m
+[0.270s] [35m[1mConsolidate compiler generated dependencies of target odometry[0m
+[0.306s] [ 20%] Built target object_recognizer
+[0.306s] [ 40%] Built target robot_controller
+[0.314s] [ 70%] [32mBuilding CXX object CMakeFiles/localization.dir/src/RobotLocalization.cpp.o[0m
+[0.315s] [ 70%] Built target robot_localization
+[0.315s] [ 80%] [32mBuilding CXX object CMakeFiles/odometry.dir/src/Odometry.cpp.o[0m
+[17.718s] [ 90%] [32m[1mLinking CXX executable odometry[0m
+[18.196s] [ 90%] Built target odometry
+[19.852s] [100%] [32m[1mLinking CXX executable localization[0m
+[20.259s] /usr/bin/ld: CMakeFiles/localization.dir/src/RobotLocalization.cpp.o: in function `RobotLocalization::mcl()':
+[20.259s] RobotLocalization.cpp:(.text+0xff7): undefined reference to `RobotLocalization::calculate_weight()'
+[20.305s] collect2: error: ld returned 1 exit status
+[20.306s] gmake[2]: *** [CMakeFiles/localization.dir/build.make:174: localization] Error 1
+[20.306s] gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/localization.dir/all] Error 2
+[20.306s] gmake: *** [Makefile:146: all] Error 2
+[20.311s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization' returned '2': AMENT_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization -- -j16 -l16

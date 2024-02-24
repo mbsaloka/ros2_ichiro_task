@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target localization[0m
+[35m[1mConsolidate compiler generated dependencies of target odometry[0m
+[ 20%] Built target object_recognizer
+[ 40%] Built target robot_controller
+[ 70%] [32mBuilding CXX object CMakeFiles/localization.dir/src/RobotLocalization.cpp.o[0m
+[ 70%] Built target robot_localization
+[ 80%] [32mBuilding CXX object CMakeFiles/odometry.dir/src/Odometry.cpp.o[0m
+[ 90%] [32m[1mLinking CXX executable odometry[0m
+[ 90%] Built target odometry
+[100%] [32m[1mLinking CXX executable localization[0m
