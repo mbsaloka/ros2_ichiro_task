@@ -1,3 +1,6 @@
+#ifndef ODOMETRY_HPP
+#define ODOMETRY_HPP
+
 #include <memory>
 #include <chrono>
 #include <functional>
@@ -7,6 +10,8 @@
 #include "my_interfaces/msg/velocity.hpp"
 #include "my_interfaces/msg/pose.hpp"
 #include "my_interfaces/msg/boolean.hpp"
+
+#define TIME_STEP 0.032
 
 using namespace std::chrono_literals;
 
@@ -29,4 +34,9 @@ private:
     double linear_vel_;
     double angular_vel_;
     double robot_pose_[3] = {0.0, 0.0, 0.0};
+
+    std::chrono::time_point<std::chrono::high_resolution_clock> lastTime_,
+        currentTime_;
 };
+
+#endif  // ODOMETRY_HPP

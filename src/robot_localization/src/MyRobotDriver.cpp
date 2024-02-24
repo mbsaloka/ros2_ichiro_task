@@ -8,7 +8,7 @@
 #include <webots/Motor.hpp>
 
 #define HALF_DISTANCE_BETWEEN_WHEELS 0.026
-#define WHEEL_RADIUS 0.02
+#define WHEEL_RADIUS 0.0205
 
 namespace my_robot_driver {
 void MyRobotDriver::init(
