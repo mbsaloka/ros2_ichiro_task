@@ -35,10 +35,10 @@ typedef struct recognizedObj_t {
 typedef struct particle_t {
     double base_x;
     double base_y;
-    double base_theta;
+    double base_w;
     double x;
     double y;
-    double theta;
+    double w;
     double weight;
 } Particle;
 
@@ -61,6 +61,7 @@ private:
     double calculate_total_likelihood(const Particle &particle);
     double calculate_object_likelihood(const RecognizedObject &measurement,
                                        const Particle &particle);
+    void estimate_pose();
     void print_particles();
     void print_odometry();
 
@@ -83,6 +84,8 @@ private:
     };
     std::chrono::time_point<std::chrono::high_resolution_clock> lastTime_,
         currentTime_, timer_;
+
+    Particle pose_estimation_;
 };
 
 #endif  // ROBOT_LOCALIZATION_HPP

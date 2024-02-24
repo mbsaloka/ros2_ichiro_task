@@ -34,9 +34,6 @@ private:
     double linear_vel_;
     double angular_vel_;
     double robot_pose_[3] = {0.0, 0.0, 0.0};
-
-    std::chrono::time_point<std::chrono::high_resolution_clock> lastTime_,
-        currentTime_;
 };
 
 #endif  // ODOMETRY_HPP

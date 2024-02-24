@@ -1,8 +1,6 @@
 #include "robot_localization/Odometry.hpp"
 
 Odometry::Odometry() : Node("odometry") {
-    lastTime_ = std::chrono::high_resolution_clock::now();
-
     vel_sub_ = create_subscription<my_interfaces::msg::Velocity>(
         "/velocity", 1,
         std::bind(&Odometry::velocityCallback, this, std::placeholders::_1));
@@ -25,16 +23,14 @@ void Odometry::velocityCallback(
 
 void Odometry::timer_callback() {
     auto message = my_interfaces::msg::Pose();
-    const double ang_corr = 0.905;
+    const double x_err = 0.855;
+    const double y_err = 0.855;
+    const double w_err = 0.77;
+    const double dt = TIME_STEP;
 
-    currentTime_ = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> duration_vel = currentTime_ - lastTime_;
-    const double dt = duration_vel.count();
-    lastTime_ = currentTime_;
-
-    robot_pose_[0] += linear_vel_ * cos(robot_pose_[2]) * dt;
-    robot_pose_[1] += linear_vel_ * sin(robot_pose_[2]) * dt;
-    robot_pose_[2] += angular_vel_ * dt * ang_corr;
+    robot_pose_[2] += angular_vel_ * dt * w_err;
+    robot_pose_[0] += linear_vel_ * cos(robot_pose_[2]) * dt * x_err;
+    robot_pose_[1] += linear_vel_ * sin(robot_pose_[2]) * dt * y_err;
 
     if (robot_pose_[2] > M_PI) {
         robot_pose_[2] -= 2 * M_PI;
