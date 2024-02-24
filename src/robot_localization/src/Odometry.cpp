@@ -23,9 +23,9 @@ void Odometry::velocityCallback(
 
 void Odometry::timer_callback() {
     auto message = my_interfaces::msg::Pose();
-    const double x_err = 0.855;
-    const double y_err = 0.855;
-    const double w_err = 0.77;
+    const double x_err = 0.88;
+    const double y_err = 0.88;
+    const double w_err = 0.82;
     const double dt = TIME_STEP;
 
     robot_pose_[2] += angular_vel_ * dt * w_err;

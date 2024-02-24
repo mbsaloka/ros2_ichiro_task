@@ -73,8 +73,9 @@ private:
     double robot_pose_[3] = {0.0, 0.0, 0.0};
     std::vector<Particle> particles_;
     std::vector<RecognizedObject> recognized_objects_;
+    Particle pose_estimation_;
     unsigned num_particles_, iteration_ = 0;
-    bool firstIteration_ = true;
+    bool firstIteration_ = true, kidnap_ = false;
     double linear_vel_, angular_vel_;
     const double LANDMARK[NUM_LANDMARK][2] = {
         {0.0, 0.0},     {0.0, 80.0},     {0.0, -80.0},   {0.0, 300.0},
@@ -84,8 +85,6 @@ private:
     };
     std::chrono::time_point<std::chrono::high_resolution_clock> lastTime_,
         currentTime_, timer_;
-
-    Particle pose_estimation_;
 };
 
 #endif  // ROBOT_LOCALIZATION_HPP

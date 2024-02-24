@@ -45,7 +45,10 @@ void RobotLocalization::velocityCallback(
 
 void RobotLocalization::restartCallback(
     const my_interfaces::msg::Boolean::SharedPtr msg) {
+    std::cout << "[ROBOT IS KIDNAPPED. Wait for the update...]" << std::endl;
+    kidnap_ = true;
     init_particles();
+    calculate_weight();
 }
 
 void RobotLocalization::odometryCallback(
@@ -63,7 +66,7 @@ void RobotLocalization::mcl() {
     double seconds = duration.count();
 
     motion_update();
-    if ((firstIteration_) && recognized_objects_.size() > 0) {
+    if ((seconds >= 1.0 || firstIteration_) && recognized_objects_.size() > 0) {
         if (!firstIteration_) {
             resample_particles();
         }
@@ -82,59 +85,122 @@ void RobotLocalization::mcl() {
 
 void RobotLocalization::init_particles() {
     std::vector<Particle> new_particles;
-    std::random_device xrd, yrd, wrd;
-    std::normal_distribution<double> xrg(START_X, VAR_X), yrg(START_Y, VAR_Y),
-        wrg(START_W, VAR_W);
+    if (!kidnap_) {
+        std::random_device xrd, yrd, wrd;
+        std::normal_distribution<double> xrg(START_X, VAR_X),
+            yrg(START_Y, VAR_Y), wrg(START_W, VAR_W);
 
-    for (int i = 0; i < NUM_PARTICLES; i++) {
-        Particle p;
-        p.base_x = xrg(xrd);
-        p.base_y = yrg(yrd);
-        p.base_w = wrg(wrd);
-        p.x = p.base_x;
-        p.y = p.base_y;
-        p.w = p.base_w;
-        p.weight = 1.0 / NUM_PARTICLES;
-        new_particles.push_back(p);
+        for (int i = 0; i < NUM_PARTICLES; i++) {
+            Particle p;
+            p.base_x = xrg(xrd);
+            p.base_y = yrg(yrd);
+            p.base_w = wrg(wrd);
+            p.x = p.base_x;
+            p.y = p.base_y;
+            p.w = p.base_w;
+            p.weight = 1.0 / NUM_PARTICLES;
+            new_particles.push_back(p);
+        }
+    } else {
+        std::vector<double> angles;
+        const int num_angle = 12, x_gap = 5, y_gap = 5;
+
+        num_particles_ = FIELD_WIDTH * FIELD_LENGTH * num_angle;
+
+        for (int i = 0; i < (num_angle / 2); i++) {
+            double angle = (double)i / (num_angle / 2) * M_PI;
+            angles.push_back(angle);
+        }
+
+        for (int i = (num_angle / 2); i > 0; i--) {
+            double angle = (double)i / (num_angle / 2) * M_PI * -1;
+            angles.push_back(angle);
+        }
+
+        for (auto angle : angles) {
+            for (int i = 0; i < FIELD_WIDTH; i += x_gap) {
+                for (int j = -FIELD_LENGTH / 2; j < FIELD_LENGTH / 2;
+                     j += y_gap) {
+                    Particle p;
+                    p.base_x = i;
+                    p.base_y = j;
+                    p.base_w = angle;
+                    p.x = i;
+                    p.y = j;
+                    p.w = angle;
+                    p.weight = 1.0 / num_particles_;
+                    new_particles.push_back(p);
+                }
+            }
+        }
     }
-
     particles_ = new_particles;
-    num_particles_ = NUM_PARTICLES;
+    num_particles_ = particles_.size();
 }
 
 void RobotLocalization::resample_particles() {
     std::vector<Particle> new_particles;
-    std::random_device xrd, yrd, wrd;
-    const double var_x = 5.0, var_y = 5.0, var_w = 0.01;
-    const int min_num_particle = 10;
-    int n;
+    if (!kidnap_) {
+        std::random_device xrd, yrd, wrd;
+        const double var_x = 5.0, var_y = 5.0, var_w = 0.01;
+        const int min_num_particle = 10;
+        int n;
 
-    for (size_t i = 0; i < particles_.size(); ++i) {
-        if (particles_[i].weight > (double)1 / (double)particles_.size()) {
-            new_particles.push_back(particles_[i]);
+        for (size_t i = 0; i < particles_.size(); ++i) {
+            if (particles_[i].weight >= (double)1 / (double)particles_.size()) {
+                new_particles.push_back(particles_[i]);
 
-            n = int(particles_[i].weight * 100);
-            std::normal_distribution<double> xrg(particles_[i].base_x, var_x),
-                yrg(particles_[i].base_y, var_y),
-                wrg(particles_[i].base_w, var_w);
-            for (int i = 0; i < n; i++) {
-                Particle p;
-                p.base_x = xrg(xrd);
-                p.base_y = yrg(yrd);
-                p.base_w = wrg(wrd);
-                p.x = p.base_x + robot_pose_[0] * 100;
-                p.y = p.base_y + robot_pose_[1] * 100;
-                p.w = p.base_w + robot_pose_[2];
-                p.weight = particles_[i].weight / n;
+                n = int(particles_[i].weight * 100);
+                std::normal_distribution<double> xrg(particles_[i].base_x,
+                                                     var_x),
+                    yrg(particles_[i].base_y, var_y),
+                    wrg(particles_[i].base_w, var_w);
+                for (int i = 0; i < n; i++) {
+                    Particle p;
+                    p.base_x = xrg(xrd);
+                    p.base_y = yrg(yrd);
+                    p.base_w = wrg(wrd);
+                    p.x = p.base_x + robot_pose_[0] * 100;
+                    p.y = p.base_y + robot_pose_[1] * 100;
+                    p.w = p.base_w + robot_pose_[2];
+                    p.weight = particles_[i].weight / n;
 
+                    // std::cout << "[RESAMPLE] " << p.x << " " << p.y << " "
+                    //           << p.w << std::endl;
+
+                    new_particles.push_back(p);
+                }
+            }
+        }
+
+        if (new_particles.size() > min_num_particle ||
+            new_particles.size() > particles_.size()) {
+            // std::cout << "RESAMPLE JALAN =============================== "
+            //           << new_particles.size() << std::endl;
+            // std::cout << "RESAMPLE JALAN =============================== "
+            //           << new_particles.size() << std::endl;
+            // std::cout << "RESAMPLE JALAN =============================== "
+            //           << new_particles.size() << std::endl;
+            // std::cout << "RESAMPLE JALAN =============================== "
+            //           << new_particles.size() << std::endl;
+            // std::cout << "RESAMPLE JALAN =============================== "
+            //           << new_particles.size() << std::endl;
+
+            particles_ = new_particles;
+            num_particles_ = particles_.size();
+        }
+    } else {
+        for (auto &p : particles_) {
+            if (p.weight > 0.00001) {
                 new_particles.push_back(p);
             }
         }
-    }
 
-    if (new_particles.size() > min_num_particle) {
         particles_ = new_particles;
         num_particles_ = particles_.size();
+        if (num_particles_ < NUM_PARTICLES) {
+            kidnap_ = false;
+        }
     }
 }
 
@@ -206,9 +272,9 @@ void RobotLocalization::estimate_pose() {
     double y_mean = 0.0;
     double w_mean = 0.0;
     for (auto p : particles_) {
-        x_mean += (1.0 / NUM_PARTICLES) * p.x;
-        y_mean += (1.0 / NUM_PARTICLES) * p.y;
-        w_mean += (1.0 / NUM_PARTICLES) * p.w;
+        x_mean += (1.0 / num_particles_) * p.x;
+        y_mean += (1.0 / num_particles_) * p.y;
+        w_mean += (1.0 / num_particles_) * p.w;
     }
     pose_estimation_.x = x_mean;
     pose_estimation_.y = y_mean;
@@ -263,6 +329,8 @@ void RobotLocalization::print_odometry() {
     std::cout << "Robot move: [" << robot_pose_[0] * 100.0 << " "
               << robot_pose_[1] * 100.0 << " " << robot_pose_[2] << "]"
               << std::endl;
+    std::cout << "Kidnap state: " << kidnap_ << std::endl;
+    std::cout << "First iteration state: " << firstIteration_ << std::endl;
     std::cout << ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" << std::endl;
 }
 

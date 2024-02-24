@@ -106,13 +106,15 @@ void RobotController::keyLoop() {
                     break;
                 case 'b':
                     std::cout << "BREAK" << std::endl;
-                    linear_ = 0;
-                    angular_ = 0;
+                    linear_ = 0.0;
+                    angular_ = 0.0;
                     dirty = true;
                     last_c = c;
                     break;
                 case 'r':
                     std::cout << "RESTART" << std::endl;
+                    linear_ = 0.0;
+                    angular_ = 0.0;
                     dirty = true;
                     last_c = c;
                     break;
@@ -123,14 +125,15 @@ void RobotController::keyLoop() {
         msg.linear = linear_;
         msg.angular = angular_;
 
+        my_interfaces::msg::Boolean restart_msg;
+        restart_msg.flag = true;
+
         if (dirty == true) {
             if (c == 'r') {
-                my_interfaces::msg::Boolean restart_msg;
-                restart_msg.flag = true;
                 restart_pub_->publish(restart_msg);
-            } else {
-                velocity_pub_->publish(msg);
             }
+            velocity_pub_->publish(msg);
+
             dirty = false;
         }
     }
