@@ -19,6 +19,10 @@ RobotLocalization::RobotLocalization() : Node("robot_localization") {
         "/odometry", 1,
         std::bind(&RobotLocalization::odometryCallback, this,
                   std::placeholders::_1));
+    imu_sub_ = create_subscription<my_interfaces::msg::Double>(
+        "/orientation", 1,
+        std::bind(&RobotLocalization::imuCallback, this,
+                  std::placeholders::_1));
 
     init_particles();
     lastTime_ = std::chrono::high_resolution_clock::now();
@@ -46,7 +50,12 @@ void RobotLocalization::velocityCallback(
 void RobotLocalization::restartCallback(
     const my_interfaces::msg::Boolean::SharedPtr msg) {
     std::cout << "[ROBOT IS KIDNAPPED. Wait for the update...]" << std::endl;
+    restart();
+}
+
+void RobotLocalization::restart() {
     kidnap_ = true;
+    robot_pose_[2] = imu_orientation_;
     init_particles();
     calculate_weight();
 }
@@ -58,6 +67,11 @@ void RobotLocalization::odometryCallback(
     robot_pose_[2] = msg->theta;
 
     mcl();
+}
+
+void RobotLocalization::imuCallback(
+    const my_interfaces::msg::Double::SharedPtr msg) {
+    imu_orientation_ = msg->data;
 }
 
 void RobotLocalization::mcl() {
@@ -76,7 +90,6 @@ void RobotLocalization::mcl() {
         firstIteration_ = false;
         iteration_++;
     }
-
     estimate_pose();
 
     print_particles();
@@ -103,34 +116,34 @@ void RobotLocalization::init_particles() {
         }
     } else {
         std::vector<double> angles;
-        const int num_angle = 12, x_gap = 5, y_gap = 5;
+        // const int num_angle = 12;
+        const int x_gap = 5, y_gap = 5;
 
-        num_particles_ = FIELD_WIDTH * FIELD_LENGTH * num_angle;
+        // num_particles_ = FIELD_WIDTH * FIELD_LENGTH * num_angle;
+        num_particles_ = FIELD_WIDTH * FIELD_LENGTH;
 
-        for (int i = 0; i < (num_angle / 2); i++) {
-            double angle = (double)i / (num_angle / 2) * M_PI;
-            angles.push_back(angle);
-        }
+        // for (int i = 0; i < (num_angle / 2); i++) {
+        //     double angle = (double)i / (num_angle / 2) * M_PI;
+        //     angles.push_back(angle);
+        // }
 
-        for (int i = (num_angle / 2); i > 0; i--) {
-            double angle = (double)i / (num_angle / 2) * M_PI * -1;
-            angles.push_back(angle);
-        }
+        // for (int i = (num_angle / 2); i > 0; i--) {
+        //     double angle = (double)i / (num_angle / 2) * M_PI * -1;
+        //     angles.push_back(angle);
+        // }
 
-        for (auto angle : angles) {
-            for (int i = -FIELD_WIDTH / 2; i < FIELD_WIDTH / 2; i += x_gap) {
-                for (int j = -FIELD_LENGTH / 2; j < FIELD_LENGTH / 2;
-                     j += y_gap) {
-                    Particle p;
-                    p.base_x = i;
-                    p.base_y = j;
-                    p.base_w = angle;
-                    p.x = i;
-                    p.y = j;
-                    p.w = angle;
-                    p.weight = 1.0 / num_particles_;
-                    new_particles.push_back(p);
-                }
+        double angle = robot_pose_[2];
+        for (int i = -FIELD_WIDTH / 2; i < FIELD_WIDTH / 2; i += x_gap) {
+            for (int j = -FIELD_LENGTH / 2; j < FIELD_LENGTH / 2; j += y_gap) {
+                Particle p;
+                p.base_x = i;
+                p.base_y = j;
+                p.base_w = angle;
+                p.x = i;
+                p.y = j;
+                p.w = angle;
+                p.weight = 1.0 / num_particles_;
+                new_particles.push_back(p);
             }
         }
     }
@@ -220,8 +233,14 @@ void RobotLocalization::calculate_weight() {
         sum_weights += particles_[i].weight;
     }
 
-    for (int i = 0; i < num_particles_; ++i) {
-        particles_[i].weight /= sum_weights;
+    if (sum_weights <= 0.0) {
+        for (int i = 0; i < num_particles_; ++i) {
+            particles_[i].weight = 1 / num_particles_;
+        }
+    } else {
+        for (int i = 0; i < num_particles_; ++i) {
+            particles_[i].weight /= sum_weights;
+        }
     }
 }
 
@@ -283,8 +302,8 @@ void RobotLocalization::estimate_pose() {
 
 void RobotLocalization::print_particles() {
     double sum_samples = 0.0;
-    double best_sample_weight = 0.0;
-    int best_sample_index = 0;
+    // double best_sample_weight = 0.0;
+    // int best_sample_index = 0;
 
     for (int i = 0; i < num_particles_; i++) {
         if (particles_[i].weight > 0.00001) {
@@ -296,12 +315,12 @@ void RobotLocalization::print_particles() {
                       << particles_[i].y << ", " << std::fixed
                       << std::setprecision(2) << particles_[i].w << "]"
                       << std::endl;
-            sum_samples += particles_[i].weight;
 
-            if (particles_[i].weight > best_sample_weight) {
-                best_sample_weight = particles_[i].weight;
-                best_sample_index = i;
-            }
+            // if (particles_[i].weight > best_sample_weight) {
+            //     best_sample_weight = particles_[i].weight;
+            //     best_sample_index = i;
+            // }
+            sum_samples += particles_[i].weight;
         }
     }
 

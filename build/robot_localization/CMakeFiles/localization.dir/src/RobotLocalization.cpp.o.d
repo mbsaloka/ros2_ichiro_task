@@ -677,4 +677,8 @@ CMakeFiles/localization.dir/src/RobotLocalization.cpp.o: \
  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/pose.hpp \
  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__struct.hpp \
  /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__builder.hpp \
- /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__traits.hpp
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/pose__traits.hpp \
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/double.hpp \
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp \
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__builder.hpp \
+ /home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__traits.hpp

@@ -12,6 +12,7 @@
 #include "my_interfaces/msg/vector_objects.hpp"
 #include "my_interfaces/msg/boolean.hpp"
 #include "my_interfaces/msg/pose.hpp"
+#include "my_interfaces/msg/double.hpp"
 
 #define TIME_STEP 0.032
 #define MAX_SPEED 6.28
@@ -53,6 +54,7 @@ private:
     void velocityCallback(const my_interfaces::msg::Velocity::SharedPtr msg);
     void restartCallback(const my_interfaces::msg::Boolean::SharedPtr msg);
     void odometryCallback(const my_interfaces::msg::Pose::SharedPtr msg);
+    void imuCallback(const my_interfaces::msg::Double::SharedPtr msg);
 
     void init_particles();
     void resample_particles();
@@ -64,11 +66,13 @@ private:
     void estimate_pose();
     void print_particles();
     void print_odometry();
+    void restart();
 
     rclcpp::Subscription<my_interfaces::msg::VectorObjects>::SharedPtr obj_sub_;
     rclcpp::Subscription<my_interfaces::msg::Velocity>::SharedPtr vel_sub_;
     rclcpp::Subscription<my_interfaces::msg::Boolean>::SharedPtr res_sub_;
     rclcpp::Subscription<my_interfaces::msg::Pose>::SharedPtr odom_sub_;
+    rclcpp::Subscription<my_interfaces::msg::Double>::SharedPtr imu_sub_;
 
     double robot_pose_[3] = {0.0, 0.0, 0.0};
     std::vector<Particle> particles_;
@@ -76,12 +80,12 @@ private:
     Particle pose_estimation_;
     unsigned num_particles_, iteration_ = 0;
     bool firstIteration_ = true, kidnap_ = false;
-    double linear_vel_, angular_vel_;
+    double linear_vel_, angular_vel_, imu_orientation_;
     const double LANDMARK[NUM_LANDMARK][2] = {
         {0.0, 0.0},       {0.0, 80.0},     {0.0, -80.0},     {0.0, 300.0},
         {0.0, -300.0},    {240.0, 0.0},    {350.0, 250.0},   {350.0, -250.0},
         {450.0, 250.0},   {450.0, -250.0}, {450.0, 300.0},   {450.0, -300.0},
-        {450.0, 130.0},   {450.0, -130.0}, {-2 - 40.0, 0.0}, {-350.0, 250.0},
+        {450.0, 130.0},   {450.0, -130.0}, {-240.0, 0.0},    {-350.0, 250.0},
         {-350.0, -250.0}, {-450.0, 250.0}, {-450.0, -250.0}, {-450.0, 300.0},
         {-450.0, -300.0}, {-450.0, 130.0}, {-450.0, -130.0},
     };

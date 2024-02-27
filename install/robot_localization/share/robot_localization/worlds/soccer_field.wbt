@@ -140,6 +140,16 @@ DEF LANDMARK_9 Solid {
     1 1 0
   ]
 }
+DEF LANDMARK_10 Solid {
+  translation 4.5 -2.5 0.2
+  children [
+    USE LANDMARK_SHAPE
+  ]
+  name "solid(10)"
+  recognitionColors [
+    1 1 0
+  ]
+}
 DEF LANDMARK_11 Solid {
   translation 4.5 3 0.2
   children [
@@ -225,7 +235,7 @@ DEF LANDMARK_19 Solid {
   children [
     USE LANDMARK_SHAPE
   ]
-  name "solid(10)"
+  name "solid(19)"
   recognitionColors [
     1 1 0
   ]
@@ -235,7 +245,7 @@ DEF LANDMARK_20 Solid {
   children [
     USE LANDMARK_SHAPE
   ]
-  name "solid(19)"
+  name "solid(20)"
   recognitionColors [
     1 1 0
   ]
@@ -245,7 +255,7 @@ DEF LANDMARK_21 Solid {
   children [
     USE LANDMARK_SHAPE
   ]
-  name "solid(20)"
+  name "solid(21)"
   recognitionColors [
     1 1 0
   ]
@@ -255,7 +265,7 @@ DEF LANDMARK_22 Solid {
   children [
     USE LANDMARK_SHAPE
   ]
-  name "solid(21)"
+  name "solid(22)"
   recognitionColors [
     1 1 0
   ]
@@ -265,7 +275,7 @@ DEF LANDMARK_23 Solid {
   children [
     USE LANDMARK_SHAPE
   ]
-  name "solid(22)"
+  name "solid(23)"
   recognitionColors [
     1 1 0
   ]
