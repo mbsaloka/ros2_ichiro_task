@@ -116,23 +116,10 @@ void RobotLocalization::init_particles() {
         }
     } else {
         std::vector<double> angles;
-        // const int num_angle = 12;
         const int x_gap = 5, y_gap = 5;
-
-        // num_particles_ = FIELD_WIDTH * FIELD_LENGTH * num_angle;
         num_particles_ = FIELD_WIDTH * FIELD_LENGTH;
-
-        // for (int i = 0; i < (num_angle / 2); i++) {
-        //     double angle = (double)i / (num_angle / 2) * M_PI;
-        //     angles.push_back(angle);
-        // }
-
-        // for (int i = (num_angle / 2); i > 0; i--) {
-        //     double angle = (double)i / (num_angle / 2) * M_PI * -1;
-        //     angles.push_back(angle);
-        // }
-
         double angle = robot_pose_[2];
+
         for (int i = -FIELD_WIDTH / 2; i < FIELD_WIDTH / 2; i += x_gap) {
             for (int j = -FIELD_LENGTH / 2; j < FIELD_LENGTH / 2; j += y_gap) {
                 Particle p;
@@ -178,9 +165,6 @@ void RobotLocalization::resample_particles() {
                     p.w = p.base_w + robot_pose_[2];
                     p.weight = particles_[i].weight / n;
 
-                    // std::cout << "[RESAMPLE] " << p.x << " " << p.y << " "
-                    //           << p.w << std::endl;
-
                     new_particles.push_back(p);
                 }
             }
@@ -188,17 +172,6 @@ void RobotLocalization::resample_particles() {
 
         if (new_particles.size() > min_num_particle ||
             new_particles.size() > particles_.size()) {
-            // std::cout << "RESAMPLE JALAN =============================== "
-            //           << new_particles.size() << std::endl;
-            // std::cout << "RESAMPLE JALAN =============================== "
-            //           << new_particles.size() << std::endl;
-            // std::cout << "RESAMPLE JALAN =============================== "
-            //           << new_particles.size() << std::endl;
-            // std::cout << "RESAMPLE JALAN =============================== "
-            //           << new_particles.size() << std::endl;
-            // std::cout << "RESAMPLE JALAN =============================== "
-            //           << new_particles.size() << std::endl;
-
             particles_ = new_particles;
             num_particles_ = particles_.size();
         }
@@ -302,8 +275,6 @@ void RobotLocalization::estimate_pose() {
 
 void RobotLocalization::print_particles() {
     double sum_samples = 0.0;
-    // double best_sample_weight = 0.0;
-    // int best_sample_index = 0;
 
     for (int i = 0; i < num_particles_; i++) {
         if (particles_[i].weight > 0.00001) {
@@ -316,10 +287,6 @@ void RobotLocalization::print_particles() {
                       << std::setprecision(2) << particles_[i].w << "]"
                       << std::endl;
 
-            // if (particles_[i].weight > best_sample_weight) {
-            //     best_sample_weight = particles_[i].weight;
-            //     best_sample_index = i;
-            // }
             sum_samples += particles_[i].weight;
         }
     }
@@ -327,14 +294,6 @@ void RobotLocalization::print_particles() {
     std::cout << "Iteration " << iteration_ << std::endl;
     std::cout << "Num particles: " << num_particles_ << std::endl;
     std::cout << "Sum weights: " << sum_samples << std::endl;
-    // std::cout << "Best sample: " << std::fixed << std::setprecision(5)
-    //           << best_sample_weight << " (particle num " << best_sample_index
-    //           << " [" << std::fixed << std::setprecision(2)
-    //           << particles_[best_sample_index].x << ", " << std::fixed
-    //           << std::setprecision(2) << particles_[best_sample_index].y <<
-    //           ", "
-    //           << std::fixed << std::setprecision(2)
-    //           << particles_[best_sample_index].w << "])" << std::endl;
     std::cout << "Pose estimation: "
               << " [" << std::fixed << std::setprecision(2)
               << pose_estimation_.x << ", " << std::fixed
@@ -348,8 +307,6 @@ void RobotLocalization::print_odometry() {
     std::cout << "Robot move: [" << robot_pose_[0] * 100.0 << " "
               << robot_pose_[1] * 100.0 << " " << robot_pose_[2] << "]"
               << std::endl;
-    std::cout << "Kidnap state: " << kidnap_ << std::endl;
-    std::cout << "First iteration state: " << firstIteration_ << std::endl;
     std::cout << ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" << std::endl;
 }
 

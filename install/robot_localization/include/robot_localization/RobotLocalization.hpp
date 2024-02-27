@@ -81,6 +81,9 @@ private:
     unsigned num_particles_, iteration_ = 0;
     bool firstIteration_ = true, kidnap_ = false;
     double linear_vel_, angular_vel_, imu_orientation_;
+
+#define NUM_LANDMARK 23
+
     const double LANDMARK[NUM_LANDMARK][2] = {
         {0.0, 0.0},       {0.0, 80.0},     {0.0, -80.0},     {0.0, 300.0},
         {0.0, -300.0},    {240.0, 0.0},    {350.0, 250.0},   {350.0, -250.0},
@@ -89,6 +92,7 @@ private:
         {-350.0, -250.0}, {-450.0, 250.0}, {-450.0, -250.0}, {-450.0, 300.0},
         {-450.0, -300.0}, {-450.0, 130.0}, {-450.0, -130.0},
     };
+
     std::chrono::time_point<std::chrono::high_resolution_clock> lastTime_,
         currentTime_, timer_;
 };

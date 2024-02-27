@@ -28,13 +28,13 @@ def generate_launch_description():
         output='screen'
     )
 
-    object_recognizer = launch.actions.ExecuteProcess(
-        cmd=['gnome-terminal', '--geometry=50x12+600+800', '--', 'ros2', 'run', 'robot_localization', 'object_recognizer'],
-        output='screen'
+    object_recognizer = Node(
+        package='robot_localization',
+        executable='object_recognizer',
     )
 
     localization = launch.actions.ExecuteProcess(
-        cmd=['gnome-terminal', '--geometry=70x16+1100+800', '--', 'ros2', 'run', 'robot_localization', 'localization'],
+        cmd=['gnome-terminal', '--geometry=70x16+600+800', '--', 'ros2', 'run', 'robot_localization', 'localization'],
         output='screen'
     )
 

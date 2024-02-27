@@ -22,8 +22,8 @@ void InertialUnit::imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg) {
     double z = qz / norm;
     double w = qw / norm;
 
-    roll_ = std::atan2(2 * (w * x + y * z), 1 - 2 * (x * x + y * y));
-    pitch_ = std::asin(2 * (w * y - z * x));
+    // roll_ = std::atan2(2 * (w * x + y * z), 1 - 2 * (x * x + y * y));
+    // pitch_ = std::asin(2 * (w * y - z * x));
     yaw_ = std::atan2(2 * (w * z + x * y), 1 - 2 * (y * y + z * z));
 
     message->data = yaw_;

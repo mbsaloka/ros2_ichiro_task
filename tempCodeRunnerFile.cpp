@@ -1,8 +1,9 @@
-#include <iostream>
-using namespace std;
+#include<iostream>
 
-int main() {
-    for (int i = 2; i <= 100; i += 2) {
-        cout << i << endl;
+int main(){
+    for(double i = -0.01; i<= 0.01; i+=0.0001){
+        if(i<=0){
+            std::cout << i << std::endl;
+        }
     }
 }
