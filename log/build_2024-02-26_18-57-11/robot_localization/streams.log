@@ -1,0 +1,76 @@
+[0.042s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization -- -j16 -l16
+[0.102s] [ 50%] Built target localization
+[0.103s] [ 50%] Built target object_recognizer
+[0.103s] [ 33%] [32mBuilding CXX object CMakeFiles/inertial_unit.dir/src/InertialUnit.cpp.o[0m
+[0.103s] [ 58%] Built target robot_controller
+[0.103s] [ 75%] Built target odometry
+[0.104s] [ 91%] Built target robot_localization
+[3.933s] [100%] [32m[1mLinking CXX executable inertial_unit[0m
+[4.188s] [100%] Built target inertial_unit
+[4.194s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization' returned '0': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization -- -j16 -l16
+[4.220s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization
+[4.225s] -- Install configuration: ""
+[4.225s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/my_robot_driver.xml
+[4.225s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/object_recognizer
+[4.225s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include
+[4.225s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization
+[4.225s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/ObjectRecognizer.hpp
+[4.225s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/RobotLocalization.hpp
+[4.225s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/InertialUnit.hpp
+[4.225s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/MyRobotDriver.hpp
+[4.225s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/Odometry.hpp
+[4.226s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/inertial_unit
+[4.230s] -- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/inertial_unit" to ""
+[4.230s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include
+[4.230s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization
+[4.230s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/ObjectRecognizer.hpp
+[4.230s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/RobotLocalization.hpp
+[4.230s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/InertialUnit.hpp
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/MyRobotDriver.hpp
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/Odometry.hpp
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/localization
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/ObjectRecognizer.hpp
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/RobotLocalization.hpp
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/InertialUnit.hpp
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/MyRobotDriver.hpp
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/Odometry.hpp
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/odometry
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/ObjectRecognizer.hpp
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/RobotLocalization.hpp
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/InertialUnit.hpp
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/MyRobotDriver.hpp
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/Odometry.hpp
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/librobot_localization.so
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/robot_controller
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/object_recognizer
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization//launch
+[4.231s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization//launch/robot_launch.py
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization//resource
+[4.232s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization//resource/my_robot.urdf
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization//worlds
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization//worlds/soccer_field.wbt
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/environment/library_path.sh
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/environment/library_path.dsv
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/ament_index/resource_index/package_run_dependencies/robot_localization
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/ament_index/resource_index/parent_prefix_path/robot_localization
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/environment/ament_prefix_path.sh
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/environment/ament_prefix_path.dsv
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/environment/path.sh
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/environment/path.dsv
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/local_setup.bash
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/local_setup.sh
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/local_setup.zsh
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/local_setup.dsv
+[4.232s] -- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/package.dsv
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/ament_index/resource_index/packages/robot_localization
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/ament_index/resource_index/webots_ros2_driver__pluginlib__plugin/robot_localization
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/cmake/ament_cmake_export_libraries-extras.cmake
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/cmake/robot_localizationConfig.cmake
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/cmake/robot_localizationConfig-version.cmake
+[4.232s] -- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/package.xml
+[4.233s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization' returned '0': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib /usr/bin/cmake --install /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization

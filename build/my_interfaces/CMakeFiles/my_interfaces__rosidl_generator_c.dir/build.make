@@ -93,6 +93,7 @@ rosidl_generator_c/my_interfaces/msg/pose.h: rosidl_adapter/my_interfaces/msg/Ve
 rosidl_generator_c/my_interfaces/msg/pose.h: rosidl_adapter/my_interfaces/msg/Object.idl
 rosidl_generator_c/my_interfaces/msg/pose.h: rosidl_adapter/my_interfaces/msg/VectorObjects.idl
 rosidl_generator_c/my_interfaces/msg/pose.h: rosidl_adapter/my_interfaces/msg/Boolean.idl
+rosidl_generator_c/my_interfaces/msg/pose.h: rosidl_adapter/my_interfaces/msg/Double.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/iron/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_c__arguments.json
 
@@ -153,6 +154,18 @@ rosidl_generator_c/my_interfaces/msg/detail/boolean__struct.h: rosidl_generator_
 rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.h: rosidl_generator_c/my_interfaces/msg/pose.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.h
 
+rosidl_generator_c/my_interfaces/msg/double.h: rosidl_generator_c/my_interfaces/msg/pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_interfaces/msg/double.h
+
+rosidl_generator_c/my_interfaces/msg/detail/double__functions.h: rosidl_generator_c/my_interfaces/msg/pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_interfaces/msg/detail/double__functions.h
+
+rosidl_generator_c/my_interfaces/msg/detail/double__struct.h: rosidl_generator_c/my_interfaces/msg/pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_interfaces/msg/detail/double__struct.h
+
+rosidl_generator_c/my_interfaces/msg/detail/double__type_support.h: rosidl_generator_c/my_interfaces/msg/pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_interfaces/msg/detail/double__type_support.h
+
 rosidl_generator_c/my_interfaces/msg/detail/pose__description.c: rosidl_generator_c/my_interfaces/msg/pose.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_interfaces/msg/detail/pose__description.c
 
@@ -197,6 +210,15 @@ rosidl_generator_c/my_interfaces/msg/detail/boolean__functions.c: rosidl_generat
 
 rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.c: rosidl_generator_c/my_interfaces/msg/pose.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.c
+
+rosidl_generator_c/my_interfaces/msg/detail/double__description.c: rosidl_generator_c/my_interfaces/msg/pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_interfaces/msg/detail/double__description.c
+
+rosidl_generator_c/my_interfaces/msg/detail/double__functions.c: rosidl_generator_c/my_interfaces/msg/pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_interfaces/msg/detail/double__functions.c
+
+rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c: rosidl_generator_c/my_interfaces/msg/pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c
 
 CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/pose__description.c.o: CMakeFiles/my_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/pose__description.c.o: rosidl_generator_c/my_interfaces/msg/detail/pose__description.c
@@ -408,6 +430,48 @@ CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interface
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.c -o CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.c.s
 
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.o: CMakeFiles/my_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.o: rosidl_generator_c/my_interfaces/msg/detail/double__description.c
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.o: CMakeFiles/my_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.o -MF CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.o.d -o CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.o -c /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_c/my_interfaces/msg/detail/double__description.c
+
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_c/my_interfaces/msg/detail/double__description.c > CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.i
+
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_c/my_interfaces/msg/detail/double__description.c -o CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.s
+
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.o: CMakeFiles/my_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.o: rosidl_generator_c/my_interfaces/msg/detail/double__functions.c
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.o: CMakeFiles/my_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.o -MF CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.o.d -o CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.o -c /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c
+
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c > CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.i
+
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c -o CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.s
+
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.o: CMakeFiles/my_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.o: rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.o: CMakeFiles/my_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.o -MF CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.o.d -o CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.o -c /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c
+
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c > CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.i
+
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c -o CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.s
+
 # Object files for target my_interfaces__rosidl_generator_c
 my_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/pose__description.c.o" \
@@ -424,7 +488,10 @@ my_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/vector_objects__type_support.c.o" \
 "CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/boolean__description.c.o" \
 "CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/boolean__functions.c.o" \
-"CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.c.o"
+"CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.c.o" \
+"CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.o" \
+"CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.o" \
+"CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.o"
 
 # External object files for target my_interfaces__rosidl_generator_c
 my_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -444,11 +511,14 @@ libmy_interfaces__rosidl_generator_c.so: CMakeFiles/my_interfaces__rosidl_genera
 libmy_interfaces__rosidl_generator_c.so: CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/boolean__description.c.o
 libmy_interfaces__rosidl_generator_c.so: CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/boolean__functions.c.o
 libmy_interfaces__rosidl_generator_c.so: CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.c.o
+libmy_interfaces__rosidl_generator_c.so: CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.o
+libmy_interfaces__rosidl_generator_c.so: CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.o
+libmy_interfaces__rosidl_generator_c.so: CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.o
 libmy_interfaces__rosidl_generator_c.so: CMakeFiles/my_interfaces__rosidl_generator_c.dir/build.make
 libmy_interfaces__rosidl_generator_c.so: /opt/ros/iron/lib/librosidl_runtime_c.so
 libmy_interfaces__rosidl_generator_c.so: /opt/ros/iron/lib/librcutils.so
 libmy_interfaces__rosidl_generator_c.so: CMakeFiles/my_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C shared library libmy_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C shared library libmy_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -466,6 +536,12 @@ CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_i
 CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/detail/boolean__struct.h
 CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.c
 CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.h
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/detail/double__description.c
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/detail/double__functions.c
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/detail/double__functions.h
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/detail/double__struct.h
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/detail/double__type_support.h
 CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/detail/object__description.c
 CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/detail/object__functions.c
 CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/detail/object__functions.h
@@ -490,6 +566,7 @@ CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_i
 CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/detail/velocity__struct.h
 CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/detail/velocity__type_support.c
 CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/detail/velocity__type_support.h
+CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/double.h
 CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/object.h
 CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/pose.h
 CMakeFiles/my_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_interfaces/msg/vector_objects.h

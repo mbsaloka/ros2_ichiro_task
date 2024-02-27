@@ -71,6 +71,7 @@ CMakeFiles/my_interfaces: /home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfa
 CMakeFiles/my_interfaces: /home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces/msg/Object.msg
 CMakeFiles/my_interfaces: /home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces/msg/VectorObjects.msg
 CMakeFiles/my_interfaces: /home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces/msg/Boolean.msg
+CMakeFiles/my_interfaces: /home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces/msg/Double.msg
 
 my_interfaces: CMakeFiles/my_interfaces
 my_interfaces: CMakeFiles/my_interfaces.dir/build.make

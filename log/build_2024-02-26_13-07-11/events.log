@@ -1,0 +1,466 @@
+[0.000000] (-) TimerEvent: {}
+[0.000534] (-) JobUnselected: {'identifier': 'my_interfaces'}
+[0.001437] (-) JobUnselected: {'identifier': 'odd_num_pubsub'}
+[0.001485] (-) JobUnselected: {'identifier': 'soccer_pubsub'}
+[0.001508] (-) JobUnselected: {'identifier': 'sum_two_num_srvcli'}
+[0.002267] (robot_localization) JobQueued: {'identifier': 'robot_localization', 'dependencies': OrderedDict([('my_interfaces', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces')])}
+[0.002387] (robot_localization) JobStarted: {'identifier': 'robot_localization'}
+[0.099849] (-) TimerEvent: {}
+[0.200682] (-) TimerEvent: {}
+[0.201503] (robot_localization) JobProgress: {'identifier': 'robot_localization', 'progress': 'cmake'}
+[0.204771] (robot_localization) JobProgress: {'identifier': 'robot_localization', 'progress': 'build'}
+[0.204899] (robot_localization) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization', '--', '-j16', '-l16'], 'cwd': '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mbsaloka'), ('LC_TIME', 'id_ID.UTF-8'), ('GIO_MODULE_DIR', '/home/mbsaloka/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/mbsaloka'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/152/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/mbsaloka/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/152/usr/share/code/code'), ('MANAGERPID', '2259'), ('SYSTEMD_EXEC_PID', '2758'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3893'), ('COLCON_PREFIX_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mbsaloka'), ('JOURNAL_STREAM', '8:42139'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'mbsaloka'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mbsaloka-LOQ-15IRH8:@/tmp/.ICE-unix/2735,unix/mbsaloka-LOQ-15IRH8:/tmp/.ICE-unix/2735'), ('GTK_EXE_PREFIX', '/snap/code/152/usr'), ('INVOCATION_ID', 'c478bc356c89403a8d398fc68881689c'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/152/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c3044f75c5.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/mbsaloka/snap/code/152/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/opt/ros/iron'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/mbsaloka/snap/code/152/.local/share:/home/mbsaloka/snap/code/152:/snap/code/152/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/opt/ros/iron')]), 'shell': False}
+[0.300838] (-) TimerEvent: {}
+[0.301267] (robot_localization) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.4 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[0.401008] (-) TimerEvent: {}
+[0.501467] (-) TimerEvent: {}
+[0.601942] (-) TimerEvent: {}
+[0.624624] (robot_localization) StdoutLine: {'line': b'-- Found rclcpp: 21.0.5 (/opt/ros/iron/share/rclcpp/cmake)\n'}
+[0.702144] (-) TimerEvent: {}
+[0.707087] (robot_localization) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)\n'}
+[0.724049] (robot_localization) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)\n'}
+[0.767735] (robot_localization) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.802273] (-) TimerEvent: {}
+[0.806467] (robot_localization) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.902424] (-) TimerEvent: {}
+[1.003052] (-) TimerEvent: {}
+[1.077028] (robot_localization) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)\n'}
+[1.080875] (robot_localization) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 7.1.3 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.103160] (-) TimerEvent: {}
+[1.203664] (-) TimerEvent: {}
+[1.292800] (robot_localization) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.303779] (-) TimerEvent: {}
+[1.404182] (-) TimerEvent: {}
+[1.504571] (-) TimerEvent: {}
+[1.604927] (-) TimerEvent: {}
+[1.620309] (robot_localization) StdoutLine: {'line': b'-- Found my_interfaces: 0.0.0 (/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/share/my_interfaces/cmake)\n'}
+[1.644641] (robot_localization) StdoutLine: {'line': b'-- Found webots_ros2_msgs: 2023.1.1 (/opt/ros/iron/share/webots_ros2_msgs/cmake)\n'}
+[1.705063] (-) TimerEvent: {}
+[1.805420] (-) TimerEvent: {}
+[1.905799] (-) TimerEvent: {}
+[2.006251] (-) TimerEvent: {}
+[2.106631] (-) TimerEvent: {}
+[2.170984] (robot_localization) StdoutLine: {'line': b'-- Found pluginlib: 5.2.2 (/opt/ros/iron/share/pluginlib/cmake)\n'}
+[2.200073] (robot_localization) StdoutLine: {'line': b'-- Found webots_ros2_driver: 2023.1.1 (/opt/ros/iron/share/webots_ros2_driver/cmake)\n'}
+[2.206784] (-) TimerEvent: {}
+[2.307191] (-) TimerEvent: {}
+[2.407904] (-) TimerEvent: {}
+[2.430700] (robot_localization) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.2.2 (/opt/ros/iron/share/eigen3_cmake_module/cmake)\n'}
+[2.433495] (robot_localization) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.508101] (-) TimerEvent: {}
+[2.608638] (-) TimerEvent: {}
+[2.709139] (-) TimerEvent: {}
+[2.810098] (-) TimerEvent: {}
+[2.910902] (-) TimerEvent: {}
+[3.011730] (-) TimerEvent: {}
+[3.112316] (-) TimerEvent: {}
+[3.212815] (-) TimerEvent: {}
+[3.313498] (-) TimerEvent: {}
+[3.414210] (-) TimerEvent: {}
+[3.514667] (-) TimerEvent: {}
+[3.615094] (-) TimerEvent: {}
+[3.715488] (-) TimerEvent: {}
+[3.815874] (-) TimerEvent: {}
+[3.916313] (-) TimerEvent: {}
+[4.017003] (-) TimerEvent: {}
+[4.117434] (-) TimerEvent: {}
+[4.157872] (robot_localization) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.217654] (-) TimerEvent: {}
+[4.279701] (robot_localization) StdoutLine: {'line': b'-- Generating done\n'}
+[4.282778] (robot_localization) StdoutLine: {'line': b'-- Build files have been written to: /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization\n'}
+[4.317850] (-) TimerEvent: {}
+[4.329457] (robot_localization) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target object_recognizer\x1b[0m\n'}
+[4.330113] (robot_localization) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_controller\x1b[0m\n'}
+[4.331557] (robot_localization) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target localization\x1b[0m\n'}
+[4.333808] (robot_localization) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_localization\x1b[0m\n'}
+[4.334548] (robot_localization) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target odometry\x1b[0m\n'}
+[4.350579] (robot_localization) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/inertial_unit.dir/src/InertialUnit.cpp.o\x1b[0m\n'}
+[4.375920] (robot_localization) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/robot_controller.dir/src/RobotController.cpp.o\x1b[0m\n'}
+[4.377949] (robot_localization) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/object_recognizer.dir/src/ObjectRecognizer.cpp.o\x1b[0m\n'}
+[4.378346] (robot_localization) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/localization.dir/src/RobotLocalization.cpp.o\x1b[0m\n'}
+[4.379975] (robot_localization) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/odometry.dir/src/Odometry.cpp.o\x1b[0m\n'}
+[4.386624] (robot_localization) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization.dir/src/MyRobotDriver.cpp.o\x1b[0m\n'}
+[4.417959] (-) TimerEvent: {}
+[4.518678] (-) TimerEvent: {}
+[4.619372] (-) TimerEvent: {}
+[4.719979] (-) TimerEvent: {}
+[4.820733] (-) TimerEvent: {}
+[4.922210] (-) TimerEvent: {}
+[5.024106] (-) TimerEvent: {}
+[5.124950] (-) TimerEvent: {}
+[5.165725] (robot_localization) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/iron/include/webots/cpp/webots/Device.hpp:20\x1b[m\x1b[K,\n'}
+[5.166193] (robot_localization) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/webots/cpp/webots/Motor.hpp:18\x1b[m\x1b[K,\n'}
+[5.166388] (robot_localization) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/include/robot_localization/MyRobotDriver.hpp:12\x1b[m\x1b[K,\n'}
+[5.166529] (robot_localization) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/MyRobotDriver.cpp:1\x1b[m\x1b[K:\n'}
+[5.166684] (robot_localization) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/webots/cpp/webots/../../c/webots/types.h:25:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning "mixing the C and C++ APIs in the same controller is not supported." [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.166952] (robot_localization) StderrLine: {'line': b'   25 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K "mixing the C and C++ APIs in the same controller is not supported."\n'}
+[5.167148] (robot_localization) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[5.225200] (-) TimerEvent: {}
+[5.325976] (-) TimerEvent: {}
+[5.426701] (-) TimerEvent: {}
+[5.527229] (-) TimerEvent: {}
+[5.627846] (-) TimerEvent: {}
+[5.728564] (-) TimerEvent: {}
+[5.829127] (-) TimerEvent: {}
+[5.929720] (-) TimerEvent: {}
+[6.030592] (-) TimerEvent: {}
+[6.131197] (-) TimerEvent: {}
+[6.231850] (-) TimerEvent: {}
+[6.332432] (-) TimerEvent: {}
+[6.433036] (-) TimerEvent: {}
+[6.533679] (-) TimerEvent: {}
+[6.634483] (-) TimerEvent: {}
+[6.735213] (-) TimerEvent: {}
+[6.836012] (-) TimerEvent: {}
+[6.936972] (-) TimerEvent: {}
+[7.037663] (-) TimerEvent: {}
+[7.138297] (-) TimerEvent: {}
+[7.239061] (-) TimerEvent: {}
+[7.339702] (-) TimerEvent: {}
+[7.440281] (-) TimerEvent: {}
+[7.540804] (-) TimerEvent: {}
+[7.641528] (-) TimerEvent: {}
+[7.742140] (-) TimerEvent: {}
+[7.842737] (-) TimerEvent: {}
+[7.943335] (-) TimerEvent: {}
+[8.044061] (-) TimerEvent: {}
+[8.144735] (-) TimerEvent: {}
+[8.246007] (-) TimerEvent: {}
+[8.346658] (-) TimerEvent: {}
+[8.447363] (-) TimerEvent: {}
+[8.548143] (-) TimerEvent: {}
+[8.648991] (-) TimerEvent: {}
+[8.749573] (-) TimerEvent: {}
+[8.850310] (-) TimerEvent: {}
+[8.950952] (-) TimerEvent: {}
+[9.051686] (-) TimerEvent: {}
+[9.152510] (-) TimerEvent: {}
+[9.253482] (-) TimerEvent: {}
+[9.354210] (-) TimerEvent: {}
+[9.454901] (-) TimerEvent: {}
+[9.555515] (-) TimerEvent: {}
+[9.656302] (-) TimerEvent: {}
+[9.757030] (-) TimerEvent: {}
+[9.857765] (-) TimerEvent: {}
+[9.958435] (-) TimerEvent: {}
+[10.059106] (-) TimerEvent: {}
+[10.159771] (-) TimerEvent: {}
+[10.260371] (-) TimerEvent: {}
+[10.364838] (-) TimerEvent: {}
+[10.465792] (-) TimerEvent: {}
+[10.568793] (-) TimerEvent: {}
+[10.669711] (-) TimerEvent: {}
+[10.770694] (-) TimerEvent: {}
+[10.872238] (-) TimerEvent: {}
+[10.973034] (-) TimerEvent: {}
+[11.073707] (-) TimerEvent: {}
+[11.174481] (-) TimerEvent: {}
+[11.275244] (-) TimerEvent: {}
+[11.376048] (-) TimerEvent: {}
+[11.476843] (-) TimerEvent: {}
+[11.577788] (-) TimerEvent: {}
+[11.678477] (-) TimerEvent: {}
+[11.779180] (-) TimerEvent: {}
+[11.879665] (-) TimerEvent: {}
+[11.980313] (-) TimerEvent: {}
+[12.080922] (-) TimerEvent: {}
+[12.181674] (-) TimerEvent: {}
+[12.282317] (-) TimerEvent: {}
+[12.347629] (robot_localization) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[12.350281] (robot_localization) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/include/robot_localization/InertialUnit.hpp:4\x1b[m\x1b[K,\n'}
+[12.350702] (robot_localization) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/InertialUnit.cpp:1\x1b[m\x1b[K:\n'}
+[12.350967] (robot_localization) StderrLine: {'line': b'/usr/include/c++/11/bits/unique_ptr.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Ktypename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = my_interfaces::msg::Double_<std::allocator<void> >; _Args = {double&}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<my_interfaces::msg::Double_<std::allocator<void> >, std::default_delete<my_interfaces::msg::Double_<std::allocator<void> > > >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.351222] (robot_localization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/InertialUnit.cpp:15:53:\x1b[m\x1b[K   required from here\n'}
+[12.351481] (robot_localization) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:962:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmy_interfaces::msg::Double_<std::allocator<void> >::Double_(double&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.351713] (robot_localization) StderrLine: {'line': b'  962 |     { return unique_ptr<_Tp>(\x1b[01;31m\x1b[Knew _Tp(std::forward<_Args>(__args)...)\x1b[m\x1b[K); }\n'}
+[12.351925] (robot_localization) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.352140] (robot_localization) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/double.hpp:7\x1b[m\x1b[K,\n'}
+[12.352355] (robot_localization) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/include/robot_localization/InertialUnit.hpp:8\x1b[m\x1b[K,\n'}
+[12.352573] (robot_localization) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/InertialUnit.cpp:1\x1b[m\x1b[K:\n'}
+[12.352856] (robot_localization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:45:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmy_interfaces::msg::Double_<ContainerAllocator>::Double_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.353102] (robot_localization) StderrLine: {'line': b'   45 |   explicit \x1b[01;36m\x1b[KDouble_\x1b[m\x1b[K(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[12.353320] (robot_localization) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.353563] (robot_localization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:45:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::allocator<void>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.353810] (robot_localization) StderrLine: {'line': b'   45 |   explicit Double_(\x1b[01;36m\x1b[Kconst ContainerAllocator & _alloc\x1b[m\x1b[K, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[12.354040] (robot_localization) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[12.354249] (robot_localization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:36:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmy_interfaces::msg::Double_<ContainerAllocator>::Double_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.354478] (robot_localization) StderrLine: {'line': b'   36 |   explicit \x1b[01;36m\x1b[KDouble_\x1b[m\x1b[K(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)\n'}
+[12.354722] (robot_localization) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.354937] (robot_localization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:36:62:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Krosidl_runtime_cpp::MessageInitialization\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.355180] (robot_localization) StderrLine: {'line': b'   36 |   explicit Double_(\x1b[01;36m\x1b[Krosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL\x1b[m\x1b[K)\n'}
+[12.355408] (robot_localization) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.355626] (robot_localization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr my_interfaces::msg::Double_<std::allocator<void> >::Double_(const my_interfaces::msg::Double_<std::allocator<void> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.355841] (robot_localization) StderrLine: {'line': b'   32 | struct \x1b[01;36m\x1b[KDouble_\x1b[m\x1b[K\n'}
+[12.356044] (robot_localization) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.356255] (robot_localization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst my_interfaces::msg::Double_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.356475] (robot_localization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr my_interfaces::msg::Double_<std::allocator<void> >::Double_(my_interfaces::msg::Double_<std::allocator<void> >&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.356755] (robot_localization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:32:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kmy_interfaces::msg::Double_<std::allocator<void> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.382537] (-) TimerEvent: {}
+[12.483318] (-) TimerEvent: {}
+[12.583990] (-) TimerEvent: {}
+[12.684506] (-) TimerEvent: {}
+[12.785189] (-) TimerEvent: {}
+[12.885770] (-) TimerEvent: {}
+[12.986493] (-) TimerEvent: {}
+[13.087463] (-) TimerEvent: {}
+[13.188400] (-) TimerEvent: {}
+[13.289313] (-) TimerEvent: {}
+[13.390133] (-) TimerEvent: {}
+[13.490925] (-) TimerEvent: {}
+[13.591934] (-) TimerEvent: {}
+[13.692851] (-) TimerEvent: {}
+[13.793952] (-) TimerEvent: {}
+[13.894588] (-) TimerEvent: {}
+[13.995336] (-) TimerEvent: {}
+[14.096564] (-) TimerEvent: {}
+[14.199010] (-) TimerEvent: {}
+[14.300767] (-) TimerEvent: {}
+[14.401515] (-) TimerEvent: {}
+[14.502358] (-) TimerEvent: {}
+[14.603009] (-) TimerEvent: {}
+[14.703774] (-) TimerEvent: {}
+[14.804527] (-) TimerEvent: {}
+[14.905453] (-) TimerEvent: {}
+[15.006388] (-) TimerEvent: {}
+[15.107052] (-) TimerEvent: {}
+[15.207700] (-) TimerEvent: {}
+[15.308352] (-) TimerEvent: {}
+[15.408920] (-) TimerEvent: {}
+[15.509569] (-) TimerEvent: {}
+[15.610136] (-) TimerEvent: {}
+[15.710838] (-) TimerEvent: {}
+[15.811568] (-) TimerEvent: {}
+[15.912180] (-) TimerEvent: {}
+[16.012963] (-) TimerEvent: {}
+[16.113673] (-) TimerEvent: {}
+[16.214246] (-) TimerEvent: {}
+[16.314921] (-) TimerEvent: {}
+[16.415503] (-) TimerEvent: {}
+[16.516067] (-) TimerEvent: {}
+[16.616645] (-) TimerEvent: {}
+[16.717191] (-) TimerEvent: {}
+[16.817698] (-) TimerEvent: {}
+[16.918375] (-) TimerEvent: {}
+[17.019261] (-) TimerEvent: {}
+[17.119807] (-) TimerEvent: {}
+[17.220391] (-) TimerEvent: {}
+[17.321563] (-) TimerEvent: {}
+[17.422308] (-) TimerEvent: {}
+[17.522958] (-) TimerEvent: {}
+[17.623954] (-) TimerEvent: {}
+[17.724662] (-) TimerEvent: {}
+[17.825517] (-) TimerEvent: {}
+[17.926448] (-) TimerEvent: {}
+[18.026933] (-) TimerEvent: {}
+[18.127397] (-) TimerEvent: {}
+[18.227923] (-) TimerEvent: {}
+[18.300506] (robot_localization) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/inertial_unit.dir/build.make:76: CMakeFiles/inertial_unit.dir/src/InertialUnit.cpp.o] Error 1\n'}
+[18.305020] (robot_localization) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/inertial_unit.dir/all] Error 2\n'}
+[18.305582] (robot_localization) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[18.328144] (-) TimerEvent: {}
+[18.428908] (-) TimerEvent: {}
+[18.529561] (-) TimerEvent: {}
+[18.610786] (robot_localization) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX executable robot_controller\x1b[0m\n'}
+[18.629710] (-) TimerEvent: {}
+[18.730502] (-) TimerEvent: {}
+[18.831347] (-) TimerEvent: {}
+[18.935616] (-) TimerEvent: {}
+[19.036576] (-) TimerEvent: {}
+[19.137264] (-) TimerEvent: {}
+[19.237926] (-) TimerEvent: {}
+[19.255040] (robot_localization) StdoutLine: {'line': b'[ 58%] Built target robot_controller\n'}
+[19.338061] (-) TimerEvent: {}
+[19.438533] (-) TimerEvent: {}
+[19.539118] (-) TimerEvent: {}
+[19.639707] (-) TimerEvent: {}
+[19.740561] (-) TimerEvent: {}
+[19.841388] (-) TimerEvent: {}
+[19.942096] (-) TimerEvent: {}
+[20.042751] (-) TimerEvent: {}
+[20.143302] (-) TimerEvent: {}
+[20.243841] (-) TimerEvent: {}
+[20.344361] (-) TimerEvent: {}
+[20.444934] (-) TimerEvent: {}
+[20.545460] (-) TimerEvent: {}
+[20.646017] (-) TimerEvent: {}
+[20.746602] (-) TimerEvent: {}
+[20.847263] (-) TimerEvent: {}
+[20.947925] (-) TimerEvent: {}
+[21.048903] (-) TimerEvent: {}
+[21.149681] (-) TimerEvent: {}
+[21.250248] (-) TimerEvent: {}
+[21.350761] (-) TimerEvent: {}
+[21.451257] (-) TimerEvent: {}
+[21.551709] (-) TimerEvent: {}
+[21.652164] (-) TimerEvent: {}
+[21.752694] (-) TimerEvent: {}
+[21.853149] (-) TimerEvent: {}
+[21.953526] (-) TimerEvent: {}
+[22.053972] (-) TimerEvent: {}
+[22.154477] (-) TimerEvent: {}
+[22.254859] (-) TimerEvent: {}
+[22.355286] (-) TimerEvent: {}
+[22.455722] (-) TimerEvent: {}
+[22.556152] (-) TimerEvent: {}
+[22.656636] (-) TimerEvent: {}
+[22.757119] (-) TimerEvent: {}
+[22.857595] (-) TimerEvent: {}
+[22.958165] (-) TimerEvent: {}
+[23.058597] (-) TimerEvent: {}
+[23.159056] (-) TimerEvent: {}
+[23.259477] (-) TimerEvent: {}
+[23.360042] (-) TimerEvent: {}
+[23.460570] (-) TimerEvent: {}
+[23.561085] (-) TimerEvent: {}
+[23.661675] (-) TimerEvent: {}
+[23.762162] (-) TimerEvent: {}
+[23.862755] (-) TimerEvent: {}
+[23.963314] (-) TimerEvent: {}
+[23.986361] (robot_localization) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable object_recognizer\x1b[0m\n'}
+[24.063465] (-) TimerEvent: {}
+[24.163955] (-) TimerEvent: {}
+[24.264467] (-) TimerEvent: {}
+[24.364972] (-) TimerEvent: {}
+[24.390435] (robot_localization) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library librobot_localization.so\x1b[0m\n'}
+[24.465159] (-) TimerEvent: {}
+[24.565816] (-) TimerEvent: {}
+[24.666406] (-) TimerEvent: {}
+[24.767017] (-) TimerEvent: {}
+[24.867488] (-) TimerEvent: {}
+[24.967964] (-) TimerEvent: {}
+[24.983492] (robot_localization) StdoutLine: {'line': b'[ 75%] Built target object_recognizer\n'}
+[25.068152] (-) TimerEvent: {}
+[25.168829] (-) TimerEvent: {}
+[25.269278] (-) TimerEvent: {}
+[25.369664] (-) TimerEvent: {}
+[25.470094] (-) TimerEvent: {}
+[25.476434] (robot_localization) StdoutLine: {'line': b'[ 75%] Built target robot_localization\n'}
+[25.570232] (-) TimerEvent: {}
+[25.670740] (-) TimerEvent: {}
+[25.771116] (-) TimerEvent: {}
+[25.871520] (-) TimerEvent: {}
+[25.971931] (-) TimerEvent: {}
+[26.072339] (-) TimerEvent: {}
+[26.172782] (-) TimerEvent: {}
+[26.273198] (-) TimerEvent: {}
+[26.373704] (-) TimerEvent: {}
+[26.474095] (-) TimerEvent: {}
+[26.574617] (-) TimerEvent: {}
+[26.675083] (-) TimerEvent: {}
+[26.775460] (-) TimerEvent: {}
+[26.875825] (-) TimerEvent: {}
+[26.976317] (-) TimerEvent: {}
+[27.076690] (-) TimerEvent: {}
+[27.177117] (-) TimerEvent: {}
+[27.277564] (-) TimerEvent: {}
+[27.378009] (-) TimerEvent: {}
+[27.478519] (-) TimerEvent: {}
+[27.578881] (-) TimerEvent: {}
+[27.679324] (-) TimerEvent: {}
+[27.779752] (-) TimerEvent: {}
+[27.880216] (-) TimerEvent: {}
+[27.980710] (-) TimerEvent: {}
+[28.081104] (-) TimerEvent: {}
+[28.181640] (-) TimerEvent: {}
+[28.282033] (-) TimerEvent: {}
+[28.301876] (robot_localization) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable odometry\x1b[0m\n'}
+[28.382253] (-) TimerEvent: {}
+[28.482657] (-) TimerEvent: {}
+[28.583095] (-) TimerEvent: {}
+[28.683596] (-) TimerEvent: {}
+[28.784095] (-) TimerEvent: {}
+[28.884623] (-) TimerEvent: {}
+[28.984999] (-) TimerEvent: {}
+[29.085508] (-) TimerEvent: {}
+[29.149813] (robot_localization) StdoutLine: {'line': b'[ 83%] Built target odometry\n'}
+[29.185646] (-) TimerEvent: {}
+[29.286127] (-) TimerEvent: {}
+[29.386567] (-) TimerEvent: {}
+[29.486990] (-) TimerEvent: {}
+[29.587438] (-) TimerEvent: {}
+[29.687816] (-) TimerEvent: {}
+[29.788232] (-) TimerEvent: {}
+[29.888813] (-) TimerEvent: {}
+[29.989246] (-) TimerEvent: {}
+[30.089694] (-) TimerEvent: {}
+[30.190235] (-) TimerEvent: {}
+[30.290690] (-) TimerEvent: {}
+[30.391176] (-) TimerEvent: {}
+[30.491621] (-) TimerEvent: {}
+[30.591966] (-) TimerEvent: {}
+[30.692416] (-) TimerEvent: {}
+[30.792768] (-) TimerEvent: {}
+[30.893218] (-) TimerEvent: {}
+[30.993840] (-) TimerEvent: {}
+[31.094553] (-) TimerEvent: {}
+[31.195004] (-) TimerEvent: {}
+[31.295544] (-) TimerEvent: {}
+[31.395947] (-) TimerEvent: {}
+[31.496486] (-) TimerEvent: {}
+[31.596963] (-) TimerEvent: {}
+[31.697646] (-) TimerEvent: {}
+[31.798009] (-) TimerEvent: {}
+[31.898356] (-) TimerEvent: {}
+[31.998822] (-) TimerEvent: {}
+[32.099275] (-) TimerEvent: {}
+[32.199640] (-) TimerEvent: {}
+[32.299967] (-) TimerEvent: {}
+[32.400312] (-) TimerEvent: {}
+[32.500707] (-) TimerEvent: {}
+[32.601078] (-) TimerEvent: {}
+[32.701421] (-) TimerEvent: {}
+[32.801853] (-) TimerEvent: {}
+[32.902395] (-) TimerEvent: {}
+[33.002816] (-) TimerEvent: {}
+[33.103360] (-) TimerEvent: {}
+[33.203888] (-) TimerEvent: {}
+[33.304334] (-) TimerEvent: {}
+[33.404774] (-) TimerEvent: {}
+[33.505311] (-) TimerEvent: {}
+[33.605808] (-) TimerEvent: {}
+[33.706347] (-) TimerEvent: {}
+[33.806905] (-) TimerEvent: {}
+[33.907380] (-) TimerEvent: {}
+[34.007843] (-) TimerEvent: {}
+[34.108262] (-) TimerEvent: {}
+[34.208700] (-) TimerEvent: {}
+[34.309102] (-) TimerEvent: {}
+[34.409616] (-) TimerEvent: {}
+[34.510019] (-) TimerEvent: {}
+[34.610520] (-) TimerEvent: {}
+[34.710990] (-) TimerEvent: {}
+[34.811454] (-) TimerEvent: {}
+[34.911942] (-) TimerEvent: {}
+[35.012404] (-) TimerEvent: {}
+[35.112900] (-) TimerEvent: {}
+[35.213343] (-) TimerEvent: {}
+[35.313856] (-) TimerEvent: {}
+[35.405070] (robot_localization) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX executable localization\x1b[0m\n'}
+[35.414018] (-) TimerEvent: {}
+[35.514437] (-) TimerEvent: {}
+[35.614867] (-) TimerEvent: {}
+[35.715478] (-) TimerEvent: {}
+[35.816163] (-) TimerEvent: {}
+[35.917154] (-) TimerEvent: {}
+[36.017900] (-) TimerEvent: {}
+[36.118490] (-) TimerEvent: {}
+[36.219291] (-) TimerEvent: {}
+[36.320139] (-) TimerEvent: {}
+[36.421270] (-) TimerEvent: {}
+[36.522213] (-) TimerEvent: {}
+[36.622799] (-) TimerEvent: {}
+[36.723491] (-) TimerEvent: {}
+[36.824244] (-) TimerEvent: {}
+[36.925008] (-) TimerEvent: {}
+[37.025542] (-) TimerEvent: {}
+[37.126033] (-) TimerEvent: {}
+[37.182887] (robot_localization) StdoutLine: {'line': b'[ 91%] Built target localization\n'}
+[37.186802] (robot_localization) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[37.228751] (robot_localization) CommandEnded: {'returncode': 2}
+[37.251179] (-) TimerEvent: {}
+[37.357827] (-) TimerEvent: {}
+[37.458388] (-) TimerEvent: {}
+[37.559014] (-) TimerEvent: {}
+[37.659890] (-) TimerEvent: {}
+[37.704605] (robot_localization) JobEnded: {'identifier': 'robot_localization', 'rc': 2}
+[37.717955] (-) EventReactorShutdown: {}

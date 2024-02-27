@@ -1,0 +1,46 @@
+[0.110s] Invoking command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization -- -j16 -l16
+[0.223s] [35m[1mConsolidate compiler generated dependencies of target inertial_unit[0m
+[0.225s] [35m[1mConsolidate compiler generated dependencies of target robot_controller[0m
+[0.225s] [35m[1mConsolidate compiler generated dependencies of target localization[0m
+[0.228s] [35m[1mConsolidate compiler generated dependencies of target odometry[0m
+[0.229s] [35m[1mConsolidate compiler generated dependencies of target robot_localization[0m
+[0.230s] [35m[1mConsolidate compiler generated dependencies of target object_recognizer[0m
+[0.257s] [  8%] [32mBuilding CXX object CMakeFiles/inertial_unit.dir/src/InertialUnit.cpp.o[0m
+[0.264s] [ 25%] Built target robot_controller
+[0.265s] [ 41%] Built target localization
+[0.270s] [ 58%] Built target odometry
+[0.271s] [ 75%] Built target robot_localization
+[0.272s] [ 91%] Built target object_recognizer
+[4.914s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[4.915s]                  from [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/include/robot_localization/InertialUnit.hpp:4[m[K,
+[4.915s]                  from [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/InertialUnit.cpp:1[m[K:
+[4.915s] /usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘[01m[Ktypename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = my_interfaces::msg::Double_<std::allocator<void> >; _Args = {double&}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<my_interfaces::msg::Double_<std::allocator<void> >, std::default_delete<my_interfaces::msg::Double_<std::allocator<void> > > >][m[K’:
+[4.915s] [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/InertialUnit.cpp:15:53:[m[K   required from here
+[4.916s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:962:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmy_interfaces::msg::Double_<std::allocator<void> >::Double_(double&)[m[K’
+[4.916s]   962 |     { return unique_ptr<_Tp>([01;31m[Knew _Tp(std::forward<_Args>(__args)...)[m[K); }
+[4.916s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.916s] In file included from [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/double.hpp:7[m[K,
+[4.917s]                  from [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/include/robot_localization/InertialUnit.hpp:8[m[K,
+[4.917s]                  from [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/src/robot_localization/src/InertialUnit.cpp:1[m[K:
+[4.917s] [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:45:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmy_interfaces::msg::Double_<ContainerAllocator>::Double_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[4.918s]    45 |   explicit [01;36m[KDouble_[m[K(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[4.918s]       |            [01;36m[K^~~~~~~[m[K
+[4.918s] [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:45:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Kconst std::allocator<void>&[m[K’
+[4.918s]    45 |   explicit Double_([01;36m[Kconst ContainerAllocator & _alloc[m[K, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[4.918s]       |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.918s] [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:36:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmy_interfaces::msg::Double_<ContainerAllocator>::Double_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[4.918s]    36 |   explicit [01;36m[KDouble_[m[K(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[4.919s]       |            [01;36m[K^~~~~~~[m[K
+[4.919s] [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:36:62:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Krosidl_runtime_cpp::MessageInitialization[m[K’
+[4.919s]    36 |   explicit Double_([01;36m[Krosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL[m[K)
+[4.919s]       |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.919s] [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr my_interfaces::msg::Double_<std::allocator<void> >::Double_(const my_interfaces::msg::Double_<std::allocator<void> >&)[m[K’
+[4.919s]    32 | struct [01;36m[KDouble_[m[K
+[4.919s]       |        [01;36m[K^~~~~~~[m[K
+[4.919s] [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Kconst my_interfaces::msg::Double_<std::allocator<void> >&[m[K’
+[4.920s] [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr my_interfaces::msg::Double_<std::allocator<void> >::Double_(my_interfaces::msg::Double_<std::allocator<void> >&&)[m[K’
+[4.920s] [01m[K/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/double__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Kmy_interfaces::msg::Double_<std::allocator<void> >&&[m[K’
+[8.583s] gmake[2]: *** [CMakeFiles/inertial_unit.dir/build.make:76: CMakeFiles/inertial_unit.dir/src/InertialUnit.cpp.o] Error 1
+[8.584s] gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/inertial_unit.dir/all] Error 2
+[8.584s] gmake: *** [Makefile:146: all] Error 2
+[8.590s] Invoked command in '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization' returned '2': CMAKE_PREFIX_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/opt/ros/iron LD_LIBRARY_PATH=/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib /usr/bin/cmake --build /home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization -- -j16 -l16

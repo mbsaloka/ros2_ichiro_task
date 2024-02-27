@@ -41,6 +41,27 @@ install(
   DESTINATION include
 )
 
+# InertialUnit
+include_directories(
+  include
+)
+add_executable(inertial_unit
+  src/InertialUnit.cpp
+)
+ament_target_dependencies(inertial_unit
+  rclcpp
+  sensor_msgs
+  my_interfaces
+)
+install(TARGETS
+  inertial_unit
+  DESTINATION lib/${PROJECT_NAME}
+)
+install(
+  DIRECTORY include/
+  DESTINATION include
+)
+
 # RobotLocalization
 include_directories(
   include

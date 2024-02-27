@@ -7,7 +7,8 @@
     "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Velocity.idl",
     "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Object.idl",
     "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/VectorObjects.idl",
-    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Boolean.idl"
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Boolean.idl",
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Double.idl"
   ],
   "target_dependencies": [
     "/opt/ros/iron/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
@@ -20,6 +21,7 @@
     "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Velocity.idl",
     "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Object.idl",
     "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/VectorObjects.idl",
-    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Boolean.idl"
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Boolean.idl",
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Double.idl"
   ]
 }

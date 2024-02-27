@@ -490,6 +490,78 @@ rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.c.s
 .PHONY : rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.c.s
 
+rosidl_generator_c/my_interfaces/msg/detail/double__description.o: rosidl_generator_c/my_interfaces/msg/detail/double__description.c.o
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__description.o
+
+# target to build an object file
+rosidl_generator_c/my_interfaces/msg/detail/double__description.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.o
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__description.c.o
+
+rosidl_generator_c/my_interfaces/msg/detail/double__description.i: rosidl_generator_c/my_interfaces/msg/detail/double__description.c.i
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__description.i
+
+# target to preprocess a source file
+rosidl_generator_c/my_interfaces/msg/detail/double__description.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.i
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__description.c.i
+
+rosidl_generator_c/my_interfaces/msg/detail/double__description.s: rosidl_generator_c/my_interfaces/msg/detail/double__description.c.s
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__description.s
+
+# target to generate assembly for a file
+rosidl_generator_c/my_interfaces/msg/detail/double__description.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__description.c.s
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__description.c.s
+
+rosidl_generator_c/my_interfaces/msg/detail/double__functions.o: rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.o
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__functions.o
+
+# target to build an object file
+rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.o
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.o
+
+rosidl_generator_c/my_interfaces/msg/detail/double__functions.i: rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.i
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.i
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.i
+
+rosidl_generator_c/my_interfaces/msg/detail/double__functions.s: rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.s
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.s
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__functions.c.s
+
+rosidl_generator_c/my_interfaces/msg/detail/double__type_support.o: rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.o
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__type_support.o
+
+# target to build an object file
+rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.o
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.o
+
+rosidl_generator_c/my_interfaces/msg/detail/double__type_support.i: rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.i
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__type_support.i
+
+# target to preprocess a source file
+rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.i
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.i
+
+rosidl_generator_c/my_interfaces/msg/detail/double__type_support.s: rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.s
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__type_support.s
+
+# target to generate assembly for a file
+rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.s
+.PHONY : rosidl_generator_c/my_interfaces/msg/detail/double__type_support.c.s
+
 rosidl_generator_c/my_interfaces/msg/detail/object__description.o: rosidl_generator_c/my_interfaces/msg/detail/object__description.c.o
 .PHONY : rosidl_generator_c/my_interfaces/msg/detail/object__description.o
 
@@ -874,6 +946,30 @@ rosidl_generator_py/my_interfaces/msg/_boolean_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/msg/_boolean_s.c.s
 .PHONY : rosidl_generator_py/my_interfaces/msg/_boolean_s.c.s
 
+rosidl_generator_py/my_interfaces/msg/_double_s.o: rosidl_generator_py/my_interfaces/msg/_double_s.c.o
+.PHONY : rosidl_generator_py/my_interfaces/msg/_double_s.o
+
+# target to build an object file
+rosidl_generator_py/my_interfaces/msg/_double_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/msg/_double_s.c.o
+.PHONY : rosidl_generator_py/my_interfaces/msg/_double_s.c.o
+
+rosidl_generator_py/my_interfaces/msg/_double_s.i: rosidl_generator_py/my_interfaces/msg/_double_s.c.i
+.PHONY : rosidl_generator_py/my_interfaces/msg/_double_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/my_interfaces/msg/_double_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/msg/_double_s.c.i
+.PHONY : rosidl_generator_py/my_interfaces/msg/_double_s.c.i
+
+rosidl_generator_py/my_interfaces/msg/_double_s.s: rosidl_generator_py/my_interfaces/msg/_double_s.c.s
+.PHONY : rosidl_generator_py/my_interfaces/msg/_double_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/my_interfaces/msg/_double_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/msg/_double_s.c.s
+.PHONY : rosidl_generator_py/my_interfaces/msg/_double_s.c.s
+
 rosidl_generator_py/my_interfaces/msg/_object_s.o: rosidl_generator_py/my_interfaces/msg/_object_s.c.o
 .PHONY : rosidl_generator_py/my_interfaces/msg/_object_s.o
 
@@ -993,6 +1089,30 @@ rosidl_typesupport_c/my_interfaces/msg/boolean__type_support.s: rosidl_typesuppo
 rosidl_typesupport_c/my_interfaces/msg/boolean__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/msg/boolean__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/my_interfaces/msg/boolean__type_support.cpp.s
+
+rosidl_typesupport_c/my_interfaces/msg/double__type_support.o: rosidl_typesupport_c/my_interfaces/msg/double__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/my_interfaces/msg/double__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/my_interfaces/msg/double__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/msg/double__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/my_interfaces/msg/double__type_support.cpp.o
+
+rosidl_typesupport_c/my_interfaces/msg/double__type_support.i: rosidl_typesupport_c/my_interfaces/msg/double__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/my_interfaces/msg/double__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/my_interfaces/msg/double__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/msg/double__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/my_interfaces/msg/double__type_support.cpp.i
+
+rosidl_typesupport_c/my_interfaces/msg/double__type_support.s: rosidl_typesupport_c/my_interfaces/msg/double__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/my_interfaces/msg/double__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/my_interfaces/msg/double__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/msg/double__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/my_interfaces/msg/double__type_support.cpp.s
 
 rosidl_typesupport_c/my_interfaces/msg/object__type_support.o: rosidl_typesupport_c/my_interfaces/msg/object__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/my_interfaces/msg/object__type_support.o
@@ -1114,6 +1234,30 @@ rosidl_typesupport_cpp/my_interfaces/msg/boolean__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/msg/boolean__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/my_interfaces/msg/boolean__type_support.cpp.s
 
+rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.o: rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.cpp.o
+
+rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.i: rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.cpp.i
+
+rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.s: rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.cpp.s
+
 rosidl_typesupport_cpp/my_interfaces/msg/object__type_support.o: rosidl_typesupport_cpp/my_interfaces/msg/object__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/my_interfaces/msg/object__type_support.o
 
@@ -1233,6 +1377,30 @@ rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/boolean__type_support_c.s
 rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/boolean__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/boolean__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/boolean__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.o: rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.i: rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.s: rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/object__type_support_c.o: rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/object__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/object__type_support_c.o
@@ -1354,6 +1522,30 @@ rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/boolean__t
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/boolean__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/boolean__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.o: rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.i: rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.s: rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/object__type_support.o: rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/object__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/object__type_support.o
 
@@ -1474,6 +1666,30 @@ rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__type_suppor
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__type_support.c.s
 
+rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.o: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.o
+
+rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.i: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.i
+
+rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.s: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.s
+
 rosidl_typesupport_introspection_c/my_interfaces/msg/detail/object__type_support.o: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/object__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/my_interfaces/msg/detail/object__type_support.o
 
@@ -1593,6 +1809,30 @@ rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/boolean__type_supp
 rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/boolean__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/boolean__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/boolean__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.o: rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.i: rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.s: rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/object__type_support.o: rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/object__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/object__type_support.o
@@ -1731,6 +1971,15 @@ help:
 	@echo "... rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.o"
 	@echo "... rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.i"
 	@echo "... rosidl_generator_c/my_interfaces/msg/detail/boolean__type_support.s"
+	@echo "... rosidl_generator_c/my_interfaces/msg/detail/double__description.o"
+	@echo "... rosidl_generator_c/my_interfaces/msg/detail/double__description.i"
+	@echo "... rosidl_generator_c/my_interfaces/msg/detail/double__description.s"
+	@echo "... rosidl_generator_c/my_interfaces/msg/detail/double__functions.o"
+	@echo "... rosidl_generator_c/my_interfaces/msg/detail/double__functions.i"
+	@echo "... rosidl_generator_c/my_interfaces/msg/detail/double__functions.s"
+	@echo "... rosidl_generator_c/my_interfaces/msg/detail/double__type_support.o"
+	@echo "... rosidl_generator_c/my_interfaces/msg/detail/double__type_support.i"
+	@echo "... rosidl_generator_c/my_interfaces/msg/detail/double__type_support.s"
 	@echo "... rosidl_generator_c/my_interfaces/msg/detail/object__description.o"
 	@echo "... rosidl_generator_c/my_interfaces/msg/detail/object__description.i"
 	@echo "... rosidl_generator_c/my_interfaces/msg/detail/object__description.s"
@@ -1779,6 +2028,9 @@ help:
 	@echo "... rosidl_generator_py/my_interfaces/msg/_boolean_s.o"
 	@echo "... rosidl_generator_py/my_interfaces/msg/_boolean_s.i"
 	@echo "... rosidl_generator_py/my_interfaces/msg/_boolean_s.s"
+	@echo "... rosidl_generator_py/my_interfaces/msg/_double_s.o"
+	@echo "... rosidl_generator_py/my_interfaces/msg/_double_s.i"
+	@echo "... rosidl_generator_py/my_interfaces/msg/_double_s.s"
 	@echo "... rosidl_generator_py/my_interfaces/msg/_object_s.o"
 	@echo "... rosidl_generator_py/my_interfaces/msg/_object_s.i"
 	@echo "... rosidl_generator_py/my_interfaces/msg/_object_s.s"
@@ -1794,6 +2046,9 @@ help:
 	@echo "... rosidl_typesupport_c/my_interfaces/msg/boolean__type_support.o"
 	@echo "... rosidl_typesupport_c/my_interfaces/msg/boolean__type_support.i"
 	@echo "... rosidl_typesupport_c/my_interfaces/msg/boolean__type_support.s"
+	@echo "... rosidl_typesupport_c/my_interfaces/msg/double__type_support.o"
+	@echo "... rosidl_typesupport_c/my_interfaces/msg/double__type_support.i"
+	@echo "... rosidl_typesupport_c/my_interfaces/msg/double__type_support.s"
 	@echo "... rosidl_typesupport_c/my_interfaces/msg/object__type_support.o"
 	@echo "... rosidl_typesupport_c/my_interfaces/msg/object__type_support.i"
 	@echo "... rosidl_typesupport_c/my_interfaces/msg/object__type_support.s"
@@ -1809,6 +2064,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/my_interfaces/msg/boolean__type_support.o"
 	@echo "... rosidl_typesupport_cpp/my_interfaces/msg/boolean__type_support.i"
 	@echo "... rosidl_typesupport_cpp/my_interfaces/msg/boolean__type_support.s"
+	@echo "... rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.o"
+	@echo "... rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.i"
+	@echo "... rosidl_typesupport_cpp/my_interfaces/msg/double__type_support.s"
 	@echo "... rosidl_typesupport_cpp/my_interfaces/msg/object__type_support.o"
 	@echo "... rosidl_typesupport_cpp/my_interfaces/msg/object__type_support.i"
 	@echo "... rosidl_typesupport_cpp/my_interfaces/msg/object__type_support.s"
@@ -1824,6 +2082,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/boolean__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/boolean__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/boolean__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/double__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/object__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/object__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/object__type_support_c.s"
@@ -1839,6 +2100,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/boolean__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/boolean__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/boolean__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/double__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/object__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/object__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/object__type_support.s"
@@ -1854,6 +2118,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/my_interfaces/msg/detail/object__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/my_interfaces/msg/detail/object__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/my_interfaces/msg/detail/object__type_support.s"
@@ -1869,6 +2136,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/boolean__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/boolean__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/boolean__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/object__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/object__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/object__type_support.s"

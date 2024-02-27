@@ -224,6 +224,19 @@ object_recognizer/fast:
 .PHONY : object_recognizer/fast
 
 #=============================================================================
+# Target rules for targets named inertial_unit
+
+# Build rule for target.
+inertial_unit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 inertial_unit
+.PHONY : inertial_unit
+
+# fast build rule for target.
+inertial_unit/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inertial_unit.dir/build.make CMakeFiles/inertial_unit.dir/build
+.PHONY : inertial_unit/fast
+
+#=============================================================================
 # Target rules for targets named localization
 
 # Build rule for target.
@@ -261,6 +274,30 @@ robot_localization: cmake_check_build_system
 robot_localization/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_localization.dir/build.make CMakeFiles/robot_localization.dir/build
 .PHONY : robot_localization/fast
+
+src/InertialUnit.o: src/InertialUnit.cpp.o
+.PHONY : src/InertialUnit.o
+
+# target to build an object file
+src/InertialUnit.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inertial_unit.dir/build.make CMakeFiles/inertial_unit.dir/src/InertialUnit.cpp.o
+.PHONY : src/InertialUnit.cpp.o
+
+src/InertialUnit.i: src/InertialUnit.cpp.i
+.PHONY : src/InertialUnit.i
+
+# target to preprocess a source file
+src/InertialUnit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inertial_unit.dir/build.make CMakeFiles/inertial_unit.dir/src/InertialUnit.cpp.i
+.PHONY : src/InertialUnit.cpp.i
+
+src/InertialUnit.s: src/InertialUnit.cpp.s
+.PHONY : src/InertialUnit.s
+
+# target to generate assembly for a file
+src/InertialUnit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inertial_unit.dir/build.make CMakeFiles/inertial_unit.dir/src/InertialUnit.cpp.s
+.PHONY : src/InertialUnit.cpp.s
 
 src/MyRobotDriver.o: src/MyRobotDriver.cpp.o
 .PHONY : src/MyRobotDriver.o
@@ -397,11 +434,15 @@ help:
 	@echo "... test"
 	@echo "... robot_localization_uninstall"
 	@echo "... uninstall"
+	@echo "... inertial_unit"
 	@echo "... localization"
 	@echo "... object_recognizer"
 	@echo "... odometry"
 	@echo "... robot_controller"
 	@echo "... robot_localization"
+	@echo "... src/InertialUnit.o"
+	@echo "... src/InertialUnit.i"
+	@echo "... src/InertialUnit.s"
 	@echo "... src/MyRobotDriver.o"
 	@echo "... src/MyRobotDriver.i"
 	@echo "... src/MyRobotDriver.s"

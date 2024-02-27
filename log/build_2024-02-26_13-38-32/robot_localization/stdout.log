@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target inertial_unit[0m
+[35m[1mConsolidate compiler generated dependencies of target robot_controller[0m
+[35m[1mConsolidate compiler generated dependencies of target localization[0m
+[35m[1mConsolidate compiler generated dependencies of target odometry[0m
+[35m[1mConsolidate compiler generated dependencies of target robot_localization[0m
+[35m[1mConsolidate compiler generated dependencies of target object_recognizer[0m
+[  8%] [32mBuilding CXX object CMakeFiles/inertial_unit.dir/src/InertialUnit.cpp.o[0m
+[ 25%] Built target robot_controller
+[ 41%] Built target localization
+[ 58%] Built target odometry
+[ 75%] Built target robot_localization
+[ 91%] Built target object_recognizer

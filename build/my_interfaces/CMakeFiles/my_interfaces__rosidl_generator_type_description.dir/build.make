@@ -71,6 +71,7 @@ CMakeFiles/my_interfaces__rosidl_generator_type_description: rosidl_generator_ty
 CMakeFiles/my_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_interfaces/msg/Object.json
 CMakeFiles/my_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_interfaces/msg/VectorObjects.json
 CMakeFiles/my_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_interfaces/msg/Boolean.json
+CMakeFiles/my_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_interfaces/msg/Double.json
 
 rosidl_generator_type_description/my_interfaces/msg/Pose.json: /opt/ros/iron/lib/rosidl_generator_type_description/rosidl_generator_type_description
 rosidl_generator_type_description/my_interfaces/msg/Pose.json: /opt/ros/iron/lib/python3.10/site-packages/rosidl_generator_type_description/__init__.py
@@ -79,6 +80,7 @@ rosidl_generator_type_description/my_interfaces/msg/Pose.json: rosidl_adapter/my
 rosidl_generator_type_description/my_interfaces/msg/Pose.json: rosidl_adapter/my_interfaces/msg/Object.idl
 rosidl_generator_type_description/my_interfaces/msg/Pose.json: rosidl_adapter/my_interfaces/msg/VectorObjects.idl
 rosidl_generator_type_description/my_interfaces/msg/Pose.json: rosidl_adapter/my_interfaces/msg/Boolean.idl
+rosidl_generator_type_description/my_interfaces/msg/Pose.json: rosidl_adapter/my_interfaces/msg/Double.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/iron/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_type_description__arguments.json
 
@@ -94,8 +96,12 @@ rosidl_generator_type_description/my_interfaces/msg/VectorObjects.json: rosidl_g
 rosidl_generator_type_description/my_interfaces/msg/Boolean.json: rosidl_generator_type_description/my_interfaces/msg/Pose.json
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/my_interfaces/msg/Boolean.json
 
+rosidl_generator_type_description/my_interfaces/msg/Double.json: rosidl_generator_type_description/my_interfaces/msg/Pose.json
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/my_interfaces/msg/Double.json
+
 my_interfaces__rosidl_generator_type_description: CMakeFiles/my_interfaces__rosidl_generator_type_description
 my_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_interfaces/msg/Boolean.json
+my_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_interfaces/msg/Double.json
 my_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_interfaces/msg/Object.json
 my_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_interfaces/msg/Pose.json
 my_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_interfaces/msg/VectorObjects.json

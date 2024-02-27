@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/my_interfaces/msg/__init__.py"
   "../rosidl_generator_py/my_interfaces/msg/_boolean.py"
   "../rosidl_generator_py/my_interfaces/msg/_boolean_s.c"
+  "../rosidl_generator_py/my_interfaces/msg/_double.py"
+  "../rosidl_generator_py/my_interfaces/msg/_double_s.c"
   "../rosidl_generator_py/my_interfaces/msg/_object.py"
   "../rosidl_generator_py/my_interfaces/msg/_object_s.c"
   "../rosidl_generator_py/my_interfaces/msg/_pose.py"

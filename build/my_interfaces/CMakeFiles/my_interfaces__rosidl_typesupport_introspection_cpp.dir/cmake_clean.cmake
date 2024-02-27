@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/boolean__type_support.cpp.o"
   "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/boolean__type_support.cpp.o.d"
+  "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.cpp.o"
+  "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.cpp.o.d"
   "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/object__type_support.cpp.o"
   "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/object__type_support.cpp.o.d"
   "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/pose__type_support.cpp.o"
@@ -13,6 +15,8 @@ file(REMOVE_RECURSE
   "libmy_interfaces__rosidl_typesupport_introspection_cpp.so"
   "rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/boolean__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/boolean__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/double__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/object__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/object__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp"

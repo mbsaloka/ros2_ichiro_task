@@ -7,7 +7,8 @@
     "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Velocity.idl",
     "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Object.idl",
     "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/VectorObjects.idl",
-    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Boolean.idl"
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Boolean.idl",
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces:msg/Double.idl"
   ],
   "target_dependencies": [
     "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -29,13 +30,15 @@
     "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Velocity.idl",
     "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Object.idl",
     "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/VectorObjects.idl",
-    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Boolean.idl"
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Boolean.idl",
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_adapter/my_interfaces/msg/Double.idl"
   ],
   "type_description_tuples": [
     "msg/Pose.idl:/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_type_description/my_interfaces/msg/Pose.json",
     "msg/Velocity.idl:/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_type_description/my_interfaces/msg/Velocity.json",
     "msg/Object.idl:/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_type_description/my_interfaces/msg/Object.json",
     "msg/VectorObjects.idl:/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_type_description/my_interfaces/msg/VectorObjects.json",
-    "msg/Boolean.idl:/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_type_description/my_interfaces/msg/Boolean.json"
+    "msg/Boolean.idl:/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_type_description/my_interfaces/msg/Boolean.json",
+    "msg/Double.idl:/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_generator_type_description/my_interfaces/msg/Double.json"
   ]
 }

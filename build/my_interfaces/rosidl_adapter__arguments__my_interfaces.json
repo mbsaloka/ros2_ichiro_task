@@ -5,6 +5,7 @@
     "/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces:msg/Velocity.msg",
     "/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces:msg/Object.msg",
     "/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces:msg/VectorObjects.msg",
-    "/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces:msg/Boolean.msg"
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces:msg/Boolean.msg",
+    "/home/mbsaloka/Desktop/ros2_ichiro_task/src/my_interfaces:msg/Double.msg"
   ]
 }

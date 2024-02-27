@@ -36,6 +36,8 @@ E-puck {
       recognition Recognition {
       }
     }
+    InertialUnit {
+    }
   ]
 }
 DEF LANDMARK_1 Solid {

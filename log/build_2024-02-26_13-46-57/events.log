@@ -1,0 +1,216 @@
+[0.000000] (-) TimerEvent: {}
+[0.001019] (-) JobUnselected: {'identifier': 'my_interfaces'}
+[0.001086] (-) JobUnselected: {'identifier': 'odd_num_pubsub'}
+[0.001110] (-) JobUnselected: {'identifier': 'soccer_pubsub'}
+[0.001130] (-) JobUnselected: {'identifier': 'sum_two_num_srvcli'}
+[0.001151] (robot_localization) JobQueued: {'identifier': 'robot_localization', 'dependencies': OrderedDict([('my_interfaces', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces')])}
+[0.001181] (robot_localization) JobStarted: {'identifier': 'robot_localization'}
+[0.100289] (-) TimerEvent: {}
+[0.132736] (robot_localization) JobProgress: {'identifier': 'robot_localization', 'progress': 'cmake'}
+[0.135737] (robot_localization) JobProgress: {'identifier': 'robot_localization', 'progress': 'build'}
+[0.136067] (robot_localization) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization', '--', '-j16', '-l16'], 'cwd': '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mbsaloka'), ('LC_TIME', 'id_ID.UTF-8'), ('GIO_MODULE_DIR', '/home/mbsaloka/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/mbsaloka'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/152/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/mbsaloka/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/152/usr/share/code/code'), ('MANAGERPID', '2182'), ('SYSTEMD_EXEC_PID', '2605'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4318'), ('COLCON_PREFIX_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mbsaloka'), ('JOURNAL_STREAM', '8:31078'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'mbsaloka'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mbsaloka-LOQ-15IRH8:@/tmp/.ICE-unix/2583,unix/mbsaloka-LOQ-15IRH8:/tmp/.ICE-unix/2583'), ('GTK_EXE_PREFIX', '/snap/code/152/usr'), ('INVOCATION_ID', 'e9b242bbc27f4c31badacb86a241edba'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/152/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c3044f75c5.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/mbsaloka/snap/code/152/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/opt/ros/iron'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/mbsaloka/snap/code/152/.local/share:/home/mbsaloka/snap/code/152:/snap/code/152/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/opt/ros/iron')]), 'shell': False}
+[0.200473] (-) TimerEvent: {}
+[0.298688] (robot_localization) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target inertial_unit\x1b[0m\n'}
+[0.300682] (-) TimerEvent: {}
+[0.324874] (robot_localization) StdoutLine: {'line': b'[ 16%] Built target object_recognizer\n'}
+[0.325608] (robot_localization) StdoutLine: {'line': b'[ 33%] Built target odometry\n'}
+[0.325898] (robot_localization) StdoutLine: {'line': b'[ 50%] Built target localization\n'}
+[0.326275] (robot_localization) StdoutLine: {'line': b'[ 66%] Built target robot_controller\n'}
+[0.339643] (robot_localization) StdoutLine: {'line': b'[ 83%] Built target robot_localization\n'}
+[0.341674] (robot_localization) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/inertial_unit.dir/src/InertialUnit.cpp.o\x1b[0m\n'}
+[0.400841] (-) TimerEvent: {}
+[0.501760] (-) TimerEvent: {}
+[0.602366] (-) TimerEvent: {}
+[0.702799] (-) TimerEvent: {}
+[0.803381] (-) TimerEvent: {}
+[0.903847] (-) TimerEvent: {}
+[1.004569] (-) TimerEvent: {}
+[1.105090] (-) TimerEvent: {}
+[1.205591] (-) TimerEvent: {}
+[1.306109] (-) TimerEvent: {}
+[1.406633] (-) TimerEvent: {}
+[1.507209] (-) TimerEvent: {}
+[1.607677] (-) TimerEvent: {}
+[1.708167] (-) TimerEvent: {}
+[1.808641] (-) TimerEvent: {}
+[1.909152] (-) TimerEvent: {}
+[2.009654] (-) TimerEvent: {}
+[2.110168] (-) TimerEvent: {}
+[2.210729] (-) TimerEvent: {}
+[2.311285] (-) TimerEvent: {}
+[2.411878] (-) TimerEvent: {}
+[2.512547] (-) TimerEvent: {}
+[2.613079] (-) TimerEvent: {}
+[2.713626] (-) TimerEvent: {}
+[2.814090] (-) TimerEvent: {}
+[2.914644] (-) TimerEvent: {}
+[3.015210] (-) TimerEvent: {}
+[3.115644] (-) TimerEvent: {}
+[3.216121] (-) TimerEvent: {}
+[3.316723] (-) TimerEvent: {}
+[3.417314] (-) TimerEvent: {}
+[3.517942] (-) TimerEvent: {}
+[3.618562] (-) TimerEvent: {}
+[3.719363] (-) TimerEvent: {}
+[3.819910] (-) TimerEvent: {}
+[3.920441] (-) TimerEvent: {}
+[4.021016] (-) TimerEvent: {}
+[4.121580] (-) TimerEvent: {}
+[4.222256] (-) TimerEvent: {}
+[4.322877] (-) TimerEvent: {}
+[4.423320] (-) TimerEvent: {}
+[4.523727] (-) TimerEvent: {}
+[4.624226] (-) TimerEvent: {}
+[4.724983] (-) TimerEvent: {}
+[4.825794] (-) TimerEvent: {}
+[4.926530] (-) TimerEvent: {}
+[5.027188] (-) TimerEvent: {}
+[5.127752] (-) TimerEvent: {}
+[5.228404] (-) TimerEvent: {}
+[5.328895] (-) TimerEvent: {}
+[5.429388] (-) TimerEvent: {}
+[5.529928] (-) TimerEvent: {}
+[5.630512] (-) TimerEvent: {}
+[5.730967] (-) TimerEvent: {}
+[5.831382] (-) TimerEvent: {}
+[5.931748] (-) TimerEvent: {}
+[6.032222] (-) TimerEvent: {}
+[6.132561] (-) TimerEvent: {}
+[6.232982] (-) TimerEvent: {}
+[6.333434] (-) TimerEvent: {}
+[6.433852] (-) TimerEvent: {}
+[6.534300] (-) TimerEvent: {}
+[6.634767] (-) TimerEvent: {}
+[6.735254] (-) TimerEvent: {}
+[6.835732] (-) TimerEvent: {}
+[6.936267] (-) TimerEvent: {}
+[7.036812] (-) TimerEvent: {}
+[7.137354] (-) TimerEvent: {}
+[7.237916] (-) TimerEvent: {}
+[7.338435] (-) TimerEvent: {}
+[7.438797] (-) TimerEvent: {}
+[7.539323] (-) TimerEvent: {}
+[7.639822] (-) TimerEvent: {}
+[7.740271] (-) TimerEvent: {}
+[7.840762] (-) TimerEvent: {}
+[7.941167] (-) TimerEvent: {}
+[8.041693] (-) TimerEvent: {}
+[8.142188] (-) TimerEvent: {}
+[8.242697] (-) TimerEvent: {}
+[8.343177] (-) TimerEvent: {}
+[8.443563] (-) TimerEvent: {}
+[8.544078] (-) TimerEvent: {}
+[8.644588] (-) TimerEvent: {}
+[8.745088] (-) TimerEvent: {}
+[8.845557] (-) TimerEvent: {}
+[8.945978] (-) TimerEvent: {}
+[9.046404] (-) TimerEvent: {}
+[9.146747] (-) TimerEvent: {}
+[9.247180] (-) TimerEvent: {}
+[9.347587] (-) TimerEvent: {}
+[9.448049] (-) TimerEvent: {}
+[9.548534] (-) TimerEvent: {}
+[9.649052] (-) TimerEvent: {}
+[9.749532] (-) TimerEvent: {}
+[9.850038] (-) TimerEvent: {}
+[9.950467] (-) TimerEvent: {}
+[10.050897] (-) TimerEvent: {}
+[10.151313] (-) TimerEvent: {}
+[10.251732] (-) TimerEvent: {}
+[10.352231] (-) TimerEvent: {}
+[10.452737] (-) TimerEvent: {}
+[10.553248] (-) TimerEvent: {}
+[10.653746] (-) TimerEvent: {}
+[10.754248] (-) TimerEvent: {}
+[10.854725] (-) TimerEvent: {}
+[10.955322] (-) TimerEvent: {}
+[11.056184] (-) TimerEvent: {}
+[11.156732] (-) TimerEvent: {}
+[11.185482] (robot_localization) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable inertial_unit\x1b[0m\n'}
+[11.256944] (-) TimerEvent: {}
+[11.357447] (-) TimerEvent: {}
+[11.457830] (-) TimerEvent: {}
+[11.558210] (-) TimerEvent: {}
+[11.658716] (-) TimerEvent: {}
+[11.759097] (-) TimerEvent: {}
+[11.859615] (-) TimerEvent: {}
+[11.870149] (robot_localization) StdoutLine: {'line': b'[100%] Built target inertial_unit\n'}
+[11.885637] (robot_localization) CommandEnded: {'returncode': 0}
+[11.947026] (robot_localization) JobProgress: {'identifier': 'robot_localization', 'progress': 'install'}
+[11.960830] (robot_localization) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization'], 'cwd': '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mbsaloka'), ('LC_TIME', 'id_ID.UTF-8'), ('GIO_MODULE_DIR', '/home/mbsaloka/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/mbsaloka'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/152/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/mbsaloka/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/152/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/152/usr/share/code/code'), ('MANAGERPID', '2182'), ('SYSTEMD_EXEC_PID', '2605'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4318'), ('COLCON_PREFIX_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mbsaloka'), ('JOURNAL_STREAM', '8:31078'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'mbsaloka'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mbsaloka-LOQ-15IRH8:@/tmp/.ICE-unix/2583,unix/mbsaloka-LOQ-15IRH8:/tmp/.ICE-unix/2583'), ('GTK_EXE_PREFIX', '/snap/code/152/usr'), ('INVOCATION_ID', 'e9b242bbc27f4c31badacb86a241edba'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/152/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c3044f75c5.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/mbsaloka/snap/code/152/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/opt/ros/iron'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mbsaloka/Desktop/ros2_ichiro_task/build/robot_localization'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/mbsaloka/snap/code/152/.local/share:/home/mbsaloka/snap/code/152:/snap/code/152/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mbsaloka/Desktop/ros2_ichiro_task/install/my_interfaces:/home/mbsaloka/Desktop/ros2_ichiro_task/install/sum_two_num_srvcli:/home/mbsaloka/Desktop/ros2_ichiro_task/install/soccer_pubsub:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization:/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_controller:/home/mbsaloka/Desktop/ros2_ichiro_task/install/odd_num_pubsub:/opt/ros/iron')]), 'shell': False}
+[11.961810] (-) TimerEvent: {}
+[11.972482] (robot_localization) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.972981] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/my_robot_driver.xml\n'}
+[11.973517] (robot_localization) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/object_recognizer\n'}
+[11.980202] (robot_localization) StdoutLine: {'line': b'-- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/object_recognizer" to ""\n'}
+[11.980427] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include\n'}
+[11.980607] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization\n'}
+[11.980726] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/ObjectRecognizer.hpp\n'}
+[11.980895] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/RobotLocalization.hpp\n'}
+[11.980975] (robot_localization) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/InertialUnit.hpp\n'}
+[11.982203] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/MyRobotDriver.hpp\n'}
+[11.982529] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/Odometry.hpp\n'}
+[11.982706] (robot_localization) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/inertial_unit\n'}
+[11.989380] (robot_localization) StdoutLine: {'line': b'-- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/inertial_unit" to ""\n'}
+[11.989659] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include\n'}
+[11.989796] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization\n'}
+[11.990010] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/ObjectRecognizer.hpp\n'}
+[11.990133] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/RobotLocalization.hpp\n'}
+[11.990251] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/InertialUnit.hpp\n'}
+[11.990458] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/MyRobotDriver.hpp\n'}
+[11.990581] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/Odometry.hpp\n'}
+[11.990694] (robot_localization) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/localization\n'}
+[12.013165] (robot_localization) StdoutLine: {'line': b'-- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/localization" to ""\n'}
+[12.013790] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include\n'}
+[12.013983] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization\n'}
+[12.014134] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/ObjectRecognizer.hpp\n'}
+[12.014279] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/RobotLocalization.hpp\n'}
+[12.014418] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/InertialUnit.hpp\n'}
+[12.014631] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/MyRobotDriver.hpp\n'}
+[12.014755] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/Odometry.hpp\n'}
+[12.014877] (robot_localization) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/odometry\n'}
+[12.028518] (robot_localization) StdoutLine: {'line': b'-- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/odometry" to ""\n'}
+[12.028790] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include\n'}
+[12.028885] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization\n'}
+[12.028959] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/ObjectRecognizer.hpp\n'}
+[12.029029] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/RobotLocalization.hpp\n'}
+[12.029097] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/InertialUnit.hpp\n'}
+[12.029168] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/MyRobotDriver.hpp\n'}
+[12.029240] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/include/robot_localization/Odometry.hpp\n'}
+[12.029549] (robot_localization) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/librobot_localization.so\n'}
+[12.034974] (robot_localization) StdoutLine: {'line': b'-- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/librobot_localization.so" to ""\n'}
+[12.035224] (robot_localization) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/robot_controller\n'}
+[12.036910] (robot_localization) StdoutLine: {'line': b'-- Set runtime path of "/home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/robot_controller" to ""\n'}
+[12.037300] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/lib/robot_localization/object_recognizer\n'}
+[12.037493] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization//launch\n'}
+[12.037584] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization//launch/robot_launch.py\n'}
+[12.037660] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization//resource\n'}
+[12.037732] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization//resource/my_robot.urdf\n'}
+[12.037807] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization//worlds\n'}
+[12.037881] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization//worlds/soccer_field.wbt\n'}
+[12.038094] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/environment/library_path.sh\n'}
+[12.038325] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/environment/library_path.dsv\n'}
+[12.038408] (robot_localization) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/ament_index/resource_index/package_run_dependencies/robot_localization\n'}
+[12.038487] (robot_localization) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/ament_index/resource_index/parent_prefix_path/robot_localization\n'}
+[12.038619] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/environment/ament_prefix_path.sh\n'}
+[12.038769] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/environment/ament_prefix_path.dsv\n'}
+[12.038852] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/environment/path.sh\n'}
+[12.038954] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/environment/path.dsv\n'}
+[12.039024] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/local_setup.bash\n'}
+[12.039088] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/local_setup.sh\n'}
+[12.039176] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/local_setup.zsh\n'}
+[12.039291] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/local_setup.dsv\n'}
+[12.039367] (robot_localization) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/package.dsv\n'}
+[12.039475] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/ament_index/resource_index/packages/robot_localization\n'}
+[12.039582] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/ament_index/resource_index/webots_ros2_driver__pluginlib__plugin/robot_localization\n'}
+[12.039658] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.039723] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.039788] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/cmake/robot_localizationConfig.cmake\n'}
+[12.039851] (robot_localization) StdoutLine: {'line': b'-- Up-to-date: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/cmake/robot_localizationConfig-version.cmake\n'}
+[12.039917] (robot_localization) StdoutLine: {'line': b'-- Installing: /home/mbsaloka/Desktop/ros2_ichiro_task/install/robot_localization/share/robot_localization/package.xml\n'}
+[12.042543] (robot_localization) CommandEnded: {'returncode': 0}
+[12.062011] (-) TimerEvent: {}
+[12.162381] (-) TimerEvent: {}
+[12.262996] (-) TimerEvent: {}
+[12.339984] (robot_localization) JobEnded: {'identifier': 'robot_localization', 'rc': 0}
+[12.340584] (-) EventReactorShutdown: {}

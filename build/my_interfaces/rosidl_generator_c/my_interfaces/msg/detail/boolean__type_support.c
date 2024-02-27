@@ -4,8 +4,8 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
 #include "my_interfaces/msg/detail/boolean__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "my_interfaces/msg/detail/boolean__type_support.h"
 #include "my_interfaces/msg/detail/boolean__struct.h"
 

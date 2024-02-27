@@ -82,6 +82,7 @@ rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__rosidl_typesup
 rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__rosidl_typesupport_introspection_c.h: rosidl_adapter/my_interfaces/msg/Object.idl
 rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__rosidl_typesupport_introspection_c.h: rosidl_adapter/my_interfaces/msg/VectorObjects.idl
 rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__rosidl_typesupport_introspection_c.h: rosidl_adapter/my_interfaces/msg/Boolean.idl
+rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__rosidl_typesupport_introspection_c.h: rosidl_adapter/my_interfaces/msg/Double.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/iron/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_typesupport_introspection_c__arguments.json
 
@@ -97,6 +98,9 @@ rosidl_typesupport_introspection_c/my_interfaces/msg/detail/vector_objects__rosi
 rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__type_support.c: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__type_support.c
 
@@ -111,6 +115,9 @@ rosidl_typesupport_introspection_c/my_interfaces/msg/detail/vector_objects__type
 
 rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__type_support.c: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__type_support.c
+
+rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c
 
 CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__type_support.c.o: CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__type_support.c.o: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__type_support.c
@@ -182,13 +189,28 @@ CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__type_support.c -o CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__type_support.c.s
 
+CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.o: CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.o: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c
+CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.o: CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.o -MF CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.o.d -o CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.o -c /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c
+
+CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c > CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.i
+
+CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c -o CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.s
+
 # Object files for target my_interfaces__rosidl_typesupport_introspection_c
 my_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__type_support.c.o" \
 "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/velocity__type_support.c.o" \
 "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/object__type_support.c.o" \
 "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/vector_objects__type_support.c.o" \
-"CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__type_support.c.o"
+"CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__type_support.c.o" \
+"CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.o"
 
 # External object files for target my_interfaces__rosidl_typesupport_introspection_c
 my_interfaces__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
@@ -198,13 +220,14 @@ libmy_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/my_interface
 libmy_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/object__type_support.c.o
 libmy_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/vector_objects__type_support.c.o
 libmy_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__type_support.c.o
+libmy_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c.o
 libmy_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/build.make
 libmy_interfaces__rosidl_typesupport_introspection_c.so: libmy_interfaces__rosidl_generator_c.so
 libmy_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/iron/lib/librosidl_runtime_c.so
 libmy_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/iron/lib/librosidl_typesupport_introspection_c.so
 libmy_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/iron/lib/librcutils.so
 libmy_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C shared library libmy_interfaces__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mbsaloka/Desktop/ros2_ichiro_task/build/my_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C shared library libmy_interfaces__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -217,6 +240,8 @@ CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__rosidl_typesupport_introspection_c.h
 CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/boolean__type_support.c
+CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__rosidl_typesupport_introspection_c.h
+CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/double__type_support.c
 CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/object__rosidl_typesupport_introspection_c.h
 CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/object__type_support.c
 CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/my_interfaces/msg/detail/pose__rosidl_typesupport_introspection_c.h

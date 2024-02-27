@@ -43,6 +43,11 @@ def generate_launch_description():
         executable='odometry',
     )
 
+    inertial_unit = Node(
+        package='robot_localization',
+        executable='inertial_unit',
+    )
+
     def close_terminals(event):
         subprocess.call(['pkill', '-f', 'ros2 run robot_localization robot_controller'])
         subprocess.call(['pkill', '-f', 'ros2 run robot_localization object_recognizer'])
@@ -55,6 +60,7 @@ def generate_launch_description():
         object_recognizer,
         localization,
         odometry,
+        inertial_unit,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=my_robot_driver,  # Attach event handler to my_robot_driver process

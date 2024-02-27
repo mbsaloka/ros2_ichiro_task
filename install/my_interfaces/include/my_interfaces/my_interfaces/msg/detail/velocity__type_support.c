@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "my_interfaces/msg/detail/velocity__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "my_interfaces/msg/detail/velocity__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "my_interfaces/msg/detail/velocity__type_support.h"
 
 #ifdef __cplusplus
