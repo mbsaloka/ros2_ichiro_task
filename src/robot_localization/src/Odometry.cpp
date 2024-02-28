@@ -11,6 +11,10 @@ Odometry::Odometry() : Node("odometry") {
         "/restart", 1,
         std::bind(&Odometry::restartCallback, this, std::placeholders::_1));
 
+    res_2_sub_ = create_subscription<my_interfaces::msg::Boolean>(
+        "/restart_2", 1,
+        std::bind(&Odometry::restartCallback, this, std::placeholders::_1));
+
     timer_ = this->create_wall_timer(
         32ms, std::bind(&Odometry::timer_callback, this));
 }

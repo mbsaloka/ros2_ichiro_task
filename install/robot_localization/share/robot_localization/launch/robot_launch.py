@@ -24,7 +24,7 @@ def generate_launch_description():
     )
 
     robot_controller = launch.actions.ExecuteProcess(
-        cmd=['gnome-terminal', '--geometry=50x12+100+800', '--', 'ros2', 'run', 'robot_localization', 'robot_controller'],
+        cmd=['gnome-terminal', '--geometry=50x12+600+800', '--', 'ros2', 'run', 'robot_localization', 'robot_controller'],
         output='screen'
     )
 
@@ -34,7 +34,7 @@ def generate_launch_description():
     )
 
     localization = launch.actions.ExecuteProcess(
-        cmd=['gnome-terminal', '--geometry=70x16+600+800', '--', 'ros2', 'run', 'robot_localization', 'localization'],
+        cmd=['gnome-terminal', '--geometry=70x16+1100+800', '--', 'ros2', 'run', 'robot_localization', 'localization'],
         output='screen'
     )
 

@@ -30,6 +30,7 @@ private:
     rclcpp::Subscription<my_interfaces::msg::Velocity>::SharedPtr vel_sub_;
     rclcpp::Publisher<my_interfaces::msg::Pose>::SharedPtr pose_pub_;
     rclcpp::Subscription<my_interfaces::msg::Boolean>::SharedPtr res_sub_;
+    rclcpp::Subscription<my_interfaces::msg::Boolean>::SharedPtr res_2_sub_;
 
     double linear_vel_;
     double angular_vel_;

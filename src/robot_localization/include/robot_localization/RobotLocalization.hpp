@@ -15,7 +15,6 @@
 #include "my_interfaces/msg/double.hpp"
 
 #define TIME_STEP 0.032
-#define MAX_SPEED 6.28
 #define FIELD_WIDTH 900
 #define FIELD_LENGTH 600
 #define NUM_PARTICLES 1000
@@ -67,12 +66,14 @@ private:
     void print_particles();
     void print_odometry();
     void restart();
+    double get_sum_weight();
 
     rclcpp::Subscription<my_interfaces::msg::VectorObjects>::SharedPtr obj_sub_;
     rclcpp::Subscription<my_interfaces::msg::Velocity>::SharedPtr vel_sub_;
     rclcpp::Subscription<my_interfaces::msg::Boolean>::SharedPtr res_sub_;
     rclcpp::Subscription<my_interfaces::msg::Pose>::SharedPtr odom_sub_;
     rclcpp::Subscription<my_interfaces::msg::Double>::SharedPtr imu_sub_;
+    rclcpp::Publisher<my_interfaces::msg::Boolean>::SharedPtr restart_pub_;
 
     double robot_pose_[3] = {0.0, 0.0, 0.0};
     std::vector<Particle> particles_;
