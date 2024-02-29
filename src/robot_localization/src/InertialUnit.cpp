@@ -16,6 +16,7 @@ void InertialUnit::imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg) {
     double qz = msg->orientation.z;
     double qw = msg->orientation.w;
 
+    // convert quaternion orientation to euler angles
     double norm = std::sqrt(qx * qx + qy * qy + qz * qz + qw * qw);
     double x = qx / norm;
     double y = qy / norm;

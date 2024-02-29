@@ -26,8 +26,8 @@ RobotController::RobotController(std::shared_ptr<rclcpp::Node> nh)
     : nh_(nh), linear_(0), angular_(0) {
     velocity_pub_ =
         nh_->create_publisher<my_interfaces::msg::Velocity>("/velocity", 1);
-    restart_pub_ =
-        nh_->create_publisher<my_interfaces::msg::Boolean>("/restart", 1);
+    restart_pub_ = nh_->create_publisher<my_interfaces::msg::Boolean>(
+        "/restart_by_key", 1);
 }
 
 int kb = 0;

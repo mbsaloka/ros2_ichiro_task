@@ -63,7 +63,7 @@ def generate_launch_description():
         inertial_unit,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
-                target_action=my_robot_driver,  # Attach event handler to my_robot_driver process
+                target_action=my_robot_driver,
                 on_exit=[
                     launch.actions.EmitEvent(event=launch.events.Shutdown()),
                     launch.actions.OpaqueFunction(function=close_terminals)

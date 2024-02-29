@@ -8,12 +8,6 @@
                 <alwaysOn>true</alwaysOn>
             </ros>
         </device>
-        <!-- <device reference="inertial unit" type="InertialUnit">
-            <ros>
-                <topicName>/orientation</topicName>
-                <alwaysOn>true</alwaysOn>
-            </ros>
-        </device> -->
         <plugin type="webots_ros2_driver::Ros2IMU">
             <topicName>/imu</topicName>
             <alwaysOn>True</alwaysOn>

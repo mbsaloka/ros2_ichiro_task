@@ -25,7 +25,6 @@ void ObjectRecognizer::cameraCallback(
     }
 
     for (const auto obj : recognized_objects_) {
-        // std::cout << "X: " << obj.x << " Y: " << obj.y << std::endl;
         my_interfaces::msg::Object object;
 
         object.x = obj.x;
@@ -33,7 +32,6 @@ void ObjectRecognizer::cameraCallback(
 
         message->objects.push_back(object);
     }
-    // std::cout << "-------------------------" << std::endl;
 
     object_pub_->publish(std::move(message));
 }

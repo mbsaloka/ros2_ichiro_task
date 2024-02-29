@@ -12,7 +12,7 @@ RobotLocalization::RobotLocalization() : Node("robot_localization") {
         std::bind(&RobotLocalization::velocityCallback, this,
                   std::placeholders::_1));
     res_sub_ = create_subscription<my_interfaces::msg::Boolean>(
-        "/restart", 1,
+        "/restart_by_key", 1,
         std::bind(&RobotLocalization::restartCallback, this,
                   std::placeholders::_1));
     odom_sub_ = create_subscription<my_interfaces::msg::Pose>(
@@ -24,7 +24,7 @@ RobotLocalization::RobotLocalization() : Node("robot_localization") {
         std::bind(&RobotLocalization::imuCallback, this,
                   std::placeholders::_1));
     restart_pub_ =
-        create_publisher<my_interfaces::msg::Boolean>("/restart_2", 1);
+        create_publisher<my_interfaces::msg::Boolean>("/restart_by_code", 1);
 
     init_particles();
     lastTime_ = std::chrono::high_resolution_clock::now();
@@ -50,24 +50,26 @@ void RobotLocalization::velocityCallback(
 void RobotLocalization::restartCallback(
     const my_interfaces::msg::Boolean::SharedPtr msg) {
     std::cout << "[ROBOT IS KIDNAPPED. Wait for the update...]" << std::endl;
-    std::cout << "[MOVE ROBOT TO RECOGNIZE OBJECT]" << std::endl;
     restart();
 }
 
 void RobotLocalization::restart() {
     kidnap_ = true;
-    // std::cout << "[RESTART METHOD IS CALLED]" << std::endl;
     if (recognized_objects_.size() > 0) {
-        std::cout << "[LOCALIZATION RESTART]" << std::endl;
+        std::cout << "[LOCALIZATION RESTARTED]" << std::endl;
 
         auto res_msg = std::make_unique<my_interfaces::msg::Boolean>();
         res_msg->flag = true;
         restart_pub_->publish(std::move(res_msg));
+
+        iteration_ = 0;
         robot_pose_[2] = imu_orientation_;
         init_particles();
         calculate_weight();
         resample_particles();
         kidnap_ = false;
+    } else {
+        std::cout << "[MOVE ROBOT TO RECOGNIZE OBJECT]" << std::endl;
     }
 }
 
@@ -78,7 +80,6 @@ void RobotLocalization::odometryCallback(
     robot_pose_[2] = msg->theta;
 
     if (kidnap_) {
-        std::cout << "[ON KIDNAP PHASE]" << std::endl;
         restart();
     } else {
         mcl();
@@ -95,78 +96,30 @@ void RobotLocalization::mcl() {
     std::chrono::duration<double> duration = currentTime_ - lastTime_;
     double seconds = duration.count();
 
-    bool executed_flag = false;
-    bool temp_particle_flag = false;
-    bool kidnap_before = kidnap_;
-    // iteration_++;
-
-    // if (recognized_objects_.size() == 0 && !kidnap_) {
-    //     restart();
-    // }
-
     motion_update();
-    if ((seconds >= 0.2 || firstIteration_)) {
+    if ((seconds >= TIME_STEP || firstIteration_)) {
         if (recognized_objects_.size() > 0) {
             std::vector<Particle> temp_particles = particles_;
             if (!firstIteration_) {
-                // std::cout << "RESAMPLING IS EXECUTED | Object recognized : "
-                //           << recognized_objects_.size() << std::endl;
                 resample_particles();
             }
             calculate_weight();
 
             if (get_sum_weight() == 0.0) {
                 particles_ = temp_particles;
-                temp_particle_flag = true;
                 // restart();
             }
 
-            // if (get_sum_weight() == 0.0 && !kidnap_) {
-            //     particles_ = temp_particles;
-            //     temp_particle_flag = true;
-            //     zero_particle_counter_++;
-            //     if (zero_particle_counter_ > 5) {
-            //         recognized_objects_.clear();
-            //         restart();
-            //         zero_particle_counter_ = 0;
-            //     }
-            // }
-
-            lastTime_ = currentTime_;
-            firstIteration_ = false;
-            iteration_++;
-
-            executed_flag = true;
         } else {
             restart();
         }
+        iteration_++;
+        lastTime_ = currentTime_;
+        firstIteration_ = false;
     }
-
     estimate_pose();
-
     print_particles();
     print_odometry();
-
-    // std::cout << "Kidnap State (before) : " << kidnap_before << std::endl;
-    // std::cout << "Kidnap State (after) : " << kidnap_ << std::endl;
-
-    // if (executed_flag) {
-    //     std::cout << "RESAMPLING IS EXECUTED | Object recognized : "
-    //               << recognized_objects_.size() << std::endl;
-    // } else {
-    //     std::cout << "RESAMPLING IS NOT EXECUTED" << std::endl;
-    // }
-
-    // if (temp_particle_flag) {
-    //     std::cout << "NEW PARTICLE IS NOT GENERATED" << std::endl;
-    //     std::cout << "NEW PARTICLE IS NOT GENERATED" << std::endl;
-    //     std::cout << "NEW PARTICLE IS NOT GENERATED" << std::endl;
-    //     std::cout << "NEW PARTICLE IS NOT GENERATED" << std::endl;
-    //     std::cout << "NEW PARTICLE IS NOT GENERATED" << std::endl;
-    // } else {
-    //     std::cout << "NEW PARTICLE IS GENERATED" << std::endl;
-    // }
-
     recognized_objects_.clear();
 }
 
@@ -216,7 +169,6 @@ void RobotLocalization::resample_particles() {
     if (!kidnap_) {
         std::random_device xrd, yrd, wrd;
         const double var_x = 5.0, var_y = 5.0, var_w = 0.01;
-        // const double var_x = 10.0, var_y = 10.0, var_w = 0.03;
         int n;
 
         for (size_t i = 0; i < particles_.size(); ++i) {
@@ -225,7 +177,6 @@ void RobotLocalization::resample_particles() {
                 new_particles.push_back(particles_[i]);
 
                 n = int(particles_[i].weight * 100);
-                // n = int(particles_[i].weight * 100) * 5;
                 std::normal_distribution<double> xrg(particles_[i].base_x,
                                                      var_x),
                     yrg(particles_[i].base_y, var_y),
@@ -243,9 +194,6 @@ void RobotLocalization::resample_particles() {
                 }
             }
         }
-
-        particles_ = new_particles;
-        num_particles_ = particles_.size();
     } else {
         for (auto &p : particles_) {
             if (p.weight > 0.00001) {
@@ -253,17 +201,15 @@ void RobotLocalization::resample_particles() {
             }
         }
 
-        particles_ = new_particles;
-        num_particles_ = particles_.size();
-        if (num_particles_ < NUM_PARTICLES) {
+        if (new_particles.size() < NUM_PARTICLES) {
             kidnap_ = false;
         }
     }
+    particles_ = new_particles;
+    num_particles_ = particles_.size();
 }
 
 void RobotLocalization::motion_update() {
-    // std::cout << "MOTION UPDATE AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-    //           << std::endl;
     for (int i = 0; i < num_particles_; ++i) {
         particles_[i].x = particles_[i].base_x + robot_pose_[0] * 100;
         particles_[i].y = particles_[i].base_y + robot_pose_[1] * 100;

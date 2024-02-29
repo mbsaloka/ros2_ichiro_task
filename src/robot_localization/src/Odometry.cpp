@@ -7,12 +7,12 @@ Odometry::Odometry() : Node("odometry") {
 
     pose_pub_ = create_publisher<my_interfaces::msg::Pose>("/odometry", 1);
 
-    res_sub_ = create_subscription<my_interfaces::msg::Boolean>(
-        "/restart", 1,
+    res_key_sub_ = create_subscription<my_interfaces::msg::Boolean>(
+        "/restart_by_key", 1,
         std::bind(&Odometry::restartCallback, this, std::placeholders::_1));
 
-    res_2_sub_ = create_subscription<my_interfaces::msg::Boolean>(
-        "/restart_2", 1,
+    res_code_sub_ = create_subscription<my_interfaces::msg::Boolean>(
+        "/restart_by_code", 1,
         std::bind(&Odometry::restartCallback, this, std::placeholders::_1));
 
     timer_ = this->create_wall_timer(
