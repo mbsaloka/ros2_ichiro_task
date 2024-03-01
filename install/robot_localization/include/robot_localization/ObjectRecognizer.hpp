@@ -24,9 +24,7 @@ private:
 
     rclcpp::Subscription<
         webots_ros2_msgs::msg::CameraRecognitionObjects>::SharedPtr camera_sub_;
-
     rclcpp::Publisher<my_interfaces::msg::VectorObjects>::SharedPtr object_pub_;
-
     std::vector<RecognizedObject> recognized_objects_;
 };
 

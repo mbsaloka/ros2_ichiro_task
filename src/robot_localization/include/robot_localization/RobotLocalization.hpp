@@ -15,17 +15,14 @@
 #include "my_interfaces/msg/double.hpp"
 
 #define TIME_STEP 0.032
-#define FIELD_WIDTH 900
-#define FIELD_LENGTH 600
+#define FIELD_WIDTH 600
+#define FIELD_LENGTH 900
 #define NUM_PARTICLES 1000
 #define NUM_LANDMARK 23
 #define CAM_POSE_X 0.04
 #define START_X 0
 #define START_Y 0
 #define START_W 0
-#define VAR_X 10
-#define VAR_Y 10
-#define VAR_W 0.05
 
 typedef struct recognizedObj_t {
     double x;
@@ -67,6 +64,7 @@ private:
     void print_odometry();
     void restart();
     double get_sum_weight();
+    Particle make_particle(double x, double y, double w, double weight);
 
     rclcpp::Subscription<my_interfaces::msg::VectorObjects>::SharedPtr obj_sub_;
     rclcpp::Subscription<my_interfaces::msg::Velocity>::SharedPtr vel_sub_;

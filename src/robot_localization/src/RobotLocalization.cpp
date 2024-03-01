@@ -56,13 +56,12 @@ void RobotLocalization::restartCallback(
 void RobotLocalization::restart() {
     kidnap_ = true;
     if (recognized_objects_.size() > 0) {
-        std::cout << "[LOCALIZATION RESTARTED]" << std::endl;
+        // std::cout << "[LOCALIZATION RESTARTED]" << std::endl;
 
         auto res_msg = std::make_unique<my_interfaces::msg::Boolean>();
         res_msg->flag = true;
         restart_pub_->publish(std::move(res_msg));
 
-        iteration_ = 0;
         robot_pose_[2] = imu_orientation_;
         init_particles();
         calculate_weight();
@@ -95,19 +94,20 @@ void RobotLocalization::mcl() {
     currentTime_ = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duration = currentTime_ - lastTime_;
     double seconds = duration.count();
+    // iteration_++;
 
     motion_update();
     if ((seconds >= TIME_STEP || firstIteration_)) {
         if (recognized_objects_.size() > 0) {
-            std::vector<Particle> temp_particles = particles_;
+            // std::vector<Particle> temp_particles = particles_;
             if (!firstIteration_) {
                 resample_particles();
             }
             calculate_weight();
 
             if (get_sum_weight() == 0.0) {
-                particles_ = temp_particles;
-                // restart();
+                // particles_ = temp_particles;
+                restart();
             }
 
         } else {
@@ -126,19 +126,14 @@ void RobotLocalization::mcl() {
 void RobotLocalization::init_particles() {
     std::vector<Particle> new_particles;
     if (!kidnap_) {
+        const double var_x = 10.0, var_y = 10.0, var_y = 0.05;
         std::random_device xrd, yrd, wrd;
-        std::normal_distribution<double> xrg(START_X, VAR_X),
-            yrg(START_Y, VAR_Y), wrg(START_W, VAR_W);
+        std::normal_distribution<double> xrg(START_X, var_x),
+            yrg(START_Y, var_y), wrg(START_W, var_y);
 
         for (int i = 0; i < NUM_PARTICLES; i++) {
-            Particle p;
-            p.base_x = xrg(xrd);
-            p.base_y = yrg(yrd);
-            p.base_w = wrg(wrd);
-            p.x = p.base_x;
-            p.y = p.base_y;
-            p.w = p.base_w;
-            p.weight = 1.0 / NUM_PARTICLES;
+            Particle p = make_particle(xrg(xrd), yrg(yrd), wrg(wrd),
+                                       1.0 / NUM_PARTICLES);
             new_particles.push_back(p);
         }
     } else {
@@ -148,14 +143,7 @@ void RobotLocalization::init_particles() {
 
         for (int i = -FIELD_WIDTH / 2; i < FIELD_WIDTH / 2; i += x_gap) {
             for (int j = -FIELD_LENGTH / 2; j < FIELD_LENGTH / 2; j += y_gap) {
-                Particle p;
-                p.base_x = i;
-                p.base_y = j;
-                p.base_w = angle;
-                p.x = i;
-                p.y = j;
-                p.w = angle;
-                p.weight = 1.0 / num_particles_;
+                Particle p = make_particle(i, j, angle, 1.0 / num_particles_);
                 new_particles.push_back(p);
             }
         }
@@ -166,43 +154,24 @@ void RobotLocalization::init_particles() {
 
 void RobotLocalization::resample_particles() {
     std::vector<Particle> new_particles;
-    if (!kidnap_) {
-        std::random_device xrd, yrd, wrd;
-        const double var_x = 5.0, var_y = 5.0, var_w = 0.01;
-        int n;
+    std::random_device xrd, yrd, wrd;
+    const double var_x = 5.0, var_y = 5.0, var_w = 0.01;
 
-        for (size_t i = 0; i < particles_.size(); ++i) {
-            if (particles_[i].weight >=
-                (double)1 / (double)particles_.size() / 10.0) {
-                new_particles.push_back(particles_[i]);
+    for (auto &particle : particles_) {
+        if (particle.weight >= 1.0 / (particles_.size() * 10.0)) {
+            new_particles.push_back(particle);
+            int n = int(particle.weight * 100);
+            std::normal_distribution<double> xrg(particle.base_x, var_x),
+                yrg(particle.base_y, var_y), wrg(particle.base_w, var_w);
 
-                n = int(particles_[i].weight * 100);
-                std::normal_distribution<double> xrg(particles_[i].base_x,
-                                                     var_x),
-                    yrg(particles_[i].base_y, var_y),
-                    wrg(particles_[i].base_w, var_w);
-                for (int i = 0; i < n; i++) {
-                    Particle p;
-                    p.base_x = xrg(xrd);
-                    p.base_y = yrg(yrd);
-                    p.base_w = wrg(wrd);
-                    p.x = p.base_x + robot_pose_[0] * 100;
-                    p.y = p.base_y + robot_pose_[1] * 100;
-                    p.w = p.base_w + robot_pose_[2];
-                    p.weight = particles_[i].weight / n;
-                    new_particles.push_back(p);
-                }
-            }
-        }
-    } else {
-        for (auto &p : particles_) {
-            if (p.weight > 0.00001) {
+            for (int i = 0; i < n; i++) {
+                Particle p = make_particle(xrg(xrd), yrg(yrd), wrg(wrd),
+                                           particles_[i].weight / n);
+                p.x += robot_pose_[0] * 100;
+                p.y += robot_pose_[1] * 100;
+                p.w += robot_pose_[2];
                 new_particles.push_back(p);
             }
-        }
-
-        if (new_particles.size() < NUM_PARTICLES) {
-            kidnap_ = false;
         }
     }
     particles_ = new_particles;
@@ -297,6 +266,19 @@ double RobotLocalization::get_sum_weight() {
         sum += p.weight;
     }
     return sum;
+}
+
+Particle RobotLocalization::make_particle(double x, double y, double w,
+                                          double weight) {
+    Particle p;
+    p.base_x = x;
+    p.base_y = y;
+    p.base_w = w;
+    p.x = x;
+    p.y = y;
+    p.w = w;
+    p.weight = weight;
+    return p;
 }
 
 void RobotLocalization::print_particles() {

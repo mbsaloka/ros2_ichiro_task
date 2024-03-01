@@ -50,7 +50,6 @@ def generate_launch_description():
 
     def close_terminals(event):
         subprocess.call(['pkill', '-f', 'ros2 run robot_localization robot_controller'])
-        subprocess.call(['pkill', '-f', 'ros2 run robot_localization object_recognizer'])
         subprocess.call(['pkill', '-f', 'ros2 run robot_localization localization'])
 
     return LaunchDescription([
